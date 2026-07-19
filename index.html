@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W4 Advisory — AI Safety & Security Research</title>
+<meta name="description" content="W4 Advisory researches AI safety and security and builds open-source tools for securing AI systems. Home of Plexiglass and the SafeLlama community.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1b1d21;
+    --ink-soft: #4b4e55;
+    --muted: #8a8d93;
+    --paper: #f7f7f4;
+    --paper-raised: #ffffff;
+    --hairline: #e2e2dc;
+    --alert: #b53a21;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+    --sans: "Archivo", -apple-system, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--ink); color: var(--paper); }
+
+  a { color: inherit; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- utility text ---------- */
+  .meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--hairline);
+    padding: 3px 8px;
+    border-radius: 2px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .tag.alert { border-color: var(--alert); color: var(--alert); }
+
+  /* ---------- nav ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .wordmark {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .wordmark span {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    transition: color .15s ease;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible { color: var(--ink); }
+  .nav-links a.cta {
+    color: var(--paper);
+    background: var(--ink);
+    padding: 8px 16px;
+    border-radius: 2px;
+  }
+  .nav-links a.cta:hover { background: var(--alert); color: #fff; }
+  @media (max-width: 720px) { .nav-links a:not(.cta) { display: none; } }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--alert);
+    outline-offset: 2px;
+  }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 110px 0 90px; border-bottom: 1px solid var(--hairline); position: relative; overflow: hidden; }
+  .hero .meta { margin-bottom: 28px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .hero h1 {
+    font-weight: 650;
+    font-variation-settings: "wdth" 118;
+    font-size: clamp(42px, 7.2vw, 92px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    max-width: 15ch;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--muted);
+  }
+  .hero p.lede {
+    margin-top: 34px;
+    max-width: 56ch;
+    font-size: 19px;
+    color: var(--ink-soft);
+  }
+  .hero .actions { margin-top: 40px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 24px;
+    border-radius: 2px;
+    border: 1px solid var(--ink);
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .btn.solid { background: var(--ink); color: var(--paper); }
+  .btn.solid:hover { background: var(--alert); border-color: var(--alert); color: #fff; }
+  .btn.ghost:hover { background: var(--ink); color: var(--paper); }
+
+  .reveal { opacity: 0; transform: translateY(14px); animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+  .reveal.d1 { animation-delay: .08s; }
+  .reveal.d2 { animation-delay: .18s; }
+  .reveal.d3 { animation-delay: .3s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  /* ---------- sections ---------- */
+  section { padding: 88px 0; border-bottom: 1px solid var(--hairline); }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+  .section-head h2 {
+    font-weight: 650;
+    font-variation-settings: "wdth" 112;
+    font-size: clamp(26px, 3.4vw, 38px);
+    letter-spacing: -0.015em;
+  }
+
+  /* ---------- practice areas ---------- */
+  .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
+  @media (max-width: 860px) { .areas { grid-template-columns: 1fr; } }
+  .area { background: var(--paper); padding: 34px 28px 40px; transition: background .2s ease; }
+  .area:hover { background: var(--paper-raised); }
+  .area .meta { color: var(--alert); margin-bottom: 20px; }
+  .area h3 { font-size: 20px; font-weight: 650; margin-bottom: 12px; letter-spacing: -0.01em; }
+  .area p { font-size: 15.5px; color: var(--ink-soft); }
+
+  /* ---------- research ledger ---------- */
+  .ledger { border-top: 1px solid var(--ink); }
+  .paper-row {
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    gap: 28px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--hairline);
+    text-decoration: none;
+    align-items: start;
+    transition: background .15s ease;
+  }
+  .paper-row:hover { background: var(--paper-raised); }
+  @media (max-width: 860px) {
+    .paper-row { grid-template-columns: 1fr; gap: 10px; padding: 22px 0; }
+  }
+  .paper-id {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 2;
+  }
+  .paper-id b { display: block; color: var(--ink); font-weight: 500; }
+  .paper-main h3 {
+    font-size: 21px;
+    font-weight: 650;
+    letter-spacing: -0.012em;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+  .paper-row:hover .paper-main h3 { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+  .paper-main p { font-size: 15px; color: var(--ink-soft); max-width: 62ch; }
+  .paper-tags { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  @media (max-width: 860px) { .paper-tags { justify-content: flex-start; } }
+
+  .ledger-note {
+    margin-top: 22px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ---------- plexiglass ---------- */
+  .split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items: start; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 40px; } }
+  .split h2 {
+    font-weight: 650;
+    font-variation-settings: "wdth" 112;
+    font-size: clamp(26px, 3.4vw, 38px);
+    letter-spacing: -0.015em;
+    margin-bottom: 18px;
+  }
+  .split p { color: var(--ink-soft); margin-bottom: 16px; max-width: 58ch; }
+  .repo-stats { display: flex; gap: 26px; margin: 26px 0 30px; flex-wrap: wrap; }
+  .repo-stats div b {
+    display: block;
+    font-size: 26px;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .repo-stats div span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+  .terminal {
+    background: var(--ink);
+    border-radius: 4px;
+    padding: 22px 24px;
+    font-family: var(--mono);
+    font-size: 13.5px;
+    line-height: 2;
+    color: #c9cbd1;
+    overflow-x: auto;
+  }
+  .terminal .cm { color: #6d7078; }
+  .terminal .hl { color: var(--paper); }
+  .terminal .ok { color: #7fae86; }
+
+  /* ---------- community ---------- */
+  .community-inner { max-width: 760px; }
+  .community-inner p { color: var(--ink-soft); margin-bottom: 16px; }
+
+  /* ---------- founder ---------- */
+  .founder { display: grid; grid-template-columns: 150px 1fr; gap: 48px; align-items: start; }
+  @media (max-width: 720px) { .founder { grid-template-columns: 1fr; gap: 24px; } }
+  .founder-mark {
+    font-weight: 700;
+    font-variation-settings: "wdth" 120;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    border: 1px solid var(--hairline);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--paper-raised);
+  }
+  .founder h3 { font-size: 22px; font-weight: 650; margin-bottom: 4px; }
+  .founder .role { font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--alert); margin-bottom: 18px; }
+  .founder p { color: var(--ink-soft); max-width: 62ch; margin-bottom: 14px; }
+  .founder-links { display: flex; gap: 22px; margin-top: 8px; }
+  .founder-links a { font-size: 14px; font-weight: 600; text-underline-offset: 4px; }
+
+  /* ---------- footer ---------- */
+  footer { padding: 56px 0 64px; }
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .foot .meta { letter-spacing: 0.1em; }
+  .foot-links { display: flex; gap: 22px; }
+  .foot-links a { font-size: 13.5px; color: var(--ink-soft); text-decoration: none; }
+  .foot-links a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="wordmark" href="#top">W4<span>Advisory</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#research">Research</a>
+      <a href="#plexiglass">Plexiglass</a>
+      <a href="#safellama">SafeLlama</a>
+      <a class="cta" href="mailto:hello@w4advisory.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <div class="meta reveal">
+        <span>AI Safety &amp; Security Research</span>
+        <span>London, UK</span>
+        <span>Open Source</span>
+      </div>
+      <h1 class="reveal d1">Security research for systems <em>that learn.</em></h1>
+      <p class="lede reveal d2">W4 Advisory is an independent research practice studying how AI systems fail, how they are attacked, and how to defend them. We publish our findings openly and build the tools to act on them.</p>
+      <div class="actions reveal d3">
+        <a class="btn solid" href="#research">Read the research</a>
+        <a class="btn ghost" href="https://github.com/w4-advisory/plexiglass">Plexiglass on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <section aria-labelledby="what-we-do">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="what-we-do">What we do</h2>
+        <span class="meta">Three lines of work, one practice</span>
+      </div>
+      <div class="areas">
+        <div class="area">
+          <div class="meta">Research</div>
+          <h3>Vulnerability &amp; risk research</h3>
+          <p>In-depth published research on AI vulnerabilities, emerging attack classes, and responsible AI development practices — from prompt injection to the security of agentic systems.</p>
+        </div>
+        <div class="area">
+          <div class="meta">Tools</div>
+          <h3>Open-source security tooling</h3>
+          <p>We build and maintain open-source tools for testing and hardening AI systems, starting with Plexiglass — a toolkit for detecting and protecting against LLM vulnerabilities.</p>
+        </div>
+        <div class="area">
+          <div class="meta">Community</div>
+          <h3>The SafeLlama community</h3>
+          <p>A developer community for AI security research, knowledge sharing, and open-source collaboration — because securing AI is not a problem any one team solves alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" aria-labelledby="research-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="research-h">Research index</h2>
+        <span class="meta">Whitepapers &amp; technical notes</span>
+      </div>
+
+      <div class="ledger">
+        <a class="paper-row" href="#">
+          <div class="paper-id"><b>W4-R-2026-004</b>Jun 2026 · Whitepaper</div>
+          <div class="paper-main">
+            <h3>Trusting the Untrusted: Prompt Injection in Tool-Using Agents</h3>
+            <p>A taxonomy of indirect prompt injection paths in agentic systems — retrieved documents, tool results, and inter-agent messages — with practical mitigations and a test harness for measuring exposure.</p>
+          </div>
+          <div class="paper-tags"><span class="tag alert">Agents</span><span class="tag">Prompt Injection</span></div>
+        </a>
+
+        <a class="paper-row" href="#">
+          <div class="paper-id"><b>W4-R-2026-003</b>Apr 2026 · Technical note</div>
+          <div class="paper-main">
+            <h3>The Inference Stack Is an Attack Surface</h3>
+            <p>What recent vulnerabilities in open-source model-serving infrastructure teach us about deserialization, model loading, and the supply chain beneath every deployed LLM.</p>
+          </div>
+          <div class="paper-tags"><span class="tag alert">Supply Chain</span><span class="tag">Infrastructure</span></div>
+        </a>
+
+        <a class="paper-row" href="#">
+          <div class="paper-id"><b>W4-R-2026-002</b>Feb 2026 · Whitepaper</div>
+          <div class="paper-main">
+            <h3>Shadow AI: Mapping Unsanctioned Model Use in the Enterprise</h3>
+            <p>How ungoverned AI adoption creates data-exposure and compliance risk, why blocking tools fails, and a pragmatic framework for bringing shadow AI into the light without killing productivity.</p>
+          </div>
+          <div class="paper-tags"><span class="tag">Governance</span><span class="tag">Enterprise</span></div>
+        </a>
+
+        <a class="paper-row" href="#">
+          <div class="paper-id"><b>W4-R-2025-001</b>Nov 2025 · Whitepaper</div>
+          <div class="paper-main">
+            <h3>Benchmarking LLM Robustness: Lessons from Building Plexiglass</h3>
+            <p>Design decisions behind an open-source adversarial testing toolkit — scraping live jailbreak corpora, measuring toxicity and PII leakage, and why reproducible benchmarks beat one-off red teams.</p>
+          </div>
+          <div class="paper-tags"><span class="tag">Benchmarking</span><span class="tag">Open Source</span></div>
+        </a>
+      </div>
+      <p class="ledger-note">// Full papers available on request while the archive is being migrated.</p>
+    </div>
+  </section>
+
+  <section id="plexiglass" aria-labelledby="plexiglass-h">
+    <div class="wrap split">
+      <div>
+        <div class="meta" style="color: var(--alert); margin-bottom: 18px;">Flagship tool</div>
+        <h2 id="plexiglass-h">Plexiglass</h2>
+        <p>Plexiglass is an open-source toolkit for detecting and protecting against vulnerabilities in Large Language Models. It is a simple CLI that lets you test LLMs against adversarial attacks — prompt injection, jailbreaking, and more — in minutes, not sprints.</p>
+        <p>Two modes cover the workflow: <strong>llm-chat</strong> converses with a model while measuring metrics like toxicity and PII leakage; <strong>llm-scan</strong> benchmarks models against open-source adversarial datasets to surface vulnerabilities before attackers do.</p>
+        <div class="repo-stats">
+          <div><b>153</b><span>GitHub stars</span></div>
+          <div><b>18</b><span>Forks</span></div>
+          <div><b>Apache-2.0</b><span>License</span></div>
+        </div>
+        <div class="actions" style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a class="btn solid" href="https://github.com/w4-advisory/plexiglass">View on GitHub</a>
+          <a class="btn ghost" href="https://safellama.github.io/plexiglass/build/html/index.html">Documentation</a>
+        </div>
+      </div>
+      <div>
+        <div class="terminal" role="img" aria-label="Terminal showing Plexiglass installation and scan">
+          <span class="cm"># install from PyPI</span><br>
+          <span class="hl">$ pip install --upgrade plexiglass</span><br>
+          <br>
+          <span class="cm"># scan a model for vulnerabilities</span><br>
+          <span class="hl">$ plexiglass llm-scan</span><br>
+          <span class="ok">✓ loading adversarial prompt corpus</span><br>
+          <span class="ok">✓ running toxicity benchmark</span><br>
+          <span class="ok">✓ running pii_detection</span><br>
+          <span class="cm">→ report: 3 findings, 1 high severity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="safellama" aria-labelledby="safellama-h">
+    <div class="wrap community-inner">
+      <div class="meta" style="color: var(--alert); margin-bottom: 18px;">Community</div>
+      <h2 class="section-head" style="margin-bottom: 18px;" id="safellama-h">SafeLlama</h2>
+      <p>SafeLlama is the developer community behind our open-source work — researchers, engineers, and practitioners collaborating on AI security research and sharing what they learn. Contributions to Plexiglass, discussion of new attack classes, and working groups all live here.</p>
+      <p>If you are breaking, defending, or benchmarking AI systems, you will fit right in.</p>
+      <div style="margin-top: 28px;">
+        <a class="btn solid" href="https://discord.gg/sHuzVV8tQv">Join us on Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="founder-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="founder-h">Who is behind this</h2>
+      </div>
+      <div class="founder">
+        <div class="founder-mark" aria-hidden="true">EK</div>
+        <div>
+          <h3>Enoch Kan</h3>
+          <div class="role">Founder</div>
+          <p>Enoch is an AI engineer and security researcher based in London. He has led machine learning and data engineering teams across startups and consulting, writes near-daily on AI safety and security for an audience of 15,000+ practitioners, and founded W4 Advisory to turn that research into open tools the whole field can use.</p>
+          <div class="founder-links">
+            <a href="https://www.linkedin.com/in/enochkan/">LinkedIn</a>
+            <a href="https://github.com/w4-advisory">GitHub</a>
+            <a href="mailto:hello@w4advisory.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span class="meta">W4 Advisory · AI Safety &amp; Security Research · © 2026</span>
+    <div class="foot-links">
+      <a href="#research">Research</a>
+      <a href="https://github.com/w4-advisory/plexiglass">Plexiglass</a>
+      <a href="https://discord.gg/sHuzVV8tQv">Discord</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
