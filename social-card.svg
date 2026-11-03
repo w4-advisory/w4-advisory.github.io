@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f7f7f4"/>
+<rect x="0" y="0" width="1200" height="9" fill="#b53a21"/>
+<g stroke="#e2e2dc" stroke-width="1"><line x1="65" y1="106" x2="1135" y2="106"/><line x1="65" y1="546" x2="1135" y2="546"/></g>
+<rect x="65" y="34" width="59" height="59" rx="9" fill="#1b1d21"/>
+<path d="M74 50h7l5 19 6-13h5l6 13 4-19h7l-7 33h-7l-7-15-7 15h-7z" fill="#f7f7f4"/>
+<text x="145" y="72" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#1b1d21" letter-spacing="0.5">W4</text>
+<text x="208" y="71" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4b4e55" letter-spacing="5">ADVISORY</text>
+<text x="65" y="221" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#b53a21" letter-spacing="3">AI SAFETY &amp; SECURITY RESEARCH</text>
+<text x="60" y="338" font-family="Arial, Helvetica, sans-serif" font-size="81" font-weight="700" fill="#1b1d21">Security research</text>
+<text x="60" y="430" font-family="Arial, Helvetica, sans-serif" font-size="81" font-weight="700" fill="#8a8d93">for systems that learn.</text>
+<text x="65" y="586" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#4b4e55" letter-spacing="1.2">W4-ADVISORY.GITHUB.IO</text>
+<circle cx="1100" cy="577" r="11" fill="#b53a21"/>
+</svg>
