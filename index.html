@@ -314,6 +314,7 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="#research">Research</a>
       <a href="glossary.html">Glossary</a>
+      <a href="#news">News</a>
       <a href="#plexiglass">Plexiglass</a>
       <a href="#safellama">SafeLlama</a>
       <a class="cta" href="mailto:hello@w4advisory.com">Contact</a>
@@ -413,6 +414,17 @@
     </div>
   </section>
 
+  <section id="news" aria-labelledby="news-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="news-h">AI security news</h2>
+        <span class="meta">Selected headlines · Updated twice weekly</span>
+      </div>
+      <div class="ledger" id="latest-news"><p class="ledger-note">Loading recent coverage…</p></div>
+      <div style="margin-top:28px;"><a class="btn ghost" href="news.html">All news →</a></div>
+    </div>
+  </section>
+
   <section id="glossary" aria-labelledby="glossary-h">
     <div class="wrap split">
       <div>
@@ -504,11 +516,30 @@
     <div class="foot-links">
       <a href="#research">Research</a>
       <a href="glossary.html">Glossary</a>
+      <a href="news.html">News</a>
       <a href="https://github.com/w4-advisory/plexiglass">Plexiglass</a>
       <a href="https://discord.gg/sHuzVV8tQv">Discord</a>
     </div>
   </div>
 </footer>
 
+<script>
+(async function(){
+ const node=document.getElementById('latest-news');
+ try{
+  const res=await fetch('news.json',{cache:'no-cache'});if(!res.ok)throw new Error('unavailable');
+  const data=await res.json();if(!Array.isArray(data)||!data.length){node.textContent='The first headlines will appear after the next scheduled update.';return}
+  node.replaceChildren();
+  for(const story of data.slice(0,2)){
+   if(!story.title||!story.url||!story.url.startsWith('https://'))continue;
+   const row=document.createElement('a');row.className='paper-row';row.href=story.url;row.target='_blank';row.rel='noopener noreferrer';
+   const date=document.createElement('div');date.className='paper-id';date.textContent=story.published||'';
+   const body=document.createElement('div');body.className='paper-main';const h=document.createElement('h3');h.textContent=story.title;body.append(h);
+   const tags=document.createElement('div');tags.className='paper-tags';const source=document.createElement('span');source.className='tag';source.textContent=story.source||'News';tags.append(source);
+   row.append(date,body,tags);node.append(row);
+  }
+ }catch(error){node.textContent='Headlines temporarily unavailable.'}
+})();
+</script>
 </body>
 </html>
