@@ -1,0 +1,43 @@
+name: Render website brand images
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'favicon.svg'
+      - 'social-card.svg'
+      - '.github/workflows/render-brand-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install SVG renderer
+        run: python -m pip install 'CairoSVG==2.7.1'
+      - name: Render social preview and icons
+        run: |
+          python - <<'PY'
+          import cairosvg
+          cairosvg.svg2png(url="social-card.svg",write_to="og-image.png",output_width=1200,output_height=630)
+          cairosvg.svg2png(url="favicon.svg",write_to="favicon-32.png",output_width=32,output_height=32)
+          cairosvg.svg2png(url="favicon.svg",write_to="apple-touch-icon.png",output_width=180,output_height=180)
+          PY
+      - name: Commit rendered assets
+        run: |
+          git add og-image.png favicon-32.png apple-touch-icon.png
+          if git diff --cached --quiet; then
+            echo "Brand images unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: render social preview and favicon PNGs"
+          git push
