@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{const theme=localStorage.getItem('w4-theme');if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme}catch(_){}</script>
 <style>
   :root {
     --ink: #1b1d21;
@@ -344,20 +345,23 @@
   .foot-links a { font-size: 13.5px; color: var(--ink-soft); text-decoration: none; }
   .foot-links a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
 </style>
+<link rel="stylesheet" href="theme.css">
+<script defer src="theme.js"></script>
+<script src="news-preview.js"></script>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
     <a class="wordmark" href="#top">W4<span>Advisory</span></a>
-    <nav class="nav-links" aria-label="Primary">
+    <div class="nav-actions"><nav class="nav-links" aria-label="Primary">
       <a href="#research">Research</a>
       <a href="glossary.html">Glossary</a>
       <a href="#news">News</a>
       <a href="#plexiglass">Plexiglass</a>
       <a href="#safellama">SafeLlama</a>
       <a class="cta" href="mailto:hello@w4advisory.com">Contact</a>
-    </nav>
+    </nav><button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.2 15.7A8.5 8.5 0 0 1 8.3 3.8 8.5 8.5 0 1 0 20.2 15.7Z"/></svg><span class="theme-label">Dark mode</span></button></div>
   </div>
 </header>
 
@@ -457,13 +461,13 @@
     <div class="wrap">
       <div class="section-head">
         <h2 id="news-h">AI security news</h2>
-        <span class="meta">Selected headlines · Updated twice weekly</span>
+        <span class="meta">Selected headlines · Updated daily</span>
       </div>
-      <div class="news-announcement" role="note" aria-label="New twice-weekly news updates">
+      <div class="news-announcement" role="note" aria-label="Daily news updates">
         <div>
-          <span class="meta" style="color: var(--alert);">New · Twice-weekly updates</span>
+          <span class="meta" style="color: var(--alert);">Daily updates</span>
           <h3>Stay current on AI security.</h3>
-          <p>Every Tuesday and Friday, we share a selection of recent headlines covering AI vulnerabilities, emerging threats, and defenses — with links to the original reporting.</p>
+          <p>Every day, we share a selection of recent headlines covering AI vulnerabilities, emerging threats, and defenses — with links to the original reporting.</p>
         </div>
         <a href="news.html">Explore AI security news →</a>
       </div>
@@ -579,14 +583,15 @@
   node.replaceChildren();
   for(const story of data.slice(0,2)){
    if(!story.title||!story.url||!story.url.startsWith('https://'))continue;
-   const row=document.createElement('a');row.className='paper-row';row.href=story.url;row.target='_blank';row.rel='noopener noreferrer';
+   const row=document.createElement('a');row.className='paper-row news-row';row.href=story.article_url||story.url;row.target='_blank';row.rel='noopener noreferrer';
    const date=document.createElement('div');date.className='paper-id';date.textContent=story.published||'';
-   const body=document.createElement('div');body.className='paper-main';const h=document.createElement('h3');h.textContent=story.title;body.append(h);
+   const body=document.createElement('div');body.className='paper-main';const h=document.createElement('h3');h.textContent=story.title;body.append(h);const summary=W4NewsPreview.summary(story);if(summary)body.append(summary);
    const tags=document.createElement('div');tags.className='paper-tags';const source=document.createElement('span');source.className='tag';source.textContent=story.source||'News';tags.append(source);
-   row.append(date,body,tags);node.append(row);
+   row.append(date,W4NewsPreview.media(story),body,tags);node.append(row);
   }
  }catch(error){node.textContent='Headlines temporarily unavailable.'}
 })();
 </script>
 </body>
 </html>
+

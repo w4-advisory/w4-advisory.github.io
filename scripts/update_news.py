@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Collect up to two AI security news links per run, without external dependencies."""
+"""Collect AI security news and enrich archive entries with publisher previews."""
 import datetime as dt
 import email.utils
+import html
+from html.parser import HTMLParser
 import json
 import re
 import urllib.parse
@@ -14,6 +16,7 @@ DATA = ROOT / "news.json"
 NOW = dt.datetime.now(dt.timezone.utc)
 MAX_AGE = dt.timedelta(days=14)
 MAX_ARCHIVE = 80
+MAX_ENRICH_PER_RUN = 12
 # Separate, broadly scoped feeds avoid Google's handling of a deeply nested OR query.
 QUERIES = [
     '"prompt injection" OR "LLM vulnerability" when:14d',
@@ -35,7 +38,61 @@ AI = re.compile(
 )
 
 def clean(value):
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", value or "")).strip()
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape(value or ""))).strip()
+
+class Metadata(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.values = {}
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "meta":
+            name = (attrs.get("property") or attrs.get("name") or "").lower()
+            if name in {"og:image", "og:image:secure_url", "twitter:image", "og:description", "twitter:description", "description"}:
+                self.values.setdefault(name, attrs.get("content", ""))
+        elif tag == "link" and "canonical" in attrs.get("rel", "").lower():
+            self.values.setdefault("canonical", attrs.get("href", ""))
+
+def https_url(value, base=""):
+    url = urllib.parse.urljoin(base, html.unescape(value or ""))
+    parsed = urllib.parse.urlparse(url)
+    return url if parsed.scheme == "https" and parsed.hostname else None
+
+def preview(story):
+    """Best-effort publisher metadata; Google interstitials are never used as previews."""
+    target = story.get("article_url") or story["url"]
+    try:
+        req = urllib.request.Request(target, headers={"User-Agent": "Mozilla/5.0 (compatible; W4AdvisoryNewsBot/1.0)"})
+        with urllib.request.urlopen(req, timeout=12) as response:
+            final = response.geturl()
+            if response.status != 200 or "html" not in response.headers.get("Content-Type", "").lower():
+                return False
+            raw = response.read(500_000)
+            charset = response.headers.get_content_charset() or "utf-8"
+        if urllib.parse.urlparse(final).hostname in {"news.google.com", "www.google.com"}:
+            return False
+        parser = Metadata()
+        parser.feed(raw.decode(charset, errors="replace"))
+        canonical = https_url(parser.values.get("canonical"), final) or final
+        if urllib.parse.urlparse(canonical).hostname in {"news.google.com", "www.google.com"}:
+            return False
+        changed = False
+        if not story.get("article_url"):
+            story["article_url"] = canonical
+            changed = True
+        description = clean(next((parser.values.get(k) for k in ("og:description", "twitter:description", "description") if parser.values.get(k)), ""))
+        if description and not story.get("summary"):
+            story["summary"] = description[:260]
+            changed = True
+        image = https_url(next((parser.values.get(k) for k in ("og:image:secure_url", "og:image", "twitter:image") if parser.values.get(k)), ""), final)
+        if image and not story.get("image"):
+            story["image"] = image
+            changed = True
+        return changed
+    except (OSError, UnicodeError, ValueError) as exc:
+        print(f"Preview unavailable for {story.get('source', 'article')}: {exc}")
+        return False
 
 def existing():
     try:
@@ -123,8 +180,7 @@ def main():
     old = existing()
     candidates, successful = collect()
     if not successful:
-        print("No feeds were reachable; preserving archive.")
-        return
+        print("No feeds were reachable; retaining existing archive.")
     seen = {key(item) for item in old}
     seen_urls = {item.get("url") for item in old}
     additions = []
@@ -136,12 +192,17 @@ def main():
             seen_urls.add(story["url"])
         if len(additions) == 2:
             break
-    if not additions:
-        print("No eligible, unseen articles; archive unchanged. Review diagnostics above.")
-        return
     result = (additions + old)[:MAX_ARCHIVE]
-    DATA.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Added {len(additions)} new stories (archive: {len(result)}).")
+    pending = [story for story in result if not (story.get("image") and story.get("summary"))]
+    start = NOW.date().toordinal() % len(pending) if pending else 0
+    selected = (pending[start:] + pending[:start])[:MAX_ENRICH_PER_RUN]
+    for story in selected:
+        preview(story)
+    enriched = len(selected)
+    if result != old:
+        DATA.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Added {len(additions)} new stories; checked {enriched} previews (archive: {len(result)}).")
 
 if __name__ == "__main__":
     main()
+
