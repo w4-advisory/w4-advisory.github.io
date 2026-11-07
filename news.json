@@ -1,5 +1,15 @@
 [
   {
+    "title": "CVE-2026-102610: fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102610",
+    "source": "NIST NVD",
+    "published": "2026-11-06",
+    "origin": "advisory",
+    "summary": "fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound to 0.0.0.0 on port 8000 without authentication, allowing any network client that can reac",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-102610",
+    "image": "https://nvd.nist.gov/vuln/detail/cve-2026-102610"
+  },
+  {
     "title": "Macron gathers specialists for Élysée briefing on AI security",
     "url": "https://www.intelligenceonline.com/europe-russia/2026/11/06/macron-gathers-specialists-for-elysee-briefing-on-ai-security,110915569-art",
     "article_url": "https://www.intelligenceonline.com/europe-russia/2026/11/06/macron-gathers-specialists-for-elysee-briefing-on-ai-security,110915569-art",
@@ -46,6 +56,16 @@
     "origin": "research",
     "summary": "Trail of Bits reports on using an AI coding agent to backport security fixes while checking vulnerable branches and patch behavior.",
     "image": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/backporting_socialbanner.png"
+  },
+  {
+    "title": "CVE-2026-61789: DBHub is a database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite. Prior to 0.22.6, read-only SQL validation can be bypassed on the MySQL and MariaD",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61789",
+    "source": "NIST NVD",
+    "published": "2026-10-30",
+    "origin": "advisory",
+    "summary": "DBHub is a database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite. Prior to 0.22.6, read-only SQL validation can be bypassed on the MySQL and MariaDB connectors. In `src/utils/sql-parser.ts`, `scanSingleLineComment` treats every double da",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-61789",
+    "image": "https://nvd.nist.gov/vuln/detail/cve-2026-61789"
   },
   {
     "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
