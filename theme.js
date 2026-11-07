@@ -2,8 +2,7 @@
   const root = document.documentElement;
   const button = document.querySelector('.theme-toggle');
   if (!button) return;
-  const media = matchMedia('(prefers-color-scheme: dark)');
-  const current = () => root.dataset.theme || (media.matches ? 'dark' : 'light');
+  const current = () => root.dataset.theme || 'light';
   const update = () => {
     const dark = current() === 'dark';
     button.setAttribute('aria-pressed', String(dark));
@@ -16,7 +15,6 @@
     try { localStorage.setItem('w4-theme', next); } catch (_) {}
     update();
   });
-  media.addEventListener?.('change', update);
   window.addEventListener('storage', event => {
     if (event.key !== 'w4-theme') return;
     if (event.newValue === 'dark' || event.newValue === 'light') root.dataset.theme = event.newValue;

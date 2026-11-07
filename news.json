@@ -5,7 +5,8 @@
     "source": "Education Times",
     "published": "2026-11-06",
     "article_url": "https://www.educationtimes.com/news-iit-delhi-launches-a-6-month-course-in-cybersecurity-and-ai-security-who-can-apply-and-how-much-does-it-cost/articleshow/135592969.cms",
-    "summary": "IIT Delhi has launched a six-month certificate programme combining cybersecurity and AI security for working professionals."
+    "summary": "IIT Delhi has launched a six-month certificate programme combining cybersecurity and AI security for working professionals.",
+    "image": "https://static.toiimg.com/thumb/msid-135593058,width-1280,height-720,imgsize-185396,resizemode-6,y_pad-600/photo.jpg"
   },
   {
     "title": "France • Macron gathers specialists for Elysée briefing on AI security - Intelligence Online",
@@ -13,20 +14,25 @@
     "source": "Intelligence Online",
     "published": "2026-11-06",
     "article_url": "https://www.intelligenceonline.com/europe-russia/2026/11/06/macron-gathers-specialists-for-elysee-briefing-on-ai-security,110915569-art",
-    "summary": "French President Emmanuel Macron is convening European AI researchers and practitioners at the Élysée as part of a wider technology initiative."
+    "summary": "French President Emmanuel Macron is convening European AI researchers and practitioners at the Élysée as part of a wider technology initiative.",
+    "image": "https://www.intelligenceonline.com/utils/imageresize?file64=SU9cQXJ0aWNsZXNcTWFjcm9uQUkuanBn&web=1&x=1400"
   },
   {
     "title": "CrowdStrike To Reportedly Buy AI Security Startups For $495M, Launches ‘Kill Switch’ For Rogue Agents - TradingView",
     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPRDZHcHhSdnh4SmdyWng2T1hIRl9LdzZNQWJtR2ZqanM0b1hJSW0yMFMxYUQ0VEZId1VYb0Z2enJQc1NPWi04bEl0SnRiVHkwMUhXUThIQVdsUldKZ243LWpiaWVSSHZtQnBNQWlQeVE2bk02QktyREJUQ0dfbHJlTE5uQnVXWmRwOUp3QVpZYTR1ZXNGRnZXVGY2QnQ3N0NJeXd6aVcxRy13ZGpENmJsMzRYTWZCclZvNVVQSFBtSnRNOVd3a05VTERuTHJJYUZMaGQ1b0ZfRlVsMEVHV3BhQXdSUUVrT1FfTVNwS0tR?oc=5",
     "source": "TradingView",
     "published": "2026-11-03",
-    "summary": "CrowdStrike announced plans to acquire Fiddler AI and Dreadnode and introduced an AI Kill Switch for rogue agents."
+    "summary": "CrowdStrike announced plans to acquire Fiddler AI and Dreadnode and introduced an AI Kill Switch for rogue agents.",
+    "article_url": "https://www.tradingview.com/news/stocktwits:6eb5fd9d9094b:0-crowdstrike-to-reportedly-buy-ai-security-startups-for-495m-launches-kill-switch-for-rogue-agents/",
+    "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
   },
   {
     "title": "CrowdStrike Announces New Native AI Security Innovations on AWS - 01net",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS21WSUpVU1RUN2ZlMmhwUWRQVkllbWFsYThaNERublRsZGw4R1JhX2xkd1ZiNjFHT1FMaFROLUZiMmI3WXBYVVJuYno4R3VkamlOYVFDaUdWM0FGamtCTEw1OW4zeXNJZG5DSVV1U25WdmtYa0JLcHJGeldvc0t4WDlaMV9TeS1SRkRJLVdB?oc=5",
     "source": "01net",
     "published": "2026-11-03",
-    "summary": "CrowdStrike announced new AI security capabilities and integrations for customers building with AWS."
+    "summary": "CrowdStrike announced new AI security capabilities and integrations for customers building with AWS.",
+    "article_url": "https://www.01net.it/crowdstrike-announces-new-native-ai-security-innovations-on-aws/",
+    "image": "https://mms.businesswire.com/media/20261103596263/en/821165/22/CS_Logos_2020_InlineRed.jpg"
   }
 ]
