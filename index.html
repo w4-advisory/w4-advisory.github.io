@@ -133,7 +133,7 @@
     border-radius: 2px;
   }
   .nav-links a.cta:hover { background: var(--alert); color: #fff; }
-  @media (max-width: 720px) { .nav-links a:not(.cta) { display: none; } }
+  @media (max-width: 720px) { .nav-links a:not(.nav-news) { display: none; } }
 
   a:focus-visible, button:focus-visible {
     outline: 2px solid var(--alert);
@@ -200,7 +200,8 @@
   }
 
   /* ---------- practice areas ---------- */
-  .areas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
+  .areas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); }
+  @media (max-width: 1100px) { .areas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 860px) { .areas { grid-template-columns: 1fr; } }
   .area { background: var(--paper); padding: 34px 28px 40px; transition: background .2s ease; }
   .area:hover { background: var(--paper-raised); }
@@ -355,9 +356,9 @@
   <div class="wrap nav">
     <a class="wordmark" href="#top">W4<span>Advisory</span></a>
     <div class="nav-actions"><nav class="nav-links" aria-label="Primary">
+      <a class="nav-news" href="#news">News</a>
       <a href="#research">Research</a>
       <a href="glossary.html">Glossary</a>
-      <a href="#news">News</a>
       <a href="#plexiglass">Plexiglass</a>
       <a href="#safellama">SafeLlama</a>
       <a class="cta" href="mailto:hello@w4advisory.com">Contact</a>
@@ -374,22 +375,46 @@
         <span>London, UK</span>
         <span>Open Source</span>
       </div>
-      <h1 class="reveal d1">Security research for systems <em>that learn.</em></h1>
-      <p class="lede reveal d2">W4 Advisory is an independent research practice studying how AI systems fail, how they are attacked, and how to defend them. We publish our findings openly and build the tools to act on them.</p>
+      <h1 class="reveal d1">AI security news.<br><em>Independent insight.</em></h1>
+      <p class="lede reveal d2">Follow the latest AI security news, vulnerabilities, and emerging threats. W4 Advisory brings together daily coverage, independent research, and open-source tools to help you understand how AI systems fail and how to defend them.</p>
       <div class="actions reveal d3">
-        <a class="btn solid" href="#research">Read the research</a>
-        <a class="btn ghost" href="https://github.com/w4-advisory/plexiglass">Plexiglass on GitHub</a>
+        <a class="btn solid" href="#news">Latest AI security news</a>
+        <a class="btn ghost" href="#research">Read the research</a>
       </div>
     </div>
   </div>
+
+  <section id="news" aria-labelledby="news-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="news-h">AI security news</h2>
+        <span class="meta">Selected coverage · Checked daily</span>
+      </div>
+      <div class="news-announcement" role="note" aria-label="Daily news updates">
+        <div>
+          <span class="meta" style="color: var(--alert);">Daily updates</span>
+          <h3>Stay current on AI security.</h3>
+          <p>Every day, we check for AI security research, vulnerabilities, industry developments, and policy news — with links to the original source.</p>
+        </div>
+        <a href="news.html">Explore AI security news →</a>
+      </div>
+      <div class="ledger" id="latest-news"><p class="ledger-note">Loading recent coverage…</p></div>
+      <div style="margin-top:28px;"><a class="btn ghost" href="news.html">All news →</a></div>
+    </div>
+  </section>
 
   <section aria-labelledby="what-we-do">
     <div class="wrap">
       <div class="section-head">
         <h2 id="what-we-do">What we do</h2>
-        <span class="meta">Three lines of work, one practice</span>
+        <span class="meta">News, research, tools &amp; community</span>
       </div>
       <div class="areas">
+        <div class="area">
+          <div class="meta">News</div>
+          <h3><a href="news.html">AI security, checked daily →</a></h3>
+          <p>Follow vulnerability disclosures, new research, industry developments, and policy news — with article previews and links to the original sources.</p>
+        </div>
         <div class="area">
           <div class="meta">Research</div>
           <h3>Vulnerability &amp; risk research</h3>
@@ -454,25 +479,6 @@
         </a>
       </div>
       <p class="ledger-note">// All papers published as PDF under CC BY 4.0.</p>
-    </div>
-  </section>
-
-  <section id="news" aria-labelledby="news-h">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="news-h">AI security news</h2>
-        <span class="meta">Selected coverage · Checked daily</span>
-      </div>
-      <div class="news-announcement" role="note" aria-label="Daily news updates">
-        <div>
-          <span class="meta" style="color: var(--alert);">Daily updates</span>
-          <h3>Stay current on AI security.</h3>
-          <p>Every day, we check for AI security research, vulnerabilities, industry developments, and policy news — with links to the original source.</p>
-        </div>
-        <a href="news.html">Explore AI security news →</a>
-      </div>
-      <div class="ledger" id="latest-news"><p class="ledger-note">Loading recent coverage…</p></div>
-      <div style="margin-top:28px;"><a class="btn ghost" href="news.html">All news →</a></div>
     </div>
   </section>
 
@@ -581,7 +587,7 @@
   const res=await fetch('news.json',{cache:'no-cache'});if(!res.ok)throw new Error('unavailable');
   const data=await res.json();if(!Array.isArray(data)||!data.length){node.textContent='The first headlines will appear after the next scheduled update.';return}
   node.replaceChildren();
-  for(const story of data.slice(0,2)){
+  for(const story of data.slice(0,3)){
    if(!story.title||!story.url||!story.url.startsWith('https://'))continue;
    const row=document.createElement('a');row.className='paper-row news-row';row.href=story.article_url||story.url;row.target='_blank';row.rel='noopener noreferrer';
    const date=document.createElement('div');date.className='paper-id';date.textContent=story.published||'';
