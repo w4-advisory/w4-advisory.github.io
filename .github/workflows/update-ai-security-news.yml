@@ -14,7 +14,7 @@ concurrency:
 jobs:
   update-news:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Select recent AI security headlines
+      - name: Select technical AI security research and advisories
         run: python scripts/update_news.py
       - name: Commit updates, if any
         run: |

@@ -24,3 +24,5 @@
 @media (max-width: 720px) { .story { grid-template-columns: 105px minmax(0, 1fr); gap: 12px 18px; } .story .date { grid-column: 1 / -1; } .story .news-preview-wrap { width: 105px; } .story h2 { font-size: 19px; } }
 :root[data-theme="dark"] .controls input, :root[data-theme="dark"] .controls select { background: var(--paper-raised); }
 @media (max-width: 720px) { .nav-actions { gap: 10px; } .theme-toggle .theme-label { display: none; } }
+
+.discussion-link { display: inline-block; margin-top: 10px; color: var(--alert); font: 12px var(--mono); text-underline-offset: 3px; }
