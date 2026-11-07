@@ -16,9 +16,22 @@ class SelectionTests(unittest.TestCase):
         item = self.story("IIT Delhi launches a course in cybersecurity and AI security")
         self.assertEqual(news.relevance_score(item), 0)
 
-    def test_rejects_marketing_and_unrelated_ai_security_briefing(self):
-        self.assertEqual(news.relevance_score(self.story("CrowdStrike announces new native AI security innovations")), 0)
-        self.assertEqual(news.relevance_score(self.story("Macron gathers specialists for AI security briefing")), 0)
+    def test_keeps_relevant_industry_and_policy_coverage(self):
+        for title, source, url in (
+            ("CrowdStrike announces new native AI security innovations", "01net", "https://www.01net.it/story"),
+            ("CrowdStrike to buy AI security startups and launch Kill Switch for rogue agents", "TradingView", "https://www.tradingview.com/story"),
+            ("Macron gathers specialists for AI security briefing", "Intelligence Online", "https://www.intelligenceonline.com/story"),
+        ):
+            with self.subTest(title=title):
+                item = self.story(title, url=url)
+                item["source"] = source
+                self.assertGreater(news.relevance_score(item), 0)
+
+    def test_rejects_training_promotion_even_from_vetted_source(self):
+        item = self.story("New AI security training course: who can apply and how much does it cost",
+                          url="https://www.01net.it/story")
+        item["source"] = "01net"
+        self.assertEqual(news.relevance_score(item), 0)
 
     def test_accepts_first_party_vulnerability_research(self):
         item = self.story("Discovering vulnerabilities with Claude", url="https://www.anthropic.com/research/discovering-vulnerabilities-with-claude", origin="research")
