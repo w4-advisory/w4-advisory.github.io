@@ -1,5 +1,18 @@
 [
   {
+    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "source": "apiiro.com",
+    "published": "2026-11-07",
+    "origin": "hn",
+    "hn_score": 40,
+    "discussion_url": "https://news.ycombinator.com/item?id=50407882",
+    "added_on": "2026-11-07",
+    "image": "https://w4-advisory.github.io/og-image.png",
+    "article_url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "summary": "Secure everything coding agents build, use, and ship - prevent risk before code exists, AutoFix the backlog, and protect the coding agents and supply chain."
+  },
+  {
     "title": "CVE-2026-102610: fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102610",
     "source": "NIST NVD",
@@ -19,6 +32,24 @@
     "origin": "news",
     "summary": "French President Emmanuel Macron is convening European AI researchers and practitioners at the Élysée as part of a wider technology initiative.",
     "image": "https://www.intelligenceonline.com/utils/imageresize?file64=SU9cQXJ0aWNsZXNcTWFjcm9uQUkuanBn&web=1&x=1400"
+  },
+  {
+    "title": "Palo Alto Networks Eyes $500 Million AI Security Deal - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTERyU2ZaZVdEN0FiZ29kWFV1a19JVnc0NTFrLWJOZ2tMYTZrSUtvbE5rYVVnYVIzdi1JZTRvSFhoRWhXOXRNWHBRSFFFU0EycmhmUENEWF9nQ1VsRmZsbTM2cTFJNkUzOFpwMWdDdjl1UzBRWDNNUFNVNE9JNEV1Ulpybk1VQ18zM1Q5T2g0blZxY0tmMkNiMFBsdTJqaHE2ZVQ2azlVZ2didEFDb3N0anZR?oc=5",
+    "source": "TradingView",
+    "published": "2026-11-05",
+    "origin": "news",
+    "added_on": "2026-11-07",
+    "image": "https://w4-advisory.github.io/og-image.png"
+  },
+  {
+    "title": "Palo Alto Networks in talks to buy AI security startup Clutch for $500M: report - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQd0Nqb2VDSHpYZzRoVklvcTJtZnVnZGo1VjRYUWRLSHczTkxfSlJhYnlIeFZHQV9lX1F0X0QwcGVZOWFyQ1dvUmo3Vl9wbzFvOFY5SEQzSklZSFkzSm1oaUtPakRyMGkwSm44djJkaFFnSXc3VVVkREVWa0NodUFGckc3bmRaQms3VWNJWG5YTFpwNjE1VEpKc1FzQXF6SEFyLU14WklDOFJvWWs3ZmhsX0JaZ0QzbUtnY0ZYTGdGclZqQXdiV083MUZBaVFyVzQxYmZmQXZyVQ?oc=5",
+    "source": "TradingView",
+    "published": "2026-11-05",
+    "origin": "news",
+    "added_on": "2026-11-07",
+    "image": "https://w4-advisory.github.io/og-image.png"
   },
   {
     "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
