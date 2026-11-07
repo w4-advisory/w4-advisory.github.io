@@ -1,4 +1,5 @@
 import importlib.util
+import datetime as dt
 from email.message import Message
 import json
 import tempfile
@@ -12,6 +13,46 @@ spec.loader.exec_module(news)
 
 
 class SelectionTests(unittest.TestCase):
+    def test_calendar_window_includes_fifth_day_and_rejects_older_or_future(self):
+        with patch.object(news, "NOW", dt.datetime(2026, 11, 7, 9, tzinfo=dt.timezone.utc)):
+            for date in ("2026-11-07", "2026-11-02", "2026-11-02T00:00:00Z"):
+                self.assertTrue(news.recent(date), date)
+            for date in ("2026-11-01T23:59:59Z", "2026-11-08", "invalid", None):
+                self.assertFalse(news.recent(date), date)
+
+    def test_daily_cap_deduplication_and_archive_retention(self):
+        today = news.NOW.astimezone(news.DAY_ZONE).date().isoformat()
+        old = {"title": "Old AI security research", "url": "https://example.org/old",
+               "origin": "research", "published": "2026-01-01"}
+        candidates = [{"title": f"AI security research finding {i}", "url": f"https://example.org/{i}",
+                       "origin": "research", "published": today} for i in range(8)]
+        stale = dict(candidates[0], title="Stale AI security research", url="https://example.org/stale",
+                     published=(news.NOW - dt.timedelta(days=6)).date().isoformat())
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory) / "news.json"
+            archive.write_text(json.dumps([old]))
+            with patch.object(news, "DATA", archive), \
+                 patch.object(news, "collect_anthropic", return_value=[stale] + candidates + candidates), \
+                 patch.object(news, "collect_hn", return_value=[]), \
+                 patch.object(news, "collect_kev", return_value=[]), \
+                 patch.object(news, "collect_nvd", return_value=[]), \
+                 patch.object(news, "rss_stories", return_value=[]), \
+                 patch.object(news, "preview", return_value=False):
+                news.main()
+                first = json.loads(archive.read_text())
+                news.main()
+                second = json.loads(archive.read_text())
+            self.assertEqual(len(first), 6)
+            self.assertEqual(first, second)
+            self.assertEqual(sum(item.get("added_on") == today for item in first), 5)
+            self.assertIn(old["url"], [item["url"] for item in first])
+            self.assertNotIn(stale["url"], [item["url"] for item in first])
+            self.assertEqual(len({item["url"] for item in first}), 6)
+
+    def test_empty_image_metadata_does_not_resolve_to_article_url(self):
+        self.assertIsNone(news.https_url("", "https://example.org/article"))
+        self.assertIsNone(news.https_url(None, "https://example.org/article"))
+
     def story(self, title, summary="", url="https://example.org/story", origin="news"):
         return {"title": title, "summary": summary, "url": url, "origin": origin}
 

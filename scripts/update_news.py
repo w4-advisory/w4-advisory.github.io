@@ -12,22 +12,24 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "news.json"
 NOW = dt.datetime.now(dt.timezone.utc)
-MAX_AGE = dt.timedelta(days=14)
+MAX_AGE = dt.timedelta(days=5)
+DAY_ZONE = ZoneInfo("Europe/London")
 MAX_ARCHIVE = 80
-MAX_NEW = 2
+MAX_NEW = 5
 MAX_ENRICH = 12
 FALLBACK_IMAGE = "https://w4-advisory.github.io/og-image.png"
 USER_AGENT = "W4AdvisoryNewsBot/2.0 (+https://w4-advisory.github.io/news.html)"
 
 # These queries are discovery sources, not an automatic inclusion rule.
 GOOGLE_QUERIES = [
-    '"prompt injection" OR "LLM exploit" OR "AI agent vulnerability" when:14d',
-    '"AI vulnerability research" OR "Claude CVE" OR "MCP security flaw" when:14d',
-    '"AI security" OR "AI agent security" when:14d',
+    '"prompt injection" OR "LLM exploit" OR "AI agent vulnerability" when:6d',
+    '"AI vulnerability research" OR "Claude CVE" OR "MCP security flaw" when:6d',
+    '"AI security" OR "AI agent security" when:6d',
 ]
 NVD_TERMS = ("prompt injection", "large language model", "Ollama", "Model Context Protocol")
 AI = re.compile(r"\bAI\b|\bLLMs?\b|\bMCPs?\b|\bGenAI\b|artificial intelligence|language model|"
@@ -57,6 +59,8 @@ def host(url):
 
 
 def https_url(value, base=""):
+    if not value or not value.strip():
+        return None
     url = urllib.parse.urljoin(base, html.unescape(value or ""))
     parsed = urllib.parse.urlparse(url)
     return url if parsed.scheme == "https" and parsed.hostname else None
@@ -67,7 +71,8 @@ def recent(value):
         date = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
         if date.tzinfo is None:
             date = date.replace(tzinfo=dt.timezone.utc)
-        return NOW - MAX_AGE <= date <= NOW + dt.timedelta(hours=3)
+        today = NOW.astimezone(DAY_ZONE).date()
+        return today - MAX_AGE <= date.astimezone(DAY_ZONE).date() <= today
     except (AttributeError, ValueError):
         return False
 
@@ -255,7 +260,8 @@ def collect_kev():
 
 def collect_nvd():
     stories = []
-    start = (NOW - MAX_AGE).strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
+    start = (NOW.astimezone(DAY_ZONE).replace(hour=0, minute=0, second=0, microsecond=0)
+             - MAX_AGE).astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
     end = NOW.strftime("%Y-%m-%dT%H:%M:%S.000+00:00")
     for term in NVD_TERMS:
         params = urllib.parse.urlencode({"keywordSearch": term, "pubStartDate": start,
@@ -302,6 +308,8 @@ def key(story):
 
 def main(sync_file=None, limit=MAX_NEW):
     old = [story for story in existing() if relevance_score(story)]
+    today = NOW.astimezone(DAY_ZONE).date().isoformat()
+    budget = limit if sync_file else max(0, limit - sum(story.get("added_on") == today for story in old))
     candidates = []
     if sync_file:
         candidates = json.loads(Path(sync_file).read_text(encoding="utf-8"))
@@ -330,13 +338,19 @@ def main(sync_file=None, limit=MAX_NEW):
     seen_urls = {item.get("article_url") or item.get("url") for item in old}
     additions = []
     for story in sorted(candidates, key=lambda s: (relevance_score(s), s.get("published", "")), reverse=True):
+        if len(additions) >= budget:
+            break
         if not relevance_score(story):
+            continue
+        if not sync_file and not recent(story.get("published")):
             continue
         k = key(story)
         url = story.get("article_url") or story["url"]
         if k in seen or url in seen_urls:
             continue
         additions.append(story)
+        if not sync_file:
+            story["added_on"] = today
         seen.add(k)
         seen_urls.add(url)
         if len(additions) >= limit:
@@ -344,6 +358,9 @@ def main(sync_file=None, limit=MAX_NEW):
     if sync_file and len(additions) != limit:
         raise ValueError(f"Expected {limit} relevant, unique new stories; found {len(additions)}")
     result = sorted(additions + old, key=lambda story: story.get("published", ""), reverse=True)[:MAX_ARCHIVE]
+    for story in result:
+        if story.get("image") in (story.get("url"), story.get("article_url")):
+            story["image"] = FALLBACK_IMAGE
     if not sync_file:
         pending = [story for story in result if story.get("image") in (None, "", FALLBACK_IMAGE) or not story.get("summary")]
         start = NOW.date().toordinal() % len(pending) if pending else 0
@@ -362,6 +379,6 @@ def main(sync_file=None, limit=MAX_NEW):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--sync-file", type=Path, help="Curated one-time candidate list")
-    parser.add_argument("--limit", type=int, default=MAX_NEW, help="Required additions for a sync; daily default is two")
+    parser.add_argument("--limit", type=int, default=MAX_NEW, help="Required additions for a sync; daily default is five")
     args = parser.parse_args()
     main(args.sync_file, args.limit)
