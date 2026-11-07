@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Select technical AI security research and advisories from public sources."""
 import concurrent.futures
+import argparse
 import datetime as dt
 import email.utils
 import html
@@ -25,6 +26,7 @@ USER_AGENT = "W4AdvisoryNewsBot/2.0 (+https://w4-advisory.github.io/news.html)"
 GOOGLE_QUERIES = [
     '"prompt injection" OR "LLM exploit" OR "AI agent vulnerability" when:14d',
     '"AI vulnerability research" OR "Claude CVE" OR "MCP security flaw" when:14d',
+    '"AI security" OR "AI agent security" when:14d',
 ]
 NVD_TERMS = ("prompt injection", "large language model", "Ollama", "Model Context Protocol")
 AI = re.compile(r"\bAI\b|\bLLMs?\b|\bMCPs?\b|\bGenAI\b|artificial intelligence|language model|"
@@ -33,15 +35,16 @@ AI = re.compile(r"\bAI\b|\bLLMs?\b|\bMCPs?\b|\bGenAI\b|artificial intelligence|l
 TECHNICAL = re.compile(r"CVE-\d{4}-\d+|vulnerab|exploit|0.?day|zero.day|prompt injection|"
                        r"jailbreak|poison|fuzz|red.team|attack chain|sandbox escape|exfiltrat|"
                        r"remote code execution|\bRCE\b|security flaw|auth bypass|bypass|"
-                       r"malicious instruction", re.I)
+                       r"malicious instruction|security|cybercrime|espionage|threat|"
+                       r"unauthorized|unintended|expos|leak|covert|policy check|command.and.control", re.I)
 PROMO = re.compile(r"\bcourse\b|certificat|bootcamp|webinar|training program|how much does it cost|"
-                   r"\bpricing\b|\bdiscount\b|\bacqui(?:re|sition)\b|\bbuy\b|\bfunding\b|"
-                   r"\bpartnership\b|\bdeal\b|\bstock\b|launches new|announces new|"
-                   r"new native .* innovations", re.I)
-LOW_SIGNAL_HOSTS = {"tradingview.com", "stocktwits.com", "educationtimes.com"}
-PRIMARY_HOSTS = {"anthropic.com", "blog.zsec.uk", "nvd.nist.gov", "cisa.gov", "github.com"}
+                   r"\bpricing\b|\bdiscount\b|\benrol\b|\btuition\b|who can apply", re.I)
+LOW_SIGNAL_HOSTS = {"educationtimes.com"}
+PRIMARY_HOSTS = {"anthropic.com", "blog.zsec.uk", "nvd.nist.gov", "cisa.gov", "github.com",
+                 "portswigger.net", "blog.trailofbits.com", "research.checkpoint.com",
+                 "unit42.paloaltonetworks.com", "microsoft.com"}
 NEWS_SOURCES = {"bleepingcomputer", "securityweek", "the record", "portswigger",
-                "ars technica", "dark reading"}
+                "ars technica", "dark reading", "intelligence online", "tradingview", "01net"}
 
 
 def clean(value):
@@ -296,23 +299,29 @@ def key(story):
     return re.sub(r"[^a-z0-9]+", "", title.casefold())
 
 
-def main():
+def main(sync_file=None, limit=MAX_NEW):
     old = [story for story in existing() if relevance_score(story)]
     candidates = []
-    sources = [("Anthropic research", collect_anthropic),
+    if sync_file:
+        candidates = json.loads(Path(sync_file).read_text(encoding="utf-8"))
+        if not isinstance(candidates, list):
+            raise ValueError("Sync file must contain a list of stories")
+        reached = 1
+    else:
+        sources = [("Anthropic research", collect_anthropic),
                ("ZephrSec RSS", lambda: rss_stories("https://blog.zsec.uk/rss/", "research")),
                ("Hacker News", collect_hn), ("CISA KEV", collect_kev), ("NIST NVD", collect_nvd)]
-    sources += [(f"Google News {i + 1}", lambda q=q: rss_stories(feed_url(q), "news"))
-                for i, q in enumerate(GOOGLE_QUERIES)]
-    reached = 0
-    for name, collect in sources:
-        try:
-            found = collect()
-            candidates.extend(found)
-            reached += 1
-            print(f"{name}: {len(found)} relevant candidates")
-        except (OSError, ValueError, ET.ParseError) as exc:
-            print(f"{name} unavailable: {exc}")
+        sources += [(f"Google News {i + 1}", lambda q=q: rss_stories(feed_url(q), "news"))
+                    for i, q in enumerate(GOOGLE_QUERIES)]
+        reached = 0
+        for name, collect in sources:
+            try:
+                found = collect()
+                candidates.extend(found)
+                reached += 1
+                print(f"{name}: {len(found)} relevant candidates")
+            except (OSError, ValueError, ET.ParseError) as exc:
+                print(f"{name} unavailable: {exc}")
     if not reached:
         print("No sources reachable; preserving archive.")
         return
@@ -320,6 +329,8 @@ def main():
     seen_urls = {item.get("article_url") or item.get("url") for item in old}
     additions = []
     for story in sorted(candidates, key=lambda s: (relevance_score(s), s.get("published", "")), reverse=True):
+        if not relevance_score(story):
+            continue
         k = key(story)
         url = story.get("article_url") or story["url"]
         if k in seen or url in seen_urls:
@@ -327,17 +338,24 @@ def main():
         additions.append(story)
         seen.add(k)
         seen_urls.add(url)
-        if len(additions) >= MAX_NEW:
+        if len(additions) >= limit:
             break
-    result = (additions + old)[:MAX_ARCHIVE]
-    pending = [story for story in result if not (story.get("image") and story.get("summary"))]
-    start = NOW.date().toordinal() % len(pending) if pending else 0
-    for story in (pending[start:] + pending[:start])[:MAX_ENRICH]:
-        preview(story)
+    if sync_file and len(additions) != limit:
+        raise ValueError(f"Expected {limit} relevant, unique new stories; found {len(additions)}")
+    result = sorted(additions + old, key=lambda story: story.get("published", ""), reverse=True)[:MAX_ARCHIVE]
+    if not sync_file:
+        pending = [story for story in result if not (story.get("image") and story.get("summary"))]
+        start = NOW.date().toordinal() % len(pending) if pending else 0
+        for story in (pending[start:] + pending[:start])[:MAX_ENRICH]:
+            preview(story)
     if result != existing():
         DATA.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Added {len(additions)} technical stories; archive now {len(result)} items.")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--sync-file", type=Path, help="Curated one-time candidate list")
+    parser.add_argument("--limit", type=int, default=MAX_NEW, help="Required additions for a sync; daily default is two")
+    args = parser.parse_args()
+    main(args.sync_file, args.limit)

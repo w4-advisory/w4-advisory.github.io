@@ -1,5 +1,51 @@
 [
   {
+    "title": "Macron gathers specialists for Élysée briefing on AI security",
+    "url": "https://www.intelligenceonline.com/europe-russia/2026/11/06/macron-gathers-specialists-for-elysee-briefing-on-ai-security,110915569-art",
+    "article_url": "https://www.intelligenceonline.com/europe-russia/2026/11/06/macron-gathers-specialists-for-elysee-briefing-on-ai-security,110915569-art",
+    "source": "Intelligence Online",
+    "published": "2026-11-06",
+    "origin": "news",
+    "summary": "French President Emmanuel Macron is convening European AI researchers and practitioners at the Élysée as part of a wider technology initiative.",
+    "image": "https://www.intelligenceonline.com/utils/imageresize?file64=SU9cQXJ0aWNsZXNcTWFjcm9uQUkuanBn&web=1&x=1400"
+  },
+  {
+    "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
+    "url": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+    "source": "Check Point Research",
+    "published": "2026-11-05",
+    "origin": "research",
+    "summary": "Analysis of agentic hacking platforms used in cybercrime, including autonomous vulnerability discovery and exploitation."
+  },
+  {
+    "title": "CrowdStrike to reportedly buy AI security startups for $495M, launches Kill Switch for rogue agents",
+    "url": "https://www.tradingview.com/news/stocktwits:6eb5fd9d9094b:0-crowdstrike-to-reportedly-buy-ai-security-startups-for-495m-launches-kill-switch-for-rogue-agents/",
+    "article_url": "https://www.tradingview.com/news/stocktwits:6eb5fd9d9094b:0-crowdstrike-to-reportedly-buy-ai-security-startups-for-495m-launches-kill-switch-for-rogue-agents/",
+    "source": "TradingView",
+    "published": "2026-11-03",
+    "origin": "news",
+    "summary": "CrowdStrike announced plans to acquire Fiddler AI and Dreadnode and introduced an AI Kill Switch for rogue agents.",
+    "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+  },
+  {
+    "title": "CrowdStrike announces new native AI security innovations on AWS",
+    "url": "https://www.01net.it/crowdstrike-announces-new-native-ai-security-innovations-on-aws/",
+    "article_url": "https://www.01net.it/crowdstrike-announces-new-native-ai-security-innovations-on-aws/",
+    "source": "01net",
+    "published": "2026-11-03",
+    "origin": "news",
+    "summary": "CrowdStrike announced new AI security capabilities and integrations for customers building with AWS.",
+    "image": "https://mms.businesswire.com/media/20261103596263/en/821165/22/CS_Logos_2020_InlineRed.jpg"
+  },
+  {
+    "title": "Backporting security fixes at scale with Codex",
+    "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+    "source": "Trail of Bits",
+    "published": "2026-11-02",
+    "origin": "research",
+    "summary": "Trail of Bits reports on using an AI coding agent to backport security fixes while checking vulnerable branches and patch behavior."
+  },
+  {
     "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
     "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
     "article_url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
@@ -10,6 +56,118 @@
     "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
   },
   {
+    "title": "Next Exploit Opportunities: How a Threat Actor Used AI to Plan Cybercrime",
+    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+    "source": "Unit 42",
+    "published": "2026-10-21",
+    "origin": "research",
+    "summary": "Incident analysis shows a threat actor using an AI agent and DeepSeek to plan exploitation and other cybercrime activity."
+  },
+  {
+    "title": "Your AI agent fixed the bug, but what else did it change?",
+    "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
+    "source": "Trail of Bits",
+    "published": "2026-10-21",
+    "origin": "research",
+    "summary": "An agent-assisted patching workflow adds regression hunting to check whether security fixes introduce other problems."
+  },
+  {
+    "title": "AI-Powered Espionage Campaign Targets Government Linux Infrastructure",
+    "url": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
+    "source": "Unit 42",
+    "published": "2026-10-15",
+    "origin": "research",
+    "summary": "Unit 42 traces a government-targeting campaign whose Linux payloads show evidence of AI-assisted generation and attack planning."
+  },
+  {
+    "title": "Investigating unintended model actions in our evaluations and internal use",
+    "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+    "source": "Anthropic Research",
+    "published": "2026-10-09",
+    "origin": "research",
+    "summary": "An analysis of AI model actions that exploited flaws or took unintended security-sensitive steps in evaluations and internal workflows."
+  },
+  {
+    "title": "The model isn't cooperating",
+    "url": "https://portswigger.net/research/the-model-isnt-cooperating",
+    "source": "PortSwigger Research",
+    "published": "2026-10-06",
+    "origin": "research",
+    "summary": "A follow-up evaluation of AI models used for autonomous vulnerability research and their behavior under security testing prompts."
+  },
+  {
+    "title": "Auditing in the age of (good enough) AI",
+    "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+    "source": "Trail of Bits",
+    "published": "2026-09-18",
+    "origin": "research",
+    "summary": "Trail of Bits explains how agents built decompilation and formal-analysis tools for a security audit of the Miden VM."
+  },
+  {
+    "title": "1Password's AI patching benchmark is misleading",
+    "url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+    "source": "Trail of Bits",
+    "published": "2026-09-15",
+    "origin": "research",
+    "summary": "Trail of Bits compares AI security patch quality with real-world consulting data and explains limits of a public benchmark."
+  },
+  {
+    "title": "PuzzleMask: Abusing Plain Prose as a Covert AI Attack Vector",
+    "url": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
+    "source": "Check Point Research",
+    "published": "2026-09-10",
+    "origin": "research",
+    "summary": "A prompt-crafting technique hides harmful instructions from lightweight AI policy checks while a target model recovers them."
+  },
+  {
+    "title": "An alignment assessment of recent cybersecurity incidents",
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "source": "Anthropic Research",
+    "published": "2026-09-09",
+    "origin": "research",
+    "summary": "Anthropic examines how models acted during recent security incidents, including unauthorized access and other unintended behavior."
+  },
+  {
+    "title": "The Shared Clipboard Inside the Sandbox: Cross-Account Data Leakage in ChatGPT",
+    "url": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/",
+    "source": "Check Point Research",
+    "published": "2026-09-08",
+    "origin": "research",
+    "summary": "A cross-account channel in ChatGPT code-execution environments could be used to leak data from another user's session."
+  },
+  {
+    "title": "VMs won't contain cyber-capable agents",
+    "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+    "source": "Trail of Bits",
+    "published": "2026-08-26",
+    "origin": "research",
+    "summary": "A threat model for running highly capable AI security agents argues that virtual machines alone may be insufficient containment."
+  },
+  {
+    "title": "Can AI do novel security research? Meet the HTTP Terminator",
+    "url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+    "source": "PortSwigger Research",
+    "published": "2026-08-05",
+    "origin": "research",
+    "summary": "James Kettle describes an autonomous AI system that discovered new HTTP desynchronization attacks and tested them against live sites."
+  },
+  {
+    "title": "AI Security Report 2026",
+    "url": "https://research.checkpoint.com/2026/ai-security-report-2026/",
+    "source": "Check Point Research",
+    "published": "2026-07-14",
+    "origin": "research",
+    "summary": "Analysis of AI as an active operator in intrusions, indirect prompt injection, and data exposure across AI applications."
+  },
+  {
+    "title": "When prompts become shells: RCE vulnerabilities in AI agent frameworks",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/",
+    "source": "Microsoft Security",
+    "published": "2026-05-07",
+    "origin": "research",
+    "summary": "Microsoft analyzes remote code execution vulnerabilities in AI agent frameworks and the prompt-to-shell attack path."
+  },
+  {
     "title": "Autonomous Vulnerability Hunting with MCP",
     "url": "https://blog.zsec.uk/bullyingllms/",
     "article_url": "https://blog.zsec.uk/bullyingllms/",
@@ -18,5 +176,37 @@
     "origin": "research",
     "summary": "A security researcher explains an AI-assisted vulnerability hunting workflow using Claude Code and MCP, with validation gates, exploit research, and disclosed CVEs.",
     "image": "https://blog.zsec.uk/content/images/2026/04/signal-2026-04-04-115255_002.jpeg"
+  },
+  {
+    "title": "ChatGPT Data Leakage via a Hidden Outbound Channel in the Code Execution Runtime",
+    "url": "https://research.checkpoint.com/2026/chatgpt-data-leakage-via-a-hidden-outbound-channel-in-the-code-execution-runtime/",
+    "source": "Check Point Research",
+    "published": "2026-03-30",
+    "origin": "research",
+    "summary": "Researchers found a hidden outbound channel that could exfiltrate ChatGPT conversation data and files through code execution."
+  },
+  {
+    "title": "Threat modeling AI applications",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/02/26/threat-modeling-ai-applications/",
+    "source": "Microsoft Security",
+    "published": "2026-02-26",
+    "origin": "research",
+    "summary": "A practical threat model for AI applications covering agent tools, untrusted content, prompt injection and data exposure."
+  },
+  {
+    "title": "Using threat modeling and prompt injection to audit Comet",
+    "url": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/",
+    "source": "Trail of Bits",
+    "published": "2026-02-20",
+    "origin": "research",
+    "summary": "An audit of Perplexity's AI browser found prompt injection techniques that could expose private Gmail information."
+  },
+  {
+    "title": "AI in the Middle: Turning Web-Based AI Services into C2 Proxies",
+    "url": "https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/",
+    "source": "Check Point Research",
+    "published": "2026-02-17",
+    "origin": "research",
+    "summary": "Research shows how AI assistants with web access can be abused as covert command-and-control relays."
   }
 ]
