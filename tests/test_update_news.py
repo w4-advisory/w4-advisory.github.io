@@ -1,4 +1,7 @@
 import importlib.util
+from email.message import Message
+import json
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -84,6 +87,44 @@ class SelectionTests(unittest.TestCase):
         with patch.object(news, "get_json", return_value=data):
             items = news.collect_kev()
         self.assertEqual([item["title"].split(":")[0] for item in items], ["CVE-2026-99999"])
+
+    def test_sync_assigns_an_image_when_publisher_has_none(self):
+        item = self.story("AI agent prompt injection vulnerability", url="https://example.org/research", origin="research")
+        item.update(source="Example Research", published="2026-11-01")
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory) / "news.json"
+            seed = Path(directory) / "seed.json"
+            archive.write_text("[]")
+            seed.write_text(json.dumps([item]))
+            with patch.object(news, "DATA", archive):
+                news.main(seed, 1)
+            self.assertEqual(json.loads(archive.read_text())[0]["image"], news.FALLBACK_IMAGE)
+
+    def test_publisher_image_replaces_fallback(self):
+        item = self.story("AI agent prompt injection vulnerability", url="https://example.org/research", origin="research")
+        item["image"] = news.FALLBACK_IMAGE
+        page = b'<html><meta property="og:image" content="/preview.png"></html>'
+        headers = Message()
+        headers["Content-Type"] = "text/html"
+        with patch.object(news, "get", return_value=(page, item["url"], headers)):
+            self.assertTrue(news.preview(item))
+        self.assertEqual(item["image"], "https://example.org/preview.png")
+
+    def test_daily_collection_assigns_an_image_to_new_stories(self):
+        item = self.story("AI agent prompt injection vulnerability", url="https://example.org/research", origin="research")
+        item.update(source="Example Research", published=news.NOW.date().isoformat())
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory) / "news.json"
+            archive.write_text("[]")
+            with patch.object(news, "DATA", archive), \
+                 patch.object(news, "collect_anthropic", return_value=[item]), \
+                 patch.object(news, "collect_hn", return_value=[]), \
+                 patch.object(news, "collect_kev", return_value=[]), \
+                 patch.object(news, "collect_nvd", return_value=[]), \
+                 patch.object(news, "rss_stories", return_value=[]), \
+                 patch.object(news, "preview", return_value=False):
+                news.main()
+            self.assertEqual(json.loads(archive.read_text())[0]["image"], news.FALLBACK_IMAGE)
 
 
 if __name__ == "__main__":

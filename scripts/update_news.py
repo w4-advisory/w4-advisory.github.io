@@ -20,6 +20,7 @@ MAX_AGE = dt.timedelta(days=14)
 MAX_ARCHIVE = 80
 MAX_NEW = 2
 MAX_ENRICH = 12
+FALLBACK_IMAGE = "https://w4-advisory.github.io/og-image.png"
 USER_AGENT = "W4AdvisoryNewsBot/2.0 (+https://w4-advisory.github.io/news.html)"
 
 # These queries are discovery sources, not an automatic inclusion rule.
@@ -120,7 +121,7 @@ def preview(story):
         if description and not story.get("summary"):
             story["summary"] = description[:260]
         image = https_url(next((values[k] for k in ("og:image:secure_url", "og:image", "twitter:image") if values.get(k)), ""), final)
-        if image and not story.get("image"):
+        if image and story.get("image") in (None, "", FALLBACK_IMAGE):
             story["image"] = image
         published = values.get("article:published_time", "")
         if published and not story.get("published") and recent(published):
@@ -344,10 +345,15 @@ def main(sync_file=None, limit=MAX_NEW):
         raise ValueError(f"Expected {limit} relevant, unique new stories; found {len(additions)}")
     result = sorted(additions + old, key=lambda story: story.get("published", ""), reverse=True)[:MAX_ARCHIVE]
     if not sync_file:
-        pending = [story for story in result if not (story.get("image") and story.get("summary"))]
+        pending = [story for story in result if story.get("image") in (None, "", FALLBACK_IMAGE) or not story.get("summary")]
         start = NOW.date().toordinal() % len(pending) if pending else 0
-        for story in (pending[start:] + pending[:start])[:MAX_ENRICH]:
+        to_enrich = list(additions)
+        to_enrich.extend(story for story in (pending[start:] + pending[:start]) if story not in additions)
+        for story in to_enrich[:MAX_ENRICH + len(additions)]:
             preview(story)
+    for story in result:
+        if not https_url(story.get("image")):
+            story["image"] = FALLBACK_IMAGE
     if result != existing():
         DATA.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Added {len(additions)} technical stories; archive now {len(result)} items.")

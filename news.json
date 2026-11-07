@@ -15,7 +15,8 @@
     "source": "Check Point Research",
     "published": "2026-11-05",
     "origin": "research",
-    "summary": "Analysis of agentic hacking platforms used in cybercrime, including autonomous vulnerability discovery and exploitation."
+    "summary": "Analysis of agentic hacking platforms used in cybercrime, including autonomous vulnerability discovery and exploitation.",
+    "image": "https://research.checkpoint.com/wp-content/uploads/2026/11/artex_background.png"
   },
   {
     "title": "CrowdStrike to reportedly buy AI security startups for $495M, launches Kill Switch for rogue agents",
@@ -43,7 +44,8 @@
     "source": "Trail of Bits",
     "published": "2026-11-02",
     "origin": "research",
-    "summary": "Trail of Bits reports on using an AI coding agent to backport security fixes while checking vulnerable branches and patch behavior."
+    "summary": "Trail of Bits reports on using an AI coding agent to backport security fixes while checking vulnerable branches and patch behavior.",
+    "image": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/backporting_socialbanner.png"
   },
   {
     "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
@@ -61,7 +63,8 @@
     "source": "Unit 42",
     "published": "2026-10-21",
     "origin": "research",
-    "summary": "Incident analysis shows a threat actor using an AI agent and DeepSeek to plan exploitation and other cybercrime activity."
+    "summary": "Incident analysis shows a threat actor using an AI agent and DeepSeek to plan exploitation and other cybercrime activity.",
+    "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/10/AdobeStock_1246251272-2-1.jpg"
   },
   {
     "title": "Your AI agent fixed the bug, but what else did it change?",
@@ -69,7 +72,8 @@
     "source": "Trail of Bits",
     "published": "2026-10-21",
     "origin": "research",
-    "summary": "An agent-assisted patching workflow adds regression hunting to check whether security fixes introduce other problems."
+    "summary": "An agent-assisted patching workflow adds regression hunting to check whether security fixes introduce other problems.",
+    "image": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/patching_socialbanner3.png"
   },
   {
     "title": "AI-Powered Espionage Campaign Targets Government Linux Infrastructure",
@@ -77,7 +81,8 @@
     "source": "Unit 42",
     "published": "2026-10-15",
     "origin": "research",
-    "summary": "Unit 42 traces a government-targeting campaign whose Linux payloads show evidence of AI-assisted generation and attack planning."
+    "summary": "Unit 42 traces a government-targeting campaign whose Linux payloads show evidence of AI-assisted generation and attack planning.",
+    "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/10/AdobeStock_637057734.jpg"
   },
   {
     "title": "Investigating unintended model actions in our evaluations and internal use",
@@ -85,7 +90,8 @@
     "source": "Anthropic Research",
     "published": "2026-10-09",
     "origin": "research",
-    "summary": "An analysis of AI model actions that exploited flaws or took unintended security-sensitive steps in evaluations and internal workflows."
+    "summary": "An analysis of AI model actions that exploited flaws or took unintended security-sensitive steps in evaluations and internal workflows.",
+    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f11d2325e688229de8a887ef7ece34f520ab7134-2000x1125.jpg"
   },
   {
     "title": "The model isn't cooperating",
@@ -93,7 +99,8 @@
     "source": "PortSwigger Research",
     "published": "2026-10-06",
     "origin": "research",
-    "summary": "A follow-up evaluation of AI models used for autonomous vulnerability research and their behavior under security testing prompts."
+    "summary": "A follow-up evaluation of AI models used for autonomous vulnerability research and their behavior under security testing prompts.",
+    "image": "https://portswigger.net/content/images/logos/portswigger-twittercardlogo.png"
   },
   {
     "title": "Auditing in the age of (good enough) AI",
@@ -101,7 +108,8 @@
     "source": "Trail of Bits",
     "published": "2026-09-18",
     "origin": "research",
-    "summary": "Trail of Bits explains how agents built decompilation and formal-analysis tools for a security audit of the Miden VM."
+    "summary": "Trail of Bits explains how agents built decompilation and formal-analysis tools for a security audit of the Miden VM.",
+    "image": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/auditing-ai-social-banner.png"
   },
   {
     "title": "1Password's AI patching benchmark is misleading",
@@ -109,7 +117,8 @@
     "source": "Trail of Bits",
     "published": "2026-09-15",
     "origin": "research",
-    "summary": "Trail of Bits compares AI security patch quality with real-world consulting data and explains limits of a public benchmark."
+    "summary": "Trail of Bits compares AI security patch quality with real-world consulting data and explains limits of a public benchmark.",
+    "image": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/1password-socialbanner-dark-v2.png"
   },
   {
     "title": "PuzzleMask: Abusing Plain Prose as a Covert AI Attack Vector",
@@ -117,7 +126,8 @@
     "source": "Check Point Research",
     "published": "2026-09-10",
     "origin": "research",
-    "summary": "A prompt-crafting technique hides harmful instructions from lightweight AI policy checks while a target model recovers them."
+    "summary": "A prompt-crafting technique hides harmful instructions from lightweight AI policy checks while a target model recovers them.",
+    "image": "https://research.checkpoint.com/wp-content/uploads/2026/07/splash-1024x683.png"
   },
   {
     "title": "An alignment assessment of recent cybersecurity incidents",
@@ -125,7 +135,8 @@
     "source": "Anthropic Research",
     "published": "2026-09-09",
     "origin": "research",
-    "summary": "Anthropic examines how models acted during recent security incidents, including unauthorized access and other unintended behavior."
+    "summary": "Anthropic examines how models acted during recent security incidents, including unauthorized access and other unintended behavior.",
+    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dbd9d321d423a22b6aeeae8172a5ba9546faf71d-1200x630.jpg"
   },
   {
     "title": "The Shared Clipboard Inside the Sandbox: Cross-Account Data Leakage in ChatGPT",
@@ -133,7 +144,8 @@
     "source": "Check Point Research",
     "published": "2026-09-08",
     "origin": "research",
-    "summary": "A cross-account channel in ChatGPT code-execution environments could be used to leak data from another user's session."
+    "summary": "A cross-account channel in ChatGPT code-execution environments could be used to leak data from another user's session.",
+    "image": "https://research.checkpoint.com/wp-content/uploads/2026/08/cover-1-1024x576.png"
   },
   {
     "title": "VMs won't contain cyber-capable agents",
@@ -141,7 +153,8 @@
     "source": "Trail of Bits",
     "published": "2026-08-26",
     "origin": "research",
-    "summary": "A threat model for running highly capable AI security agents argues that virtual machines alone may be insufficient containment."
+    "summary": "A threat model for running highly capable AI security agents argues that virtual machines alone may be insufficient containment.",
+    "image": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/vm-cyber-capable-agents-social-banner.png"
   },
   {
     "title": "Can AI do novel security research? Meet the HTTP Terminator",
@@ -149,7 +162,8 @@
     "source": "PortSwigger Research",
     "published": "2026-08-05",
     "origin": "research",
-    "summary": "James Kettle describes an autonomous AI system that discovered new HTTP desynchronization attacks and tested them against live sites."
+    "summary": "James Kettle describes an autonomous AI system that discovered new HTTP desynchronization attacks and tested them against live sites.",
+    "image": "https://portswigger.net/cms/images/65/c9/4abd-twittercard-http_terminator_x.png"
   },
   {
     "title": "AI Security Report 2026",
@@ -157,7 +171,8 @@
     "source": "Check Point Research",
     "published": "2026-07-14",
     "origin": "research",
-    "summary": "Analysis of AI as an active operator in intrusions, indirect prompt injection, and data exposure across AI applications."
+    "summary": "Analysis of AI as an active operator in intrusions, indirect prompt injection, and data exposure across AI applications.",
+    "image": "https://research.checkpoint.com/wp-content/uploads/2026/07/AI-Security-Report-2026-1024x593.png"
   },
   {
     "title": "When prompts become shells: RCE vulnerabilities in AI agent frameworks",
@@ -165,7 +180,8 @@
     "source": "Microsoft Security",
     "published": "2026-05-07",
     "origin": "research",
-    "summary": "Microsoft analyzes remote code execution vulnerabilities in AI agent frameworks and the prompt-to-shell attack path."
+    "summary": "Microsoft analyzes remote code execution vulnerabilities in AI agent frameworks and the prompt-to-shell attack path.",
+    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/03/MS_Actional-Insights_AI-agents.jpg"
   },
   {
     "title": "Autonomous Vulnerability Hunting with MCP",
@@ -183,7 +199,8 @@
     "source": "Check Point Research",
     "published": "2026-03-30",
     "origin": "research",
-    "summary": "Researchers found a hidden outbound channel that could exfiltrate ChatGPT conversation data and files through code execution."
+    "summary": "Researchers found a hidden outbound channel that could exfiltrate ChatGPT conversation data and files through code execution.",
+    "image": "https://research.checkpoint.com/wp-content/uploads/2026/03/chatgpt-data-leakage-via-a-hidden-channel-1024x683.png"
   },
   {
     "title": "Threat modeling AI applications",
@@ -191,7 +208,8 @@
     "source": "Microsoft Security",
     "published": "2026-02-26",
     "origin": "research",
-    "summary": "A practical threat model for AI applications covering agent tools, untrusted content, prompt injection and data exposure."
+    "summary": "A practical threat model for AI applications covering agent tools, untrusted content, prompt injection and data exposure.",
+    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/02/Threat-Modeling-AI-Applications-.png"
   },
   {
     "title": "Using threat modeling and prompt injection to audit Comet",
@@ -199,7 +217,8 @@
     "source": "Trail of Bits",
     "published": "2026-02-20",
     "origin": "research",
-    "summary": "An audit of Perplexity's AI browser found prompt injection techniques that could expose private Gmail information."
+    "summary": "An audit of Perplexity's AI browser found prompt injection techniques that could expose private Gmail information.",
+    "image": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/using-threat-modeling-and-prompt-injection-to-audit-comet-image-1.png"
   },
   {
     "title": "AI in the Middle: Turning Web-Based AI Services into C2 Proxies",
@@ -207,6 +226,7 @@
     "source": "Check Point Research",
     "published": "2026-02-17",
     "origin": "research",
-    "summary": "Research shows how AI assistants with web access can be abused as covert command-and-control relays."
+    "summary": "Research shows how AI assistants with web access can be abused as covert command-and-control relays.",
+    "image": "https://research.checkpoint.com/wp-content/uploads/2026/02/image-3-1024x683.png"
   }
 ]
