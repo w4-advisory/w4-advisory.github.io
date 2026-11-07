@@ -1,11 +1,4 @@
 :root { color-scheme: light; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --ink: #f1f1ed; --ink-soft: #c7c9c7; --muted: #a4a8a6;
-    --paper: #14181b; --paper-raised: #1d2327; --hairline: #394146;
-    --alert: #ff9478; color-scheme: dark;
-  }
-}
 :root[data-theme="dark"] {
   --ink: #f1f1ed; --ink-soft: #c7c9c7; --muted: #a4a8a6;
   --paper: #14181b; --paper-raised: #1d2327; --hairline: #394146;
@@ -18,10 +11,6 @@
 .theme-toggle .moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .moon { display: block; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .sun { display: none; }
-  :root:not([data-theme="light"]) .theme-toggle .moon { display: block; }
-}
 .news-preview { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--paper-raised); border: 1px solid var(--hairline); border-radius: 3px; }
 .news-preview-fallback { display: flex; align-items: flex-end; padding: 13px; background: linear-gradient(135deg, var(--paper-raised), var(--paper)); color: var(--alert); font: 600 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .news-preview-wrap { display: block; min-width: 0; }
@@ -34,5 +23,4 @@
 @media (max-width: 860px) { .paper-row.news-row { grid-template-columns: 125px minmax(0, 1fr); gap: 10px 18px; } .paper-row.news-row .paper-id { grid-column: 1 / -1; } .paper-row.news-row .news-preview-wrap { width: 125px; } .paper-row.news-row .paper-tags { grid-column: 2; } }
 @media (max-width: 720px) { .story { grid-template-columns: 105px minmax(0, 1fr); gap: 12px 18px; } .story .date { grid-column: 1 / -1; } .story .news-preview-wrap { width: 105px; } .story h2 { font-size: 19px; } }
 :root[data-theme="dark"] .controls input, :root[data-theme="dark"] .controls select { background: var(--paper-raised); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .controls input, :root:not([data-theme="light"]) .controls select { background: var(--paper-raised); } }
 @media (max-width: 720px) { .nav-actions { gap: 10px; } .theme-toggle .theme-label { display: none; } }
