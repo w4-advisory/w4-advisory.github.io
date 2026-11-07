@@ -19,20 +19,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Select technical AI security research and advisories
         run: python scripts/update_news.py
       - name: Commit updates, if any
-        run: |
-          if git diff --quiet -- news.json; then
-            echo "No new articles."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add news.json
-          git commit -m "chore: update AI security headlines"
-          git push
+        run: bash scripts/publish_news.sh
 
