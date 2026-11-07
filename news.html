@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Security News — W4 Advisory</title>
-<meta name="description" content="Selected AI security headlines from across the industry, refreshed twice weekly by W4 Advisory.">
+<meta name="description" content="Selected AI security headlines from across the industry, refreshed daily by W4 Advisory.">
 <link rel="canonical" href="https://w4-advisory.github.io/news.html">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="W4 Advisory">
 <meta property="og:title" content="AI Security News | W4 Advisory">
-<meta property="og:description" content="Recent AI security headlines, vulnerabilities, attacks, and defenses, refreshed twice weekly.">
+<meta property="og:description" content="Recent AI security headlines, vulnerabilities, attacks, and defenses, refreshed daily.">
 <meta property="og:url" content="https://w4-advisory.github.io/news.html">
 <meta property="og:image" content="https://w4-advisory.github.io/og-image.png">
 <meta property="og:image:secure_url" content="https://w4-advisory.github.io/og-image.png">
@@ -21,20 +21,24 @@
 <meta property="og:image:alt" content="W4 Advisory — AI Safety and Security Research">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Security News | W4 Advisory">
-<meta name="twitter:description" content="Recent AI security headlines, vulnerabilities, attacks, and defenses, refreshed twice weekly.">
+<meta name="twitter:description" content="Recent AI security headlines, vulnerabilities, attacks, and defenses, refreshed daily.">
 <meta name="twitter:image" content="https://w4-advisory.github.io/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{const theme=localStorage.getItem('w4-theme');if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme}catch(_){}</script>
 <style>
 :root{--ink:#1b1d21;--ink-soft:#4b4e55;--muted:#8a8d93;--paper:#f7f7f4;--paper-raised:#fff;--hairline:#e2e2dc;--alert:#b53a21;--mono:"IBM Plex Mono",ui-monospace,monospace;--sans:"Archivo",-apple-system,sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--sans)}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 24px}.meta{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--hairline)}.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}.wordmark{font-weight:700;font-size:20px;letter-spacing:.02em;text-decoration:none}.wordmark span{font-weight:400;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft);margin-left:10px}.nav-links{display:flex;gap:24px}.nav-links a{text-decoration:none;font-size:14px;color:var(--ink-soft)}.nav-links a[aria-current]{color:var(--alert)}.hero{padding:80px 0 65px;border-bottom:1px solid var(--hairline)}h1{font-size:clamp(42px,7vw,76px);font-weight:650;line-height:1.08;letter-spacing:-.025em;margin:20px 0}h1 em{font-style:normal;color:var(--muted)}.lede{max-width:62ch;font-size:18px;color:var(--ink-soft)}main section{padding:50px 0 90px}.stories{border-top:1px solid var(--ink)}.story{padding:26px 0;border-bottom:1px solid var(--hairline);display:grid;grid-template-columns:155px 1fr;gap:28px}.story .date{font:12px var(--mono);color:var(--muted)}.story h2{font-size:22px;line-height:1.3;margin:4px 0 12px;font-weight:650}.story a{text-underline-offset:4px;text-decoration:none}.story a:hover{text-decoration:underline}.story .publisher{font:11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--alert)}.notice{font-size:14px;color:var(--ink-soft)}footer{border-top:1px solid var(--hairline);padding:36px 0 56px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot a{font-size:13px;color:var(--ink-soft)}a:focus-visible{outline:2px solid var(--alert);outline-offset:2px}
 @media(max-width:720px){.story{grid-template-columns:1fr;gap:8px}.hero{padding:55px 0}.nav-links{gap:12px}.nav-links a{font-size:12px}}
 </style>
+<link rel="stylesheet" href="theme.css">
+<script defer src="theme.js"></script>
+<script src="news-preview.js"></script>
 </head>
 <body>
-<header><div class="wrap nav"><a class="wordmark" href="./">W4<span>Advisory</span></a><nav class="nav-links" aria-label="Primary"><a href="./#research">Research</a><a href="glossary.html">Glossary</a><a href="news.html" aria-current="page">News</a></nav></div></header>
-<main><div class="hero"><div class="wrap"><div class="meta">W4 Advisory / Intelligence / AI Security</div><h1>AI security,<br><em>in the news.</em></h1><p class="lede">Selected headlines on AI vulnerabilities, attacks, defenses, and governance. Checked every Tuesday and Friday. Links open the external source.</p></div></div>
+<header><div class="wrap nav"><a class="wordmark" href="./">W4<span>Advisory</span></a><div class="nav-actions"><nav class="nav-links" aria-label="Primary"><a href="./#research">Research</a><a href="glossary.html">Glossary</a><a href="news.html" aria-current="page">News</a></nav><button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.2 15.7A8.5 8.5 0 0 1 8.3 3.8 8.5 8.5 0 1 0 20.2 15.7Z"/></svg><span class="theme-label">Dark mode</span></button></div></div></header>
+<main><div class="hero"><div class="wrap"><div class="meta">W4 Advisory / Intelligence / AI Security</div><h1>AI security,<br><em>in the news.</em></h1><p class="lede">Selected headlines on AI vulnerabilities, attacks, defenses, and governance. Refreshed daily. Links open the external source.</p></div></div>
 <section><div class="wrap"><div class="stories" id="stories" aria-live="polite"><p class="notice">Loading headlines…</p></div><p class="notice">Headlines are selected automatically from a public news feed. Inclusion is not an endorsement; follow the source links for full reporting.</p></div></section></main>
 <footer><div class="wrap foot"><span class="meta">W4 Advisory · AI Safety &amp; Security Research · © 2026</span><a href="./">← Back to home</a></div></footer>
 <script>
@@ -49,9 +53,9 @@ header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1p
    const row=document.createElement('article');row.className='story';
    const date=document.createElement('div');date.className='date';date.textContent=item.published||'';
    const body=document.createElement('div'),h=document.createElement('h2'),a=document.createElement('a');
-   a.textContent=item.title;a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';h.append(a);
+   a.textContent=item.title;a.href=item.article_url||item.url;a.target='_blank';a.rel='noopener noreferrer';h.append(a);
    const pub=document.createElement('span');pub.className='publisher';pub.textContent=item.source||'Source';
-   body.append(h,pub);row.append(date,body);box.append(row)
+   body.append(h);const summary=W4NewsPreview.summary(item);if(summary)body.append(summary);body.append(pub);row.append(date,W4NewsPreview.media(item),body);box.append(row)
   }
  }catch(error){box.textContent='News is temporarily unavailable. Please check again soon.'}
 })();

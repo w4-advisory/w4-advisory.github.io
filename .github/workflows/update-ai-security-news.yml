@@ -1,7 +1,7 @@
 name: Update AI security news
 on:
   schedule:
-    - cron: '0 9 * * 2,5' # Tue and Fri, 09:00 UTC
+    - cron: '0 9 * * *' # Daily, 09:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -14,7 +14,7 @@ concurrency:
 jobs:
   update-news:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,3 +35,4 @@ jobs:
           git add news.json
           git commit -m "chore: update AI security headlines"
           git push
+
