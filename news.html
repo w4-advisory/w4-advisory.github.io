@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Security News — W4 Advisory</title>
-<meta name="description" content="Selected AI security headlines from across the industry, refreshed daily by W4 Advisory.">
+<meta name="description" content="Technical AI security research, vulnerability disclosures, and advisories, refreshed daily by W4 Advisory.">
 <link rel="canonical" href="https://w4-advisory.github.io/news.html">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="W4 Advisory">
 <meta property="og:title" content="AI Security News | W4 Advisory">
-<meta property="og:description" content="Recent AI security headlines, vulnerabilities, attacks, and defenses, refreshed daily.">
+<meta property="og:description" content="Recent technical AI security research, vulnerability disclosures, and advisories, refreshed daily.">
 <meta property="og:url" content="https://w4-advisory.github.io/news.html">
 <meta property="og:image" content="https://w4-advisory.github.io/og-image.png">
 <meta property="og:image:secure_url" content="https://w4-advisory.github.io/og-image.png">
@@ -21,7 +21,7 @@
 <meta property="og:image:alt" content="W4 Advisory — AI Safety and Security Research">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Security News | W4 Advisory">
-<meta name="twitter:description" content="Recent AI security headlines, vulnerabilities, attacks, and defenses, refreshed daily.">
+<meta name="twitter:description" content="Recent technical AI security research, vulnerability disclosures, and advisories, refreshed daily.">
 <meta name="twitter:image" content="https://w4-advisory.github.io/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -38,8 +38,8 @@ header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1p
 </head>
 <body>
 <header><div class="wrap nav"><a class="wordmark" href="./">W4<span>Advisory</span></a><div class="nav-actions"><nav class="nav-links" aria-label="Primary"><a href="./#research">Research</a><a href="glossary.html">Glossary</a><a href="news.html" aria-current="page">News</a></nav><button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.2 15.7A8.5 8.5 0 0 1 8.3 3.8 8.5 8.5 0 1 0 20.2 15.7Z"/></svg><span class="theme-label">Dark mode</span></button></div></div></header>
-<main><div class="hero"><div class="wrap"><div class="meta">W4 Advisory / Intelligence / AI Security</div><h1>AI security,<br><em>in the news.</em></h1><p class="lede">Selected headlines on AI vulnerabilities, attacks, defenses, and governance. Refreshed daily. Links open the external source.</p></div></div>
-<section><div class="wrap"><div class="stories" id="stories" aria-live="polite"><p class="notice">Loading headlines…</p></div><p class="notice">Headlines are selected automatically from a public news feed. Inclusion is not an endorsement; follow the source links for full reporting.</p></div></section></main>
+<main><div class="hero"><div class="wrap"><div class="meta">W4 Advisory / Intelligence / AI Security</div><h1>AI security,<br><em>in the news.</em></h1><p class="lede">Technical research, vulnerability disclosures, CVEs, and credible community findings. Checked daily. Links open the original source.</p></div></div>
+<section><div class="wrap"><div class="stories" id="stories" aria-live="polite"><p class="notice">Loading headlines…</p></div><p class="notice">Items are selected from research, advisories, public feeds, and Hacker News. Inclusion is not an endorsement; follow the source links for full details.</p></div></section></main>
 <footer><div class="wrap foot"><span class="meta">W4 Advisory · AI Safety &amp; Security Research · © 2026</span><a href="./">← Back to home</a></div></footer>
 <script>
 (async function(){
@@ -55,7 +55,7 @@ header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1p
    const body=document.createElement('div'),h=document.createElement('h2'),a=document.createElement('a');
    a.textContent=item.title;a.href=item.article_url||item.url;a.target='_blank';a.rel='noopener noreferrer';h.append(a);
    const pub=document.createElement('span');pub.className='publisher';pub.textContent=item.source||'Source';
-   body.append(h);const summary=W4NewsPreview.summary(item);if(summary)body.append(summary);body.append(pub);row.append(date,W4NewsPreview.media(item),body);box.append(row)
+   body.append(h);const summary=W4NewsPreview.summary(item);if(summary)body.append(summary);body.append(pub);if(item.discussion_url){const discussion=document.createElement('a');discussion.className='discussion-link';discussion.href=item.discussion_url;discussion.target='_blank';discussion.rel='noopener noreferrer';discussion.textContent='Discuss on Hacker News ↗';body.append(discussion)}row.append(date,W4NewsPreview.media(item),body);box.append(row)
   }
  }catch(error){box.textContent='News is temporarily unavailable. Please check again soon.'}
 })();
