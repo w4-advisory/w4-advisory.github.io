@@ -1,0 +1,21 @@
+[
+  {"name": "ZephrSec", "url": "https://blog.zsec.uk/rss/", "origin": "research"},
+  {"name": "Trail of Bits", "url": "https://blog.trailofbits.com/feed/", "origin": "research"},
+  {"name": "Check Point Research", "url": "https://research.checkpoint.com/feed/", "origin": "research"},
+  {"name": "Unit 42", "url": "https://unit42.paloaltonetworks.com/feed/", "origin": "research"},
+  {"name": "Microsoft Security", "url": "https://www.microsoft.com/en-us/security/blog/feed/", "origin": "research"},
+  {"name": "PortSwigger Research", "url": "https://portswigger.net/research/rss", "origin": "research"},
+  {"name": "Embrace The Red", "url": "https://embracethered.com/blog/index.xml", "origin": "research"},
+  {"name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "origin": "research"},
+  {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "origin": "research"},
+  {"name": "Google Security", "url": "https://blog.google/technology/safety-security/rss/", "origin": "research"},
+  {"name": "Wiz Research", "url": "https://www.wiz.io/feed/rss.xml", "origin": "research"},
+  {"name": "JFrog Security", "url": "https://jfrog.com/blog/feed/", "origin": "research"},
+  {"name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/", "origin": "research"},
+  {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/", "origin": "news"},
+  {"name": "SecurityWeek", "url": "https://www.securityweek.com/feed/", "origin": "news"},
+  {"name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "origin": "news"},
+  {"name": "Help Net Security", "url": "https://www.helpnetsecurity.com/feed/", "origin": "news"},
+  {"name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml", "origin": "news"},
+  {"name": "TechCrunch", "url": "https://techcrunch.com/category/security/feed/", "origin": "news"}
+]

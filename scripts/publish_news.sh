@@ -6,11 +6,11 @@ git config user.name "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
 commit_news() {
-  if git diff --quiet -- news.json; then
-    echo "No new articles."
+  git add -- news.json news-seen.json assets/news/
+  if git diff --cached --quiet; then
+    echo "No article or preview updates."
     exit 0
   fi
-  git add news.json
   git commit -m "chore: update AI security headlines"
 }
 
@@ -25,12 +25,13 @@ for attempt in 1 2 3; do
   fi
   echo "Refreshing main before retry $((attempt + 1))."
   git fetch origin main
-  if ! git rebase origin/main; then
-    # A concurrent edit to news.json needs fresh selection against the new archive.
+  if ! git rebase origin/main || ! python scripts/update_news.py --validate-only; then
+    # Concurrent news/image edits need fresh selection against the new archive.
     # This checkout is disposable; preserve the remote history and collect again.
-    git rebase --abort
+    git rebase --abort 2>/dev/null || true
     git reset --hard origin/main
     python scripts/update_news.py
+    python scripts/update_news.py --validate-only
     commit_news
   fi
 done
