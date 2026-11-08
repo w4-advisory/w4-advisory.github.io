@@ -11,7 +11,7 @@
 .theme-toggle .moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .moon { display: block; }
-.news-preview { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--paper-raised); border: 1px solid var(--hairline); border-radius: 3px; }
+.news-preview { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--paper-raised); border: 1px solid var(--hairline); border-radius: 3px; }
 .news-preview-fallback { display: flex; align-items: flex-end; padding: 13px; background: linear-gradient(135deg, var(--paper-raised), var(--paper)); color: var(--alert); font: 600 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .news-preview-wrap { display: block; min-width: 0; }
 .news-summary { color: var(--ink-soft); font-size: 14px; line-height: 1.5; margin: 7px 0 10px; }

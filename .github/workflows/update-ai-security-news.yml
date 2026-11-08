@@ -24,8 +24,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/requirements-news.txt
+      - name: Install preview image decoder
+        run: python -m pip install -r scripts/requirements-news.txt
+      - name: Check collector regressions
+        run: python -m unittest discover -s tests -v
       - name: Select technical AI security research and advisories
-        run: python scripts/update_news.py
+        run: python scripts/update_news.py --report /tmp/news-run.json
+      - name: Validate archive and all preview files
+        run: python scripts/update_news.py --validate-only
       - name: Commit updates, if any
         run: bash scripts/publish_news.sh
+      - name: Save selection report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-selection-report
+          path: /tmp/news-run.json
+          if-no-files-found: ignore
 

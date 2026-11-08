@@ -1,5 +1,97 @@
 [
   {
+    "title": "CVE-2026-18484: Denial of service in IBM ContextForge MCP Gateway",
+    "url": "https://github.com/advisories/GHSA-2hgv-xvmf-mw3c",
+    "source": "GitHub Security Advisories",
+    "origin": "advisory",
+    "summary": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization causing tool name collisions.",
+    "published": "2026-11-08",
+    "published_at": "2026-11-08T17:54:59.348000+00:00",
+    "date_source": "https://cveawg.mitre.org/api/cve/CVE-2026-18484#datePublished",
+    "id": "771e689489312bba",
+    "added_on": "2026-11-08",
+    "aliases": [
+      {
+        "title": "CVE-2026-18484: Denial of service in IBM ContextForge MCP Gateway",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18484",
+        "source": "NIST NVD",
+        "published": "2026-11-08"
+      }
+    ],
+    "article_url": "https://github.com/advisories/GHSA-2hgv-xvmf-mw3c",
+    "image_fallback": "assets/news/8223f4658c99303cab616d9f.svg",
+    "image": "assets/news/8223f4658c99303cab616d9f.svg",
+    "image_kind": "headline"
+  },
+  {
+    "title": "CVE-2026-124424: Path traversal in WWBN AVideo",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124424",
+    "source": "NIST NVD",
+    "origin": "advisory",
+    "summary": "WWBN AVideo contains a path traversal vulnerability in plugin/AI/receiveAsync.json.php that allows holders of any valid AI token to write arbitrary .vtt files by injecting traversal sequences into the unsanitized response[lang] parameter. Attackers can send a type=translation request with a crafted lang value to plant attacker-controlled content in the…",
+    "published": "2026-11-08",
+    "published_at": "2026-11-08T14:18:07.930000+00:00",
+    "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-124424#published",
+    "id": "bbb2d1081baf75d7",
+    "added_on": "2026-11-08",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-124424",
+    "image_fallback": "assets/news/e63033e57ea06df38da677e6.svg",
+    "image": "assets/news/e63033e57ea06df38da677e6.svg",
+    "image_kind": "headline",
+    "aliases": []
+  },
+  {
+    "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+    "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+    "source": "SecurityWeek",
+    "origin": "news",
+    "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses.",
+    "published": "2026-11-08",
+    "published_at": "2026-11-08T12:14:00+00:00",
+    "date_source": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/#publisher-metadata",
+    "article_url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+    "id": "7a3cca9331495d22",
+    "added_on": "2026-11-08",
+    "image_fallback": "assets/news/dd3abdf49250569b992bdca8.svg",
+    "image": "assets/news/dd3abdf49250569b992bdca8.svg",
+    "image_kind": "headline",
+    "aliases": []
+  },
+  {
+    "title": "CVE-2026-123496: Symlink following in Vikunja veans",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123496",
+    "source": "NIST NVD",
+    "origin": "advisory",
+    "summary": "Vikunja veans before 2.7.1 contains a symlink following vulnerability that allows attackers to make veans init write files outside the repository via crafted repo symlinks. Attackers can ship symlinked .veans.yml, .claude, or .opencode entries to overwrite user files like ~/.bashrc or install veans hooks and plugins globally.",
+    "published": "2026-11-08",
+    "published_at": "2026-11-08T02:16:36.977000+00:00",
+    "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-123496#published",
+    "id": "3893dd8f2a6726fb",
+    "added_on": "2026-11-08",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-123496",
+    "image_fallback": "assets/news/48ee2d7366aab54a14791f07.svg",
+    "image": "assets/news/48ee2d7366aab54a14791f07.svg",
+    "image_kind": "headline",
+    "aliases": []
+  },
+  {
+    "title": "CVE-2026-123493: Authentication bypass in Vikunja",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123493",
+    "source": "NIST NVD",
+    "origin": "advisory",
+    "summary": "Vikunja from 2.4.0 before 2.7.1 contains an authentication bypass vulnerability that allows disabled or locked users to retain access through API tokens owned by their bot users. Because token validation only checks the bot's own status, attackers holding pre-minted bot tokens can keep reading and modifying shared projects via the HTTP API, CalDAV, MCP and…",
+    "published": "2026-11-08",
+    "published_at": "2026-11-08T02:16:36.183000+00:00",
+    "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-123493#published",
+    "id": "3b1619f25b925b51",
+    "added_on": "2026-11-08",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-123493",
+    "image_fallback": "assets/news/ca6f61150b9c4a2d560228b0.svg",
+    "image": "assets/news/ca6f61150b9c4a2d560228b0.svg",
+    "image_kind": "headline",
+    "aliases": []
+  },
+  {
     "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
     "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
     "source": "apiiro.com",
@@ -8,20 +100,12 @@
     "hn_score": 40,
     "discussion_url": "https://news.ycombinator.com/item?id=50407882",
     "added_on": "2026-11-07",
-    "image": "https://w4-advisory.github.io/og-image.png",
+    "image": "assets/news/e6f98b2fd98b26fc417e59fd.svg",
     "article_url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-    "summary": "Secure everything coding agents build, use, and ship - prevent risk before code exists, AutoFix the backlog, and protect the coding agents and supply chain."
-  },
-  {
-    "title": "CVE-2026-102610: fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound",
-    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102610",
-    "source": "NIST NVD",
-    "published": "2026-11-06",
-    "origin": "advisory",
-    "summary": "fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound to 0.0.0.0 on port 8000 without authentication, allowing any network client that can reac",
-    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-102610",
-    "image": "https://w4-advisory.github.io/og-image.png",
-    "added_on": "2026-11-07"
+    "summary": "Apiiro reports that Claude Code’s persistent command approvals exposed passwords and other secrets in 1,122 public GitHub settings files.",
+    "id": "10bdc73097cfd238",
+    "image_fallback": "assets/news/e6f98b2fd98b26fc417e59fd.svg",
+    "image_kind": "headline"
   },
   {
     "title": "Macron gathers specialists for Élysée briefing on AI security",
@@ -31,34 +115,25 @@
     "published": "2026-11-06",
     "origin": "news",
     "summary": "French President Emmanuel Macron is convening European AI researchers and practitioners at the Élysée as part of a wider technology initiative.",
-    "image": "https://www.intelligenceonline.com/utils/imageresize?file64=SU9cQXJ0aWNsZXNcTWFjcm9uQUkuanBn&web=1&x=1400"
+    "image": "assets/news/038e9f64f1a4ccd9d042a994.webp",
+    "id": "fe4e975daba00d4e",
+    "image_fallback": "assets/news/aec6b198d0812ce99239a726.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://www.intelligenceonline.com/utils/imageresize?file64=SU9cQXJ0aWNsZXNcTWFjcm9uQUkuanBn&web=1&x=1400"
   },
   {
-    "title": "Palo Alto Networks In Talks To Pay $500 Million For AI Security Startup Clutch Security - The Information - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNUkdYQldhYjlJeW5keGxsaXByRHVpOW1nU1U3cWkzZVptX3BlR3ZITF9UX0hZLUVvTjg1QmhrVWg0YVNoWHRBWldFTmd3a2FuMU43cjh6a1NOMERYTmVjZXYycFczeVZSLWQ5cmJmbXpYYVhIQUstdG43MjEtT2h3V0JTdmtkSjRUanRGSlJnVEs4cnQ2UjRDYWhQZTAzQ2pnS0FraFdTMEJQZmtNdjVPVTFMUl9sOW5vLUUwTU1vZGFfU3c3RGk5Q2toYmlKbEE0Z29QZ200UjZWNkFpTC1vc0FCajktaVpZbGJBVFJLQXAycThIM0tnTmY0ZlBZenpwUnc?oc=5",
-    "source": "TradingView",
-    "published": "2026-11-05",
-    "origin": "news",
-    "added_on": "2026-11-08",
-    "image": "https://w4-advisory.github.io/og-image.png"
-  },
-  {
-    "title": "Palo Alto Networks Eyes $500 Million AI Security Deal - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTERyU2ZaZVdEN0FiZ29kWFV1a19JVnc0NTFrLWJOZ2tMYTZrSUtvbE5rYVVnYVIzdi1JZTRvSFhoRWhXOXRNWHBRSFFFU0EycmhmUENEWF9nQ1VsRmZsbTM2cTFJNkUzOFpwMWdDdjl1UzBRWDNNUFNVNE9JNEV1Ulpybk1VQ18zM1Q5T2g0blZxY0tmMkNiMFBsdTJqaHE2ZVQ2azlVZ2didEFDb3N0anZR?oc=5",
-    "source": "TradingView",
-    "published": "2026-11-05",
-    "origin": "news",
+    "title": "CVE-2026-102610: Unauthenticated tool access in fast-agent",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102610",
+    "source": "NIST NVD",
+    "published": "2026-11-06",
+    "origin": "advisory",
+    "summary": "fast-agent is a framework for building, running, and evaluating AI agents with Model Context Protocol support. Prior to 0.7.21, fast-agent serve uses HTTP transport bound to 0.0.0.0 on port 8000 without authentication, allowing any network client that can reach the /mcp endpoint to invoke the exposed agent tool. When the server is started with --shell, the…",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-102610",
+    "image": "assets/news/0748dfbb31265fdb83f02ef8.svg",
     "added_on": "2026-11-07",
-    "image": "https://w4-advisory.github.io/og-image.png"
-  },
-  {
-    "title": "Palo Alto Networks in talks to buy AI security startup Clutch for $500M: report - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQd0Nqb2VDSHpYZzRoVklvcTJtZnVnZGo1VjRYUWRLSHczTkxfSlJhYnlIeFZHQV9lX1F0X0QwcGVZOWFyQ1dvUmo3Vl9wbzFvOFY5SEQzSklZSFkzSm1oaUtPakRyMGkwSm44djJkaFFnSXc3VVVkREVWa0NodUFGckc3bmRaQms3VWNJWG5YTFpwNjE1VEpKc1FzQXF6SEFyLU14WklDOFJvWWs3ZmhsX0JaZ0QzbUtnY0ZYTGdGclZqQXdiV083MUZBaVFyVzQxYmZmQXZyVQ?oc=5",
-    "source": "TradingView",
-    "published": "2026-11-05",
-    "origin": "news",
-    "added_on": "2026-11-07",
-    "image": "https://w4-advisory.github.io/og-image.png"
+    "id": "932f363ce0289313",
+    "image_fallback": "assets/news/0748dfbb31265fdb83f02ef8.svg",
+    "image_kind": "headline"
   },
   {
     "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
@@ -67,35 +142,81 @@
     "published": "2026-11-05",
     "origin": "research",
     "summary": "Analysis of agentic hacking platforms used in cybercrime, including autonomous vulnerability discovery and exploitation.",
-    "image": "https://research.checkpoint.com/wp-content/uploads/2026/11/artex_background.png"
+    "image": "assets/news/952137728ed281d5d965590a.webp",
+    "id": "da75917fd7542a9d",
+    "article_url": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+    "published_at": "2026-11-05T17:22:06+00:00",
+    "date_source": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/#publisher-metadata",
+    "image_fallback": "assets/news/c305d084c1a420e7d8c18a2e.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/11/artex_background.png"
   },
   {
-    "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode - SecurityWeek",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRGFnYTJURUt3WF83aHNEVVZ3TE5iU1lIaW1zLXJiLXpiY0NmQTJKNlIteVFWc2pPTzNnVmhTV3ZBa3BiVURJbjYtT1FMdGJBbGpXd1VnaGJYRE9MUmlHYTRrQWtXdHpUa0JrRWJNZ09KRGhBU2RuOF8wRV81c3FBOGxkTTRPQkJrMnpEYmREakYzRDM3VExYMWhOaU9hQ0tlV19BeDBuRVlDakhBN092cg?oc=5",
-    "source": "SecurityWeek",
-    "published": "2026-11-03",
-    "origin": "news",
-    "added_on": "2026-11-08",
-    "image": "https://w4-advisory.github.io/og-image.png"
-  },
-  {
-    "title": "CrowdStrike to buy two AI security startups for $495M: WSJ - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPd1hTRkNvb3RzOUNDWU9qLUw5S1UycE1TQUpGTnFONmN6a1AwZl85Q3A1WXJ1VGZLQTdhdXB5b245bnVsRTlfZjNSLUYxWWJtNHloZjB5ZnJpSmNfcll5Y3BiMk00MzFEaldWTlhmMUZ3WjlneDczQ3FUMmxUcmRuNG9JcTJMaF9heDhmcHVZQXpLbTFubm5sN2RIZm1oWFFYRWlHMVJ6TkMzVGdSdEp0VTdQYWRtU05WbkpB?oc=5",
+    "title": "Palo Alto Networks in talks to buy AI security startup Clutch for $500M: report",
+    "url": "https://www.tradingview.com/news/seekingalpha%3Ac8545cd5c094b%3A0-palo-alto-networks-in-talks-to-buy-ai-security-startup-clutch-for-500m-report/",
     "source": "TradingView",
-    "published": "2026-11-03",
+    "published": "2026-11-05",
     "origin": "news",
-    "added_on": "2026-11-08",
-    "image": "https://w4-advisory.github.io/og-image.png"
+    "added_on": "2026-11-07",
+    "image": "assets/news/bce6621a907587efb9996661.svg",
+    "aliases": [
+      {
+        "title": "Palo Alto Networks in talks to buy AI security startup Clutch for $500M: report - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQd0Nqb2VDSHpYZzRoVklvcTJtZnVnZGo1VjRYUWRLSHczTkxfSlJhYnlIeFZHQV9lX1F0X0QwcGVZOWFyQ1dvUmo3Vl9wbzFvOFY5SEQzSklZSFkzSm1oaUtPakRyMGkwSm44djJkaFFnSXc3VVVkREVWa0NodUFGckc3bmRaQms3VWNJWG5YTFpwNjE1VEpKc1FzQXF6SEFyLU14WklDOFJvWWs3ZmhsX0JaZ0QzbUtnY0ZYTGdGclZqQXdiV083MUZBaVFyVzQxYmZmQXZyVQ?oc=5",
+        "source": "TradingView",
+        "published": "2026-11-05"
+      },
+      {
+        "title": "Palo Alto Networks In Talks To Pay $500 Million For AI Security Startup Clutch Security - The Information - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNUkdYQldhYjlJeW5keGxsaXByRHVpOW1nU1U3cWkzZVptX3BlR3ZITF9UX0hZLUVvTjg1QmhrVWg0YVNoWHRBWldFTmd3a2FuMU43cjh6a1NOMERYTmVjZXYycFczeVZSLWQ5cmJmbXpYYVhIQUstdG43MjEtT2h3V0JTdmtkSjRUanRGSlJnVEs4cnQ2UjRDYWhQZTAzQ2pnS0FraFdTMEJQZmtNdjVPVTFMUl9sOW5vLUUwTU1vZGFfU3c3RGk5Q2toYmlKbEE0Z29QZ200UjZWNkFpTC1vc0FCajktaVpZbGJBVFJLQXAycThIM0tnTmY0ZlBZenpwUnc?oc=5",
+        "source": "TradingView",
+        "published": "2026-11-05"
+      },
+      {
+        "title": "Palo Alto Networks Eyes $500 Million AI Security Deal - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTERyU2ZaZVdEN0FiZ29kWFV1a19JVnc0NTFrLWJOZ2tMYTZrSUtvbE5rYVVnYVIzdi1JZTRvSFhoRWhXOXRNWHBRSFFFU0EycmhmUENEWF9nQ1VsRmZsbTM2cTFJNkUzOFpwMWdDdjl1UzBRWDNNUFNVNE9JNEV1Ulpybk1VQ18zM1Q5T2g0blZxY0tmMkNiMFBsdTJqaHE2ZVQ2azlVZ2didEFDb3N0anZR?oc=5",
+        "source": "TradingView",
+        "published": "2026-11-05"
+      }
+    ],
+    "article_url": "https://seekingalpha.com/news/4666167-palo-alto-networks-in-talks-to-buy-ai-security-startup-clutch-for-500m-report?utm_source=tradingview&utm_medium=referral&feed_item_type=news",
+    "id": "fa697d0c40e884f0",
+    "summary": "Palo Alto Networks is reportedly in talks to acquire Clutch Security, which manages AI agents’ access to company systems.",
+    "published_at": "2026-11-05T05:06:13+00:00",
+    "date_source": "https://seekingalpha.com/news/4666167-palo-alto-networks-in-talks-to-buy-ai-security-startup-clutch-for-500m-report?utm_source=tradingview&utm_medium=referral&feed_item_type=news#publisher-metadata",
+    "image_fallback": "assets/news/bce6621a907587efb9996661.svg",
+    "image_kind": "headline",
+    "image_origin": "https://static.tradingview.com/static/images/logo-preview.png"
   },
   {
     "title": "CrowdStrike to reportedly buy AI security startups for $495M, launches Kill Switch for rogue agents",
     "url": "https://www.tradingview.com/news/stocktwits:6eb5fd9d9094b:0-crowdstrike-to-reportedly-buy-ai-security-startups-for-495m-launches-kill-switch-for-rogue-agents/",
-    "article_url": "https://www.tradingview.com/news/stocktwits:6eb5fd9d9094b:0-crowdstrike-to-reportedly-buy-ai-security-startups-for-495m-launches-kill-switch-for-rogue-agents/",
+    "article_url": "https://stocktwits.com/news-articles/markets/equity/crowd-strike-to-reportedly-buy-ai-security-startups-for-495-m-launches-kill-switch-for-rogue-agents/cNGXTrKR95n",
     "source": "TradingView",
     "published": "2026-11-03",
     "origin": "news",
     "summary": "CrowdStrike announced plans to acquire Fiddler AI and Dreadnode and introduced an AI Kill Switch for rogue agents.",
-    "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+    "image": "assets/news/1defcdba4d4ee2d2aaec82b9.svg",
+    "id": "4df8474f9b37f3e5",
+    "aliases": [
+      {
+        "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode - SecurityWeek",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRGFnYTJURUt3WF83aHNEVVZ3TE5iU1lIaW1zLXJiLXpiY0NmQTJKNlIteVFWc2pPTzNnVmhTV3ZBa3BiVURJbjYtT1FMdGJBbGpXd1VnaGJYRE9MUmlHYTRrQWtXdHpUa0JrRWJNZ09KRGhBU2RuOF8wRV81c3FBOGxkTTRPQkJrMnpEYmREakYzRDM3VExYMWhOaU9hQ0tlV19BeDBuRVlDakhBN092cg?oc=5",
+        "source": "SecurityWeek",
+        "published": "2026-11-03"
+      },
+      {
+        "title": "CrowdStrike to buy two AI security startups for $495M: WSJ - TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPd1hTRkNvb3RzOUNDWU9qLUw5S1UycE1TQUpGTnFONmN6a1AwZl85Q3A1WXJ1VGZLQTdhdXB5b245bnVsRTlfZjNSLUYxWWJtNHloZjB5ZnJpSmNfcll5Y3BiMk00MzFEaldWTlhmMUZ3WjlneDczQ3FUMmxUcmRuNG9JcTJMaF9heDhmcHVZQXpLbTFubm5sN2RIZm1oWFFYRWlHMVJ6TkMzVGdSdEp0VTdQYWRtU05WbkpB?oc=5",
+        "source": "TradingView",
+        "published": "2026-11-03"
+      }
+    ],
+    "published_at": "2026-11-03T11:48:11+00:00",
+    "date_source": "https://stocktwits.com/news-articles/markets/equity/crowd-strike-to-reportedly-buy-ai-security-startups-for-495-m-launches-kill-switch-for-rogue-agents/cNGXTrKR95n#publisher-metadata",
+    "image_fallback": "assets/news/1defcdba4d4ee2d2aaec82b9.svg",
+    "image_kind": "headline",
+    "image_origin": "https://static.tradingview.com/static/images/logo-preview.png"
   },
   {
     "title": "CrowdStrike announces new native AI security innovations on AWS",
@@ -105,7 +226,10 @@
     "published": "2026-11-03",
     "origin": "news",
     "summary": "CrowdStrike announced new AI security capabilities and integrations for customers building with AWS.",
-    "image": "https://mms.businesswire.com/media/20261103596263/en/821165/22/CS_Logos_2020_InlineRed.jpg"
+    "image": "assets/news/31698bc1b4a9024610dfb6b8.svg",
+    "id": "e383163f9a53b677",
+    "image_fallback": "assets/news/31698bc1b4a9024610dfb6b8.svg",
+    "image_kind": "headline"
   },
   {
     "title": "Backporting security fixes at scale with Codex",
@@ -114,18 +238,28 @@
     "published": "2026-11-02",
     "origin": "research",
     "summary": "Trail of Bits reports on using an AI coding agent to backport security fixes while checking vulnerable branches and patch behavior.",
-    "image": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/backporting_socialbanner.png"
+    "image": "assets/news/3423d603ac35df476e6ec079.webp",
+    "id": "e21884c37676df69",
+    "article_url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+    "published_at": "2026-11-02T12:00:00+00:00",
+    "date_source": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/#publisher-metadata",
+    "image_fallback": "assets/news/691b52653d4c6c3ecd7a13bb.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/backporting_socialbanner.png"
   },
   {
-    "title": "CVE-2026-61789: DBHub is a database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite. Prior to 0.22.6, read-only SQL validation can be bypassed on the MySQL and MariaD",
+    "title": "CVE-2026-61789: Read-only SQL validation bypass in DBHub",
     "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61789",
     "source": "NIST NVD",
     "published": "2026-10-30",
     "origin": "advisory",
-    "summary": "DBHub is a database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite. Prior to 0.22.6, read-only SQL validation can be bypassed on the MySQL and MariaDB connectors. In `src/utils/sql-parser.ts`, `scanSingleLineComment` treats every double da",
+    "summary": "DBHub is a database MCP server for Postgres, MySQL, SQL Server, Oracle, MariaDB, SQLite. Prior to 0.22.6, read-only SQL validation can be bypassed on the MySQL and MariaDB connectors. In `src/utils/sql-parser.ts`, `scanSingleLineComment` treats every double dash as a comment start, whereas MySQL and MariaDB require following whitespace, a control…",
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-61789",
-    "image": "https://w4-advisory.github.io/og-image.png",
-    "added_on": "2026-11-07"
+    "image": "assets/news/189f4ca7ccf2c90abd7b96fb.svg",
+    "added_on": "2026-11-07",
+    "id": "5354c4bff8538397",
+    "image_fallback": "assets/news/189f4ca7ccf2c90abd7b96fb.svg",
+    "image_kind": "headline"
   },
   {
     "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
@@ -135,16 +269,13 @@
     "published": "2026-10-27",
     "origin": "research",
     "summary": "Anthropic details five attack chains found with Claude, including browser and operating-system vulnerabilities that led to remote code execution and other serious impacts.",
-    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
-  },
-  {
-    "title": "Next Exploit Opportunities: How a Threat Actor Used AI to Plan Cybercrime",
-    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
-    "source": "Unit 42",
-    "published": "2026-10-21",
-    "origin": "research",
-    "summary": "Incident analysis shows a threat actor using an AI agent and DeepSeek to plan exploitation and other cybercrime activity.",
-    "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/10/AdobeStock_1246251272-2-1.jpg"
+    "image": "assets/news/9c2a906c67a93f85ae574b34.webp",
+    "id": "03917b725ddac2a4",
+    "published_at": "2026-10-27T00:00:00+00:00",
+    "date_source": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude#publisher-metadata",
+    "image_fallback": "assets/news/284345556e8eef6bb97b6282.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
   },
   {
     "title": "Your AI agent fixed the bug, but what else did it change?",
@@ -153,7 +284,30 @@
     "published": "2026-10-21",
     "origin": "research",
     "summary": "An agent-assisted patching workflow adds regression hunting to check whether security fixes introduce other problems.",
-    "image": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/patching_socialbanner3.png"
+    "image": "assets/news/90e81ce49cbb2491c87d7016.webp",
+    "id": "4d58a33caceec874",
+    "article_url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
+    "published_at": "2026-10-21T15:00:00+00:00",
+    "date_source": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/#publisher-metadata",
+    "image_fallback": "assets/news/dd7befe8a8918eef6c2f1885.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/patching_socialbanner3.png"
+  },
+  {
+    "title": "Next Exploit Opportunities: How a Threat Actor Used AI to Plan Cybercrime",
+    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+    "source": "Unit 42",
+    "published": "2026-10-21",
+    "origin": "research",
+    "summary": "Incident analysis shows a threat actor using an AI agent and DeepSeek to plan exploitation and other cybercrime activity.",
+    "image": "assets/news/dc343658f245e97516dfa45b.webp",
+    "id": "74ef3f48ee253fb2",
+    "article_url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+    "published_at": "2026-10-21T14:00:24+00:00",
+    "date_source": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/#publisher-metadata",
+    "image_fallback": "assets/news/1e8a5d3814bbd934168c2fdc.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/10/AdobeStock_1246251272-2-1.jpg"
   },
   {
     "title": "AI-Powered Espionage Campaign Targets Government Linux Infrastructure",
@@ -162,7 +316,14 @@
     "published": "2026-10-15",
     "origin": "research",
     "summary": "Unit 42 traces a government-targeting campaign whose Linux payloads show evidence of AI-assisted generation and attack planning.",
-    "image": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/10/AdobeStock_637057734.jpg"
+    "image": "assets/news/0e498ae7bf924a451575403b.webp",
+    "id": "b35c6098a0c1615e",
+    "article_url": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/",
+    "published_at": "2026-10-15T22:00:09+00:00",
+    "date_source": "https://unit42.paloaltonetworks.com/ai-campaign-targets-linux-infrastructure/#publisher-metadata",
+    "image_fallback": "assets/news/a3859d94236fff8d8a858588.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://unit42.paloaltonetworks.com/wp-content/uploads/2026/10/AdobeStock_637057734.jpg"
   },
   {
     "title": "Investigating unintended model actions in our evaluations and internal use",
@@ -171,7 +332,14 @@
     "published": "2026-10-09",
     "origin": "research",
     "summary": "An analysis of AI model actions that exploited flaws or took unintended security-sensitive steps in evaluations and internal workflows.",
-    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f11d2325e688229de8a887ef7ece34f520ab7134-2000x1125.jpg"
+    "image": "assets/news/3fcb7946fb2c723ae8ecbed5.webp",
+    "id": "ad9f073b4701b9e8",
+    "article_url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+    "published_at": "2026-10-09T00:00:00+00:00",
+    "date_source": "https://www.anthropic.com/research/investigating-unintended-model-actions#publisher-metadata",
+    "image_fallback": "assets/news/c5622c031eaf5f21f15f1265.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f11d2325e688229de8a887ef7ece34f520ab7134-2000x1125.jpg"
   },
   {
     "title": "The model isn't cooperating",
@@ -180,7 +348,13 @@
     "published": "2026-10-06",
     "origin": "research",
     "summary": "A follow-up evaluation of AI models used for autonomous vulnerability research and their behavior under security testing prompts.",
-    "image": "https://portswigger.net/content/images/logos/portswigger-twittercardlogo.png"
+    "image": "assets/news/fb81bdc4e843f675790e0bad.svg",
+    "id": "62f8a1aac6cb81da",
+    "article_url": "https://portswigger.net/research/the-model-isnt-cooperating",
+    "published_at": "2026-10-06T17:14:53+00:00",
+    "date_source": "https://portswigger.net/research/the-model-isnt-cooperating#publisher-metadata",
+    "image_fallback": "assets/news/fb81bdc4e843f675790e0bad.svg",
+    "image_kind": "headline"
   },
   {
     "title": "Auditing in the age of (good enough) AI",
@@ -189,7 +363,14 @@
     "published": "2026-09-18",
     "origin": "research",
     "summary": "Trail of Bits explains how agents built decompilation and formal-analysis tools for a security audit of the Miden VM.",
-    "image": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/auditing-ai-social-banner.png"
+    "image": "assets/news/c68ce28a02e68ebc5b69a625.webp",
+    "id": "44a4249ca6188476",
+    "article_url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
+    "published_at": "2026-09-18T11:00:00+00:00",
+    "date_source": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/#publisher-metadata",
+    "image_fallback": "assets/news/de0c95c21764088de06f2cf6.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/auditing-ai-social-banner.png"
   },
   {
     "title": "1Password's AI patching benchmark is misleading",
@@ -198,7 +379,14 @@
     "published": "2026-09-15",
     "origin": "research",
     "summary": "Trail of Bits compares AI security patch quality with real-world consulting data and explains limits of a public benchmark.",
-    "image": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/1password-socialbanner-dark-v2.png"
+    "image": "assets/news/5eb110b0341d82fa92e3d7d7.webp",
+    "id": "57a8cf53413a25f5",
+    "article_url": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+    "published_at": "2026-09-15T11:00:00+00:00",
+    "date_source": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/#publisher-metadata",
+    "image_fallback": "assets/news/840a8f0c2aff36b3f8bbdbb0.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/1password-socialbanner-dark-v2.png"
   },
   {
     "title": "PuzzleMask: Abusing Plain Prose as a Covert AI Attack Vector",
@@ -207,7 +395,14 @@
     "published": "2026-09-10",
     "origin": "research",
     "summary": "A prompt-crafting technique hides harmful instructions from lightweight AI policy checks while a target model recovers them.",
-    "image": "https://research.checkpoint.com/wp-content/uploads/2026/07/splash-1024x683.png"
+    "image": "assets/news/36484edc88ba5dc738113d69.webp",
+    "id": "d4b36573d1a386fd",
+    "article_url": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
+    "published_at": "2026-09-10T14:32:46+00:00",
+    "date_source": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/#publisher-metadata",
+    "image_fallback": "assets/news/412106d0e084ae8f83fd7a7d.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/07/splash-1024x683.png"
   },
   {
     "title": "An alignment assessment of recent cybersecurity incidents",
@@ -216,7 +411,14 @@
     "published": "2026-09-09",
     "origin": "research",
     "summary": "Anthropic examines how models acted during recent security incidents, including unauthorized access and other unintended behavior.",
-    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dbd9d321d423a22b6aeeae8172a5ba9546faf71d-1200x630.jpg"
+    "image": "assets/news/3f68f37a7cb2b80b2be72932.webp",
+    "id": "8b9a61488ff4bf89",
+    "article_url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "published_at": "2026-09-09T00:00:00+00:00",
+    "date_source": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents#publisher-metadata",
+    "image_fallback": "assets/news/06b79ad3d11121debf53c782.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dbd9d321d423a22b6aeeae8172a5ba9546faf71d-1200x630.jpg"
   },
   {
     "title": "The Shared Clipboard Inside the Sandbox: Cross-Account Data Leakage in ChatGPT",
@@ -225,7 +427,14 @@
     "published": "2026-09-08",
     "origin": "research",
     "summary": "A cross-account channel in ChatGPT code-execution environments could be used to leak data from another user's session.",
-    "image": "https://research.checkpoint.com/wp-content/uploads/2026/08/cover-1-1024x576.png"
+    "image": "assets/news/48c62ad3908aa1aa2692cc73.webp",
+    "id": "e7e62c94ce7550cb",
+    "article_url": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/",
+    "published_at": "2026-09-08T13:00:18+00:00",
+    "date_source": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/#publisher-metadata",
+    "image_fallback": "assets/news/133f1d31d9568b319ed05868.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/08/cover-1-1024x576.png"
   },
   {
     "title": "VMs won't contain cyber-capable agents",
@@ -234,7 +443,14 @@
     "published": "2026-08-26",
     "origin": "research",
     "summary": "A threat model for running highly capable AI security agents argues that virtual machines alone may be insufficient containment.",
-    "image": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/vm-cyber-capable-agents-social-banner.png"
+    "image": "assets/news/75d953188bb8b2d513cdb1b0.webp",
+    "id": "9bc4fb43dadb96af",
+    "article_url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+    "published_at": "2026-08-26T11:00:00+00:00",
+    "date_source": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/#publisher-metadata",
+    "image_fallback": "assets/news/05094bf5d04377f1854d0ab8.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/vm-cyber-capable-agents-social-banner.png"
   },
   {
     "title": "Can AI do novel security research? Meet the HTTP Terminator",
@@ -243,7 +459,14 @@
     "published": "2026-08-05",
     "origin": "research",
     "summary": "James Kettle describes an autonomous AI system that discovered new HTTP desynchronization attacks and tested them against live sites.",
-    "image": "https://portswigger.net/cms/images/65/c9/4abd-twittercard-http_terminator_x.png"
+    "image": "assets/news/48fb6082cce95ace94a1d8ff.webp",
+    "id": "7883bfd1659300c3",
+    "article_url": "https://portswigger.net/research/can-ai-do-novel-security-research",
+    "published_at": "2026-08-05T19:30:00+00:00",
+    "date_source": "https://portswigger.net/research/can-ai-do-novel-security-research#publisher-metadata",
+    "image_fallback": "assets/news/ad311351a35b9d5dc92c38a0.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://portswigger.net/cms/images/65/c9/4abd-twittercard-http_terminator_x.png"
   },
   {
     "title": "AI Security Report 2026",
@@ -252,7 +475,14 @@
     "published": "2026-07-14",
     "origin": "research",
     "summary": "Analysis of AI as an active operator in intrusions, indirect prompt injection, and data exposure across AI applications.",
-    "image": "https://research.checkpoint.com/wp-content/uploads/2026/07/AI-Security-Report-2026-1024x593.png"
+    "image": "assets/news/0c473d998263aab76d70eb6d.webp",
+    "id": "be107a30cac7f6a2",
+    "article_url": "https://research.checkpoint.com/2026/ai-security-report-2026/",
+    "published_at": "2026-07-14T00:51:31+00:00",
+    "date_source": "https://research.checkpoint.com/2026/ai-security-report-2026/#publisher-metadata",
+    "image_fallback": "assets/news/3cac33ea27cc61a6d6b97f5e.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/07/AI-Security-Report-2026-1024x593.png"
   },
   {
     "title": "When prompts become shells: RCE vulnerabilities in AI agent frameworks",
@@ -261,7 +491,14 @@
     "published": "2026-05-07",
     "origin": "research",
     "summary": "Microsoft analyzes remote code execution vulnerabilities in AI agent frameworks and the prompt-to-shell attack path.",
-    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/03/MS_Actional-Insights_AI-agents.jpg"
+    "image": "assets/news/dde8d5c6787951171bb2aafd.webp",
+    "id": "e27b45b1b4505f33",
+    "article_url": "https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/",
+    "published_at": "2026-05-07T20:22:39+00:00",
+    "date_source": "https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/#publisher-metadata",
+    "image_fallback": "assets/news/ce72dce5b085205d8aa128d0.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/03/MS_Actional-Insights_AI-agents.jpg"
   },
   {
     "title": "Autonomous Vulnerability Hunting with MCP",
@@ -271,7 +508,13 @@
     "published": "2026-04-04",
     "origin": "research",
     "summary": "A security researcher explains an AI-assisted vulnerability hunting workflow using Claude Code and MCP, with validation gates, exploit research, and disclosed CVEs.",
-    "image": "https://blog.zsec.uk/content/images/2026/04/signal-2026-04-04-115255_002.jpeg"
+    "image": "assets/news/180c0f1e972d011116e782f2.webp",
+    "id": "f55c756a855fdf31",
+    "published_at": "2026-04-04T11:19:49+00:00",
+    "date_source": "https://blog.zsec.uk/bullyingllms/#publisher-metadata",
+    "image_fallback": "assets/news/5e595abad6654f17539b882a.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.zsec.uk/content/images/2026/04/signal-2026-04-04-115255_002.jpeg"
   },
   {
     "title": "ChatGPT Data Leakage via a Hidden Outbound Channel in the Code Execution Runtime",
@@ -280,7 +523,14 @@
     "published": "2026-03-30",
     "origin": "research",
     "summary": "Researchers found a hidden outbound channel that could exfiltrate ChatGPT conversation data and files through code execution.",
-    "image": "https://research.checkpoint.com/wp-content/uploads/2026/03/chatgpt-data-leakage-via-a-hidden-channel-1024x683.png"
+    "image": "assets/news/1ee5e3c026e255ea071e1a6b.webp",
+    "id": "de1310b426e74b2d",
+    "article_url": "https://research.checkpoint.com/2026/chatgpt-data-leakage-via-a-hidden-outbound-channel-in-the-code-execution-runtime/",
+    "published_at": "2026-03-30T13:09:01+00:00",
+    "date_source": "https://research.checkpoint.com/2026/chatgpt-data-leakage-via-a-hidden-outbound-channel-in-the-code-execution-runtime/#publisher-metadata",
+    "image_fallback": "assets/news/f86f3bef3d4d50ecfb15e72a.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/03/chatgpt-data-leakage-via-a-hidden-channel-1024x683.png"
   },
   {
     "title": "Threat modeling AI applications",
@@ -289,7 +539,14 @@
     "published": "2026-02-26",
     "origin": "research",
     "summary": "A practical threat model for AI applications covering agent tools, untrusted content, prompt injection and data exposure.",
-    "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/02/Threat-Modeling-AI-Applications-.png"
+    "image": "assets/news/f6ceb23b225a4fcd6746b76b.webp",
+    "id": "9848867f41152779",
+    "article_url": "https://www.microsoft.com/en-us/security/blog/2026/02/26/threat-modeling-ai-applications/",
+    "published_at": "2026-02-26T17:04:08+00:00",
+    "date_source": "https://www.microsoft.com/en-us/security/blog/2026/02/26/threat-modeling-ai-applications/#publisher-metadata",
+    "image_fallback": "assets/news/39ce0f30d40f89e867bdb526.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/02/Threat-Modeling-AI-Applications-.png"
   },
   {
     "title": "Using threat modeling and prompt injection to audit Comet",
@@ -298,7 +555,14 @@
     "published": "2026-02-20",
     "origin": "research",
     "summary": "An audit of Perplexity's AI browser found prompt injection techniques that could expose private Gmail information.",
-    "image": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/using-threat-modeling-and-prompt-injection-to-audit-comet-image-1.png"
+    "image": "assets/news/940564824f43d57f8412feb1.webp",
+    "id": "2c788acfd7448590",
+    "article_url": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/",
+    "published_at": "2026-02-20T16:00:00+00:00",
+    "date_source": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/#publisher-metadata",
+    "image_fallback": "assets/news/2d52bf4dea1d3c3c4496c146.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/using-threat-modeling-and-prompt-injection-to-audit-comet-image-1.png"
   },
   {
     "title": "AI in the Middle: Turning Web-Based AI Services into C2 Proxies",
@@ -307,6 +571,13 @@
     "published": "2026-02-17",
     "origin": "research",
     "summary": "Research shows how AI assistants with web access can be abused as covert command-and-control relays.",
-    "image": "https://research.checkpoint.com/wp-content/uploads/2026/02/image-3-1024x683.png"
+    "image": "assets/news/d765629c8051c4fff8d68e20.webp",
+    "id": "aad38511733f171b",
+    "article_url": "https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/",
+    "published_at": "2026-02-17T14:12:49+00:00",
+    "date_source": "https://research.checkpoint.com/2026/ai-in-the-middle-turning-web-based-ai-services-into-c2-proxies-the-future-of-ai-driven-attacks/#publisher-metadata",
+    "image_fallback": "assets/news/dbe5a2ff291c8d4f8ad7fab6.svg",
+    "image_kind": "publisher",
+    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/02/image-3-1024x683.png"
   }
 ]

@@ -1,0 +1,222 @@
+{
+  "publication_day_utc": "2026-11-08",
+  "archive_before": 33,
+  "removed_duplicates": [
+    {
+      "title": "Palo Alto Networks In Talks To Pay $500 Million For AI Security Startup Clutch Security - The Information - TradingView",
+      "kept": "Palo Alto Networks in talks to buy AI security startup Clutch for $500M: report",
+      "reason": "same transaction and amount"
+    },
+    {
+      "title": "Palo Alto Networks Eyes $500 Million AI Security Deal - TradingView",
+      "kept": "Palo Alto Networks in talks to buy AI security startup Clutch for $500M: report",
+      "reason": "same transaction and amount"
+    },
+    {
+      "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode - SecurityWeek",
+      "kept": "CrowdStrike to reportedly buy AI security startups for $495M, launches Kill Switch for rogue agents",
+      "reason": "same transaction and amount"
+    },
+    {
+      "title": "CrowdStrike to buy two AI security startups for $495M: WSJ - TradingView",
+      "kept": "CrowdStrike to reportedly buy AI security startups for $495M, launches Kill Switch for rogue agents",
+      "reason": "same transaction and amount"
+    }
+  ],
+  "added": [
+    {
+      "title": "CVE-2026-18484: Denial of service in IBM ContextForge MCP Gateway",
+      "url": "https://github.com/advisories/GHSA-2hgv-xvmf-mw3c",
+      "published": "2026-11-08",
+      "published_at": "2026-11-08T17:54:59.348000+00:00",
+      "date_source": "https://cveawg.mitre.org/api/cve/CVE-2026-18484#datePublished",
+      "image": "assets/news/8223f4658c99303cab616d9f.svg",
+      "image_kind": "headline"
+    },
+    {
+      "title": "CVE-2026-124424: Path traversal in WWBN AVideo",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124424",
+      "published": "2026-11-08",
+      "published_at": "2026-11-08T14:18:07.930000+00:00",
+      "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-124424#published",
+      "image": "assets/news/e63033e57ea06df38da677e6.svg",
+      "image_kind": "headline"
+    },
+    {
+      "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+      "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+      "published": "2026-11-08",
+      "published_at": "2026-11-08T12:14:00+00:00",
+      "date_source": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/#publisher-metadata",
+      "image": "assets/news/dd3abdf49250569b992bdca8.svg",
+      "image_kind": "headline"
+    },
+    {
+      "title": "CVE-2026-123496: Symlink following in Vikunja veans",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123496",
+      "published": "2026-11-08",
+      "published_at": "2026-11-08T02:16:36.977000+00:00",
+      "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-123496#published",
+      "image": "assets/news/48ee2d7366aab54a14791f07.svg",
+      "image_kind": "headline"
+    },
+    {
+      "title": "CVE-2026-123493: Authentication bypass in Vikunja",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123493",
+      "published": "2026-11-08",
+      "published_at": "2026-11-08T02:16:36.183000+00:00",
+      "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-123493#published",
+      "image": "assets/news/ca6f61150b9c4a2d560228b0.svg",
+      "image_kind": "headline"
+    }
+  ],
+  "archive_after": 34,
+  "images": {
+    "publisher": 22,
+    "headline": 12
+  },
+  "unique_preview_files": 34,
+  "sources_during_live_selection": [
+    {
+      "source": "ZephrSec",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Trail of Bits",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Check Point Research",
+      "status": "error",
+      "error": "Unexpected response: 202"
+    },
+    {
+      "source": "Unit 42",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Microsoft Security",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "PortSwigger Research",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Embrace The Red",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Simon Willison",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "OpenAI",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Google Security",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Wiz Research",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "JFrog Security",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Schneier on Security",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "BleepingComputer",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "SecurityWeek",
+      "status": "ok",
+      "candidates": 1
+    },
+    {
+      "source": "The Hacker News",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Help Net Security",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Dark Reading",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "TechCrunch",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Anthropic Research",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "Hacker News",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "CISA KEV",
+      "status": "ok",
+      "candidates": 0
+    },
+    {
+      "source": "NIST NVD",
+      "status": "ok",
+      "candidates": 4
+    },
+    {
+      "source": "GitHub Security Advisories",
+      "status": "ok",
+      "candidates": 1
+    }
+  ],
+  "rejected_during_live_selection": [
+    {
+      "title": "CVE-2026-18484: Denial of service in IBM ContextForge MCP Gateway",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18484",
+      "reason": "duplicate: same CVE"
+    }
+  ],
+  "repeat_pull_additions": 0,
+  "checks": {
+    "python_tests_passed": 28,
+    "javascript_tests_passed": 3,
+    "browser_archive_images_loaded": 34,
+    "browser_archive_images_broken": 0,
+    "mobile_viewport_width": 390,
+    "mobile_page_width": 390,
+    "homepage_previews_loaded": 3,
+    "themes_checked": [
+      "light",
+      "dark"
+    ]
+  }
+}
