@@ -1,7 +1,7 @@
 name: Update AI security news
 on:
   schedule:
-    - cron: '0 9 * * *' # Daily, 09:00 UTC
+    - cron: '30 11 * * *' # Daily, 11:30 UTC
   workflow_dispatch:
 
 permissions:
