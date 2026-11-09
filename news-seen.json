@@ -377,5 +377,49 @@
     "published": "2026-02-17",
     "summary": "Research shows how AI assistants with web access can be abused as covert command-and-control relays.",
     "aliases": []
+  },
+  {
+    "id": "df5936412b6b7e21",
+    "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
+    "url": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
+    "source": "Dark Reading",
+    "published": "2026-11-09",
+    "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine."
+  },
+  {
+    "id": "8efdb752bca219ec",
+    "title": "CVE-2026-121576: Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121576",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-121576",
+    "source": "NIST NVD",
+    "published": "2026-11-09",
+    "summary": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.1."
+  },
+  {
+    "id": "1757fa2edacdf9d9",
+    "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
+    "url": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+    "source": "BleepingComputer",
+    "published": "2026-11-09",
+    "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication. [...]"
+  },
+  {
+    "id": "a566d7ad19451245",
+    "title": "Parents, teachers call Google's Search threat over AI blocks 'extortion'",
+    "url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+    "article_url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+    "source": "theguardian.com",
+    "published": "2026-11-09",
+    "summary": "Company says schools should control student AI use, but if they block its AI tools, they’ll lose access to search engine"
+  },
+  {
+    "id": "d74086d3ea93388f",
+    "title": "AI Security",
+    "url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+    "article_url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+    "source": "Schneier on Security",
+    "published": "2026-11-09",
+    "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for researchers to understand which one they "
   }
 ]
