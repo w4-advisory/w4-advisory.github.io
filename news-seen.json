@@ -384,7 +384,8 @@
     "url": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
     "source": "Dark Reading",
     "published": "2026-11-09",
-    "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine."
+    "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
+    "aliases": []
   },
   {
     "id": "8efdb752bca219ec",
@@ -393,7 +394,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-121576",
     "source": "NIST NVD",
     "published": "2026-11-09",
-    "summary": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.1."
+    "summary": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.1.",
+    "aliases": []
   },
   {
     "id": "1757fa2edacdf9d9",
@@ -402,7 +404,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
     "source": "BleepingComputer",
     "published": "2026-11-09",
-    "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication. [...]"
+    "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication. [...]",
+    "aliases": []
   },
   {
     "id": "a566d7ad19451245",
@@ -411,7 +414,8 @@
     "article_url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
     "source": "theguardian.com",
     "published": "2026-11-09",
-    "summary": "Company says schools should control student AI use, but if they block its AI tools, they’ll lose access to search engine"
+    "summary": "Company says schools should control student AI use, but if they block its AI tools, they’ll lose access to search engine",
+    "aliases": []
   },
   {
     "id": "d74086d3ea93388f",
@@ -420,6 +424,52 @@
     "article_url": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
     "source": "Schneier on Security",
     "published": "2026-11-09",
-    "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for researchers to understand which one they "
+    "summary": "Two weeks ago, I attended the [un]prompted AI security conference in San Francisco. It was an excellent event: three days of very dense talks about all aspects of AI security. (My talk was about integrous AI, and I will post it when it is online.) AI security can be divided into three broad topics. It’s important for researchers to understand which one they ",
+    "aliases": []
+  },
+  {
+    "id": "a1e38ef53bc1c673",
+    "title": "How to Evaluate AI Agent Cybersecurity Capabilities",
+    "url": "https://www.wiz.io/blog/cyber-model-arena-ai-benchmark",
+    "article_url": "https://www.wiz.io/blog/cyber-model-arena-ai-benchmark",
+    "source": "Wiz Research",
+    "published": "2026-11-10",
+    "summary": "A tutorial for building a benchmark for offensive agents, based on how we built the Wiz Cyber Model Arena"
+  },
+  {
+    "id": "6dc7299463ce5013",
+    "title": "Introducing JFrog Threat Hub: Turning Vulnerability Intelligence into Blast Radius Analysis",
+    "url": "https://jfrog.com/blog/threat-hub-turns-vulnerability-intelligence-into-blast-radius-analysis/",
+    "article_url": "https://jfrog.com/blog/threat-hub-turns-vulnerability-intelligence-into-blast-radius-analysis/",
+    "source": "JFrog Security",
+    "published": "2026-11-10",
+    "summary": "A new supply chain attack hits the news. A CVE with a dramatic name starts trending. A malicious package turns up in npm, PyPI, and Hugging Face. Within minutes, your Slack channels fill up, your CISO wants an update, and someone asks the question every DevSecOps professional dreads: “How are we affected?” Providing a definitive …"
+  },
+  {
+    "id": "05af2bf0fd23489d",
+    "title": "CVE-2026-112136: A vulnerability has been identified in Mendix Studio Pro 11 (All versions >= V11.15.0 = V11.12.6 < V11.12.7). The affected products MCP Server does not properly restrict…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112136",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-112136",
+    "source": "NIST NVD",
+    "published": "2026-11-10",
+    "summary": "A vulnerability has been identified in Mendix Studio Pro 11 (All versions >= V11.15.0 = V11.12.6 < V11.12.7). The affected products MCP Server does not properly restrict its HTTP listener to the loopback interface, leaving it potentially exposed to remote systems. This could allow an attacker with network access to interact with the MCP Server remotely."
+  },
+  {
+    "id": "88a6e4713b30b600",
+    "title": "Claude Mythos 5.2 arrives with stronger bug hunting and less sandbox-breaking behavior",
+    "url": "https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/",
+    "article_url": "https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/",
+    "source": "Help Net Security",
+    "published": "2026-11-10",
+    "summary": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2. The two versions share an underlying model, with stricter safeguards for cybersecurity and biology tasks in the broadly available Fable. Fable blocks fewer requests Fable’s safety classifiers block high-risk cybersecurity tasks such as penetration testing and exploit generation, as well as most biolo"
+  },
+  {
+    "id": "562ed066dd9ee82b",
+    "title": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
+    "url": "https://news.ycombinator.com/item?id=50436636",
+    "article_url": "https://news.ycombinator.com/item?id=50436636",
+    "source": "news.ycombinator.com",
+    "published": "2026-11-10",
+    "summary": "Only an email so far, nothing official I could find. I figure if you didn't get this email you are ok. --- We are writing to inform you of a security incident at one of our vendors, Fireworks AI, that may impact you. For the latest on the Fireworks AI incident, see their official updates here. Following an investigation by the Notion security team, we have d"
   }
 ]
