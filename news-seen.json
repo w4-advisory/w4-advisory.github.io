@@ -434,7 +434,8 @@
     "article_url": "https://www.wiz.io/blog/cyber-model-arena-ai-benchmark",
     "source": "Wiz Research",
     "published": "2026-11-10",
-    "summary": "A tutorial for building a benchmark for offensive agents, based on how we built the Wiz Cyber Model Arena"
+    "summary": "A tutorial for building a benchmark for offensive agents, based on how we built the Wiz Cyber Model Arena",
+    "aliases": []
   },
   {
     "id": "6dc7299463ce5013",
@@ -443,7 +444,8 @@
     "article_url": "https://jfrog.com/blog/threat-hub-turns-vulnerability-intelligence-into-blast-radius-analysis/",
     "source": "JFrog Security",
     "published": "2026-11-10",
-    "summary": "A new supply chain attack hits the news. A CVE with a dramatic name starts trending. A malicious package turns up in npm, PyPI, and Hugging Face. Within minutes, your Slack channels fill up, your CISO wants an update, and someone asks the question every DevSecOps professional dreads: “How are we affected?” Providing a definitive …"
+    "summary": "A new supply chain attack hits the news. A CVE with a dramatic name starts trending. A malicious package turns up in npm, PyPI, and Hugging Face. Within minutes, your Slack channels fill up, your CISO wants an update, and someone asks the question every DevSecOps professional dreads: “How are we affected?” Providing a definitive …",
+    "aliases": []
   },
   {
     "id": "05af2bf0fd23489d",
@@ -452,7 +454,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-112136",
     "source": "NIST NVD",
     "published": "2026-11-10",
-    "summary": "A vulnerability has been identified in Mendix Studio Pro 11 (All versions >= V11.15.0 = V11.12.6 < V11.12.7). The affected products MCP Server does not properly restrict its HTTP listener to the loopback interface, leaving it potentially exposed to remote systems. This could allow an attacker with network access to interact with the MCP Server remotely."
+    "summary": "A vulnerability has been identified in Mendix Studio Pro 11 (All versions >= V11.15.0 = V11.12.6 < V11.12.7). The affected products MCP Server does not properly restrict its HTTP listener to the loopback interface, leaving it potentially exposed to remote systems. This could allow an attacker with network access to interact with the MCP Server remotely.",
+    "aliases": []
   },
   {
     "id": "88a6e4713b30b600",
@@ -461,7 +464,8 @@
     "article_url": "https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/",
     "source": "Help Net Security",
     "published": "2026-11-10",
-    "summary": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2. The two versions share an underlying model, with stricter safeguards for cybersecurity and biology tasks in the broadly available Fable. Fable blocks fewer requests Fable’s safety classifiers block high-risk cybersecurity tasks such as penetration testing and exploit generation, as well as most biolo"
+    "summary": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2. The two versions share an underlying model, with stricter safeguards for cybersecurity and biology tasks in the broadly available Fable. Fable blocks fewer requests Fable’s safety classifiers block high-risk cybersecurity tasks such as penetration testing and exploit generation, as well as most biolo",
+    "aliases": []
   },
   {
     "id": "562ed066dd9ee82b",
@@ -470,6 +474,60 @@
     "article_url": "https://news.ycombinator.com/item?id=50436636",
     "source": "news.ycombinator.com",
     "published": "2026-11-10",
-    "summary": "Only an email so far, nothing official I could find. I figure if you didn't get this email you are ok. --- We are writing to inform you of a security incident at one of our vendors, Fireworks AI, that may impact you. For the latest on the Fireworks AI incident, see their official updates here. Following an investigation by the Notion security team, we have d"
+    "summary": "Only an email so far, nothing official I could find. I figure if you didn't get this email you are ok. --- We are writing to inform you of a security incident at one of our vendors, Fireworks AI, that may impact you. For the latest on the Fireworks AI incident, see their official updates here. Following an investigation by the Notion security team, we have d",
+    "aliases": []
+  },
+  {
+    "id": "01b83d7e13d4efa5",
+    "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+    "source": "BleepingComputer",
+    "published": "2026-11-11",
+    "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]"
+  },
+  {
+    "id": "2162ebaf6f15b272",
+    "title": "Embed Security lets analysts teach its AI SOC Platform how to investigate",
+    "url": "https://www.helpnetsecurity.com/2026/11/11/embed-security-expands-ai-soc-platform/",
+    "article_url": "https://www.helpnetsecurity.com/2026/11/11/embed-security-expands-ai-soc-platform/",
+    "source": "Help Net Security",
+    "published": "2026-11-11",
+    "summary": "Embed Security announced new capabilities that let security teams teach Embed how they investigate, what matters in their environment, and how to improve their detections. With customer-built iSteps, expanded NoiseIQ Memories, and Detection Engineering, organizations can extend Embed’s built-in security expertise with their own knowledge and operating practi"
+  },
+  {
+    "id": "e7b00091dcedeee5",
+    "title": "CVE-2026-126658: ByteStash 1.5.10 before 1.6.2 contains an insufficient session expiration vulnerability that allows holders of API keys to keep access after account deactivation because…",
+    "url": "https://github.com/advisories/GHSA-45rq-x49h-cmwp",
+    "article_url": "https://github.com/advisories/GHSA-45rq-x49h-cmwp",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-11",
+    "summary": "ByteStash 1.5.10 before 1.6.2 contains an insufficient session expiration vulnerability that allows holders of API keys to keep access after account deactivation because validateApiKey never checks account status. Attackers holding a deactivated account's API key can read, create, modify and delete its snippets via /api/snippets and use every MCP tool via /m",
+    "aliases": [
+      {
+        "title": "CVE-2026-126658: ByteStash 1.5.10 before 1.6.2 contains an insufficient session expiration vulnerability that allows holders of API keys to keep access after account deactivation because…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126658",
+        "source": "NIST NVD",
+        "published": "2026-11-11"
+      }
+    ]
+  },
+  {
+    "id": "bc84726c918acbbd",
+    "title": "CVE-2026-123478: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Meow Apps AI Engine ai-engine allows Stored XSS.This issue affects…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123478",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-123478",
+    "source": "NIST NVD",
+    "published": "2026-11-11",
+    "summary": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Meow Apps AI Engine ai-engine allows Stored XSS.This issue affects AI Engine: from n/a through 3.9.1."
+  },
+  {
+    "id": "086a8742ddedf17f",
+    "title": "Anthropic says a key AI safety alarm has been triggered, days before its IPO",
+    "url": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html",
+    "article_url": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html",
+    "source": "finance.yahoo.com",
+    "published": "2026-11-11",
+    "summary": "Anthropic's new IPO filing says AI is now accelerating its own research to the point that it's triggering one of the company's key safety alarms."
   }
 ]
