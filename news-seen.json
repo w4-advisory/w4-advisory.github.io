@@ -484,7 +484,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
     "source": "BleepingComputer",
     "published": "2026-11-11",
-    "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]"
+    "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]",
+    "aliases": []
   },
   {
     "id": "2162ebaf6f15b272",
@@ -493,7 +494,8 @@
     "article_url": "https://www.helpnetsecurity.com/2026/11/11/embed-security-expands-ai-soc-platform/",
     "source": "Help Net Security",
     "published": "2026-11-11",
-    "summary": "Embed Security announced new capabilities that let security teams teach Embed how they investigate, what matters in their environment, and how to improve their detections. With customer-built iSteps, expanded NoiseIQ Memories, and Detection Engineering, organizations can extend Embed’s built-in security expertise with their own knowledge and operating practi"
+    "summary": "Embed Security announced new capabilities that let security teams teach Embed how they investigate, what matters in their environment, and how to improve their detections. With customer-built iSteps, expanded NoiseIQ Memories, and Detection Engineering, organizations can extend Embed’s built-in security expertise with their own knowledge and operating practi",
+    "aliases": []
   },
   {
     "id": "e7b00091dcedeee5",
@@ -519,7 +521,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-123478",
     "source": "NIST NVD",
     "published": "2026-11-11",
-    "summary": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Meow Apps AI Engine ai-engine allows Stored XSS.This issue affects AI Engine: from n/a through 3.9.1."
+    "summary": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Meow Apps AI Engine ai-engine allows Stored XSS.This issue affects AI Engine: from n/a through 3.9.1.",
+    "aliases": []
   },
   {
     "id": "086a8742ddedf17f",
@@ -528,6 +531,50 @@
     "article_url": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html",
     "source": "finance.yahoo.com",
     "published": "2026-11-11",
-    "summary": "Anthropic's new IPO filing says AI is now accelerating its own research to the point that it's triggering one of the company's key safety alarms."
+    "summary": "Anthropic's new IPO filing says AI is now accelerating its own research to the point that it's triggering one of the company's key safety alarms.",
+    "aliases": []
+  },
+  {
+    "id": "ff1533857573e744",
+    "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+    "article_url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+    "source": "Microsoft Security",
+    "published": "2026-11-12",
+    "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities."
+  },
+  {
+    "id": "afc81af16dd0cb13",
+    "title": "Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors",
+    "url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+    "article_url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+    "source": "Unit 42",
+    "published": "2026-11-12",
+    "summary": "Our analysis of how attackers used the open-source Cairn AI agent framework to autonomously breach semiconductor, defense and civic targets."
+  },
+  {
+    "id": "669a96cc657d93e2",
+    "title": "Inside an AI Attack Against a US Retailer",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+    "source": "Dark Reading",
+    "published": "2026-11-12",
+    "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes."
+  },
+  {
+    "id": "7581eb93c8ba33b5",
+    "title": "CVE-2026-118531: The Directorist: AI-Powered Business Directory, Listings & Classified Ads WordPress plugin before 8.11.1 does not prevent a listing's own author from changing its status…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118531",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-118531",
+    "source": "NIST NVD",
+    "published": "2026-11-12",
+    "summary": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads WordPress plugin before 8.11.1 does not prevent a listing's own author from changing its status from pending to published, allowing users with a Subscriber-level account and above to bypass the administrator's listing moderation and publish their own pending listings."
+  },
+  {
+    "id": "d7c1da8cb7dc41da",
+    "title": "Supporting research on AI and children’s safety",
+    "url": "https://openai.com/index/children-first-declaration",
+    "source": "OpenAI",
+    "published": "2026-11-12",
+    "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people."
   }
 ]
