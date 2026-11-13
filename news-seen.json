@@ -541,7 +541,8 @@
     "article_url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
     "source": "Microsoft Security",
     "published": "2026-11-12",
-    "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities."
+    "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities.",
+    "aliases": []
   },
   {
     "id": "afc81af16dd0cb13",
@@ -550,7 +551,8 @@
     "article_url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
     "source": "Unit 42",
     "published": "2026-11-12",
-    "summary": "Our analysis of how attackers used the open-source Cairn AI agent framework to autonomously breach semiconductor, defense and civic targets."
+    "summary": "Our analysis of how attackers used the open-source Cairn AI agent framework to autonomously breach semiconductor, defense and civic targets.",
+    "aliases": []
   },
   {
     "id": "669a96cc657d93e2",
@@ -558,7 +560,8 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
     "source": "Dark Reading",
     "published": "2026-11-12",
-    "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes."
+    "summary": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.",
+    "aliases": []
   },
   {
     "id": "7581eb93c8ba33b5",
@@ -567,7 +570,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-118531",
     "source": "NIST NVD",
     "published": "2026-11-12",
-    "summary": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads WordPress plugin before 8.11.1 does not prevent a listing's own author from changing its status from pending to published, allowing users with a Subscriber-level account and above to bypass the administrator's listing moderation and publish their own pending listings."
+    "summary": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads WordPress plugin before 8.11.1 does not prevent a listing's own author from changing its status from pending to published, allowing users with a Subscriber-level account and above to bypass the administrator's listing moderation and publish their own pending listings.",
+    "aliases": []
   },
   {
     "id": "d7c1da8cb7dc41da",
@@ -575,6 +579,60 @@
     "url": "https://openai.com/index/children-first-declaration",
     "source": "OpenAI",
     "published": "2026-11-12",
-    "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people."
+    "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+    "aliases": []
+  },
+  {
+    "id": "77270ce6214db366",
+    "title": "CVE-2026-124726: Relative Path Traversal, with Unintended Proxy vulnerability in Apache APISIX. A caller of the MCP endpoint can invoke endpoints the OpenAPI document never declared,…",
+    "url": "https://github.com/advisories/GHSA-rqq9-382j-9fmw",
+    "article_url": "https://github.com/advisories/GHSA-rqq9-382j-9fmw",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-13",
+    "summary": "Relative Path Traversal, with Unintended Proxy vulnerability in Apache APISIX. A caller of the MCP endpoint can invoke endpoints the OpenAPI document never declared, under the declared tool's HTTP method, using the credentials the Route adds. This issue affects Apache APISIX: from 3.19.0 before 3.20.0. Users are recommended to upgrade to version 3.20.0, whic",
+    "aliases": [
+      {
+        "title": "CVE-2026-124726: Relative Path Traversal, with Unintended Proxy vulnerability in Apache APISIX. A caller of the MCP endpoint can invoke endpoints the OpenAPI document never declared,…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124726",
+        "source": "NIST NVD",
+        "published": "2026-11-13"
+      }
+    ]
+  },
+  {
+    "id": "e1d03fb72fcea54c",
+    "title": "CVE-2026-119102: In Telerik UI for Blazor, versions v12.0.0 through 15.2.0, an improper input validation vulnerability exists, where the Grid, TreeList and Gantt's AI command filters on…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119102",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-119102",
+    "source": "NIST NVD",
+    "published": "2026-11-13",
+    "summary": "In Telerik UI for Blazor, versions v12.0.0 through 15.2.0, an improper input validation vulnerability exists, where the Grid, TreeList and Gantt's AI command filters on any model property, bypassing the declared column allowlist."
+  },
+  {
+    "id": "4a3686306260ca37",
+    "title": "How one AI agent exposed five critical enterprise security gaps",
+    "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+    "source": "BleepingComputer",
+    "published": "2026-11-13",
+    "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them. [...]"
+  },
+  {
+    "id": "5f1f125bfe6b9d16",
+    "title": "OpenAI’s Daybreak brings AI agents to security testing and vulnerability fixes",
+    "url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
+    "article_url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
+    "source": "Help Net Security",
+    "published": "2026-11-13",
+    "summary": "OpenAI is bringing AI agents into more of the software security process with Daybreak, pairing web application penetration testing with tools that investigate vulnerabilities and develop fixes. The two offerings, Red Team and Defense Factory, connect the work of finding security weaknesses with patching and retesting them. Red Team tests applications and ver"
+  },
+  {
+    "id": "f912b97a6413394c",
+    "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+    "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+    "article_url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+    "source": "SecurityWeek",
+    "published": "2026-11-13",
+    "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches."
   }
 ]
