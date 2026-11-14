@@ -1,5 +1,46 @@
 [
   {
+    "title": "Is AI Making Us Worse at Cybersecurity?",
+    "url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "source": "SecurityWeek",
+    "origin": "news",
+    "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook.",
+    "published": "2026-11-14",
+    "published_at": "2026-11-14T14:00:00+00:00",
+    "date_source": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/#publisher-metadata",
+    "article_url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "id": "38d2938a9ce6c977",
+    "added_on": "2026-11-14",
+    "image_fallback": "assets/news/eff57cacde08dd945cb35d99.svg",
+    "image": "assets/news/f25b89cbb720ea3556a552b2.webp",
+    "image_kind": "publisher",
+    "image_origin": "https://www.securityweek.com/wp-content/uploads/2026/04/Artificial-intelligence-AI.jpeg"
+  },
+  {
+    "title": "CVE-2026-129428: Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage…",
+    "url": "https://github.com/advisories/GHSA-c2gc-chxg-hvqr",
+    "source": "GitHub Security Advisories",
+    "origin": "advisory",
+    "summary": "Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage approval requests. Attackers can list pending requests to expose proposed commands and targets, and approve or deny other users' requests, altering decision and audit state.",
+    "published": "2026-11-14",
+    "published_at": "2026-11-14T12:32:56.082000+00:00",
+    "date_source": "https://cveawg.mitre.org/api/cve/CVE-2026-129428#datePublished",
+    "id": "354690a530142ea8",
+    "added_on": "2026-11-14",
+    "aliases": [
+      {
+        "title": "CVE-2026-129428: Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129428",
+        "source": "NIST NVD",
+        "published": "2026-11-14"
+      }
+    ],
+    "article_url": "https://github.com/advisories/GHSA-c2gc-chxg-hvqr",
+    "image_fallback": "assets/news/a58ebd79b7dd199f80228c82.svg",
+    "image": "assets/news/a58ebd79b7dd199f80228c82.svg",
+    "image_kind": "headline"
+  },
+  {
     "title": "CVE-2026-124726: Relative Path Traversal, with Unintended Proxy vulnerability in Apache APISIX. A caller of the MCP endpoint can invoke endpoints the OpenAPI document never declared,…",
     "url": "https://github.com/advisories/GHSA-rqq9-382j-9fmw",
     "source": "GitHub Security Advisories",

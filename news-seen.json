@@ -606,7 +606,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-119102",
     "source": "NIST NVD",
     "published": "2026-11-13",
-    "summary": "In Telerik UI for Blazor, versions v12.0.0 through 15.2.0, an improper input validation vulnerability exists, where the Grid, TreeList and Gantt's AI command filters on any model property, bypassing the declared column allowlist."
+    "summary": "In Telerik UI for Blazor, versions v12.0.0 through 15.2.0, an improper input validation vulnerability exists, where the Grid, TreeList and Gantt's AI command filters on any model property, bypassing the declared column allowlist.",
+    "aliases": []
   },
   {
     "id": "4a3686306260ca37",
@@ -615,7 +616,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
     "source": "BleepingComputer",
     "published": "2026-11-13",
-    "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them. [...]"
+    "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them. [...]",
+    "aliases": []
   },
   {
     "id": "5f1f125bfe6b9d16",
@@ -624,7 +626,8 @@
     "article_url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
     "source": "Help Net Security",
     "published": "2026-11-13",
-    "summary": "OpenAI is bringing AI agents into more of the software security process with Daybreak, pairing web application penetration testing with tools that investigate vulnerabilities and develop fixes. The two offerings, Red Team and Defense Factory, connect the work of finding security weaknesses with patching and retesting them. Red Team tests applications and ver"
+    "summary": "OpenAI is bringing AI agents into more of the software security process with Daybreak, pairing web application penetration testing with tools that investigate vulnerabilities and develop fixes. The two offerings, Red Team and Defense Factory, connect the work of finding security weaknesses with patching and retesting them. Red Team tests applications and ver",
+    "aliases": []
   },
   {
     "id": "f912b97a6413394c",
@@ -633,6 +636,33 @@
     "article_url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
     "source": "SecurityWeek",
     "published": "2026-11-13",
-    "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches."
+    "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches.",
+    "aliases": []
+  },
+  {
+    "id": "38d2938a9ce6c977",
+    "title": "Is AI Making Us Worse at Cybersecurity?",
+    "url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "article_url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "source": "SecurityWeek",
+    "published": "2026-11-14",
+    "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook."
+  },
+  {
+    "id": "354690a530142ea8",
+    "title": "CVE-2026-129428: Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage…",
+    "url": "https://github.com/advisories/GHSA-c2gc-chxg-hvqr",
+    "article_url": "https://github.com/advisories/GHSA-c2gc-chxg-hvqr",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-14",
+    "summary": "Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage approval requests. Attackers can list pending requests to expose proposed commands and targets, and approve or deny other users' requests, altering decision and audit state.",
+    "aliases": [
+      {
+        "title": "CVE-2026-129428: Pulse from 5.0.17 before 6.8.0 contains a missing authorization vulnerability in the /api/ai/approvals endpoints that allows authenticated viewer-level users to manage…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129428",
+        "source": "NIST NVD",
+        "published": "2026-11-14"
+      }
+    ]
   }
 ]
