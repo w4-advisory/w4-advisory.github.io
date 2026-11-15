@@ -1,5 +1,53 @@
 [
   {
+    "title": "CVE-2026-125771: Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects…",
+    "url": "https://github.com/advisories/GHSA-w68m-3rvm-5xxq",
+    "source": "GitHub Security Advisories",
+    "origin": "advisory",
+    "summary": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.3.",
+    "published": "2026-11-15",
+    "published_at": "2026-11-15T15:09:09.099000+00:00",
+    "date_source": "https://cveawg.mitre.org/api/cve/CVE-2026-125771#datePublished",
+    "id": "9e8bb5b1dbb65be2",
+    "added_on": "2026-11-15",
+    "aliases": [
+      {
+        "title": "CVE-2026-125771: Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125771",
+        "source": "NIST NVD",
+        "published": "2026-11-15"
+      }
+    ],
+    "article_url": "https://github.com/advisories/GHSA-w68m-3rvm-5xxq",
+    "image_fallback": "assets/news/39a21ccf92f57b8ce9034b13.svg",
+    "image": "assets/news/39a21ccf92f57b8ce9034b13.svg",
+    "image_kind": "headline"
+  },
+  {
+    "title": "CVE-2026-129356: A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129356",
+    "source": "NIST NVD",
+    "origin": "advisory",
+    "summary": "A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common Prefix Handler. The manipulation results in race condition. The attack may be performed from remote. Attacks of this nature are highly complex. It is stated that the exploitability is diffic",
+    "published": "2026-11-15",
+    "published_at": "2026-11-15T02:17:20.967000+00:00",
+    "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-129356#published",
+    "id": "2cbf349aee3a10dd",
+    "added_on": "2026-11-15",
+    "aliases": [
+      {
+        "title": "CVE-2026-129356: A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common…",
+        "url": "https://github.com/advisories/GHSA-fj8v-85jv-jwpv",
+        "source": "GitHub Security Advisories",
+        "published": "2026-11-15"
+      }
+    ],
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-129356",
+    "image_fallback": "assets/news/c42a042718b9ea6291c54985.svg",
+    "image": "assets/news/c42a042718b9ea6291c54985.svg",
+    "image_kind": "headline"
+  },
+  {
     "title": "Is AI Making Us Worse at Cybersecurity?",
     "url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
     "source": "SecurityWeek",

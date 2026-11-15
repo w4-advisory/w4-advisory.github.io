@@ -646,7 +646,8 @@
     "article_url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
     "source": "SecurityWeek",
     "published": "2026-11-14",
-    "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook."
+    "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook.",
+    "aliases": []
   },
   {
     "id": "354690a530142ea8",
@@ -662,6 +663,40 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129428",
         "source": "NIST NVD",
         "published": "2026-11-14"
+      }
+    ]
+  },
+  {
+    "id": "9e8bb5b1dbb65be2",
+    "title": "CVE-2026-125771: Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects…",
+    "url": "https://github.com/advisories/GHSA-w68m-3rvm-5xxq",
+    "article_url": "https://github.com/advisories/GHSA-w68m-3rvm-5xxq",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-15",
+    "summary": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.3.",
+    "aliases": [
+      {
+        "title": "CVE-2026-125771: Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125771",
+        "source": "NIST NVD",
+        "published": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "2cbf349aee3a10dd",
+    "title": "CVE-2026-129356: A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129356",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-129356",
+    "source": "NIST NVD",
+    "published": "2026-11-15",
+    "summary": "A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common Prefix Handler. The manipulation results in race condition. The attack may be performed from remote. Attacks of this nature are highly complex. It is stated that the exploitability is diffic",
+    "aliases": [
+      {
+        "title": "CVE-2026-129356: A vulnerability was found in vllm-project vllm 0.30.0/0.31.0. This vulnerability affects unknown code of the file single_type_kv_cache_manager.py of the component Common…",
+        "url": "https://github.com/advisories/GHSA-fj8v-85jv-jwpv",
+        "source": "GitHub Security Advisories",
+        "published": "2026-11-15"
       }
     ]
   }
