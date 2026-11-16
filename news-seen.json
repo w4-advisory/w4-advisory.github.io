@@ -699,5 +699,58 @@
         "published": "2026-11-15"
       }
     ]
+  },
+  {
+    "id": "5d1e53468db4dea3",
+    "title": "CVE-2026-129236: Kubeshark is an eBPF-powered network observability tool for Kubernetes. From 53.1.0 until 53.4.0, the start_kubeshark MCP tool in cmd/mcpRunner.go uses…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129236",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-129236",
+    "source": "NIST NVD",
+    "published": "2026-11-16",
+    "summary": "Kubeshark is an eBPF-powered network observability tool for Kubernetes. From 53.1.0 until 53.4.0, the start_kubeshark MCP tool in cmd/mcpRunner.go uses callStartKubeshark to append caller-controlled pod_regex as a bare positional argument to kubeshark tap without a -- end-of-options separator, allowing a value beginning with --set to be parsed as a Helm valu"
+  },
+  {
+    "id": "8ecb87c2a43d6633",
+    "title": "Introducing the Wiz AI Security Agent",
+    "url": "https://www.wiz.io/blog/introducing-wiz-ai-security-agent",
+    "article_url": "https://www.wiz.io/blog/introducing-wiz-ai-security-agent",
+    "source": "Wiz Research",
+    "published": "2026-11-16",
+    "summary": "Meet the Wiz AI Security Agent, your newest security teammate to discover AI agents, understand their purpose, and expose hidden risks."
+  },
+  {
+    "id": "1614236c3d72270f",
+    "title": "CVE-2026-129875: Information disclosure in REBUILD",
+    "url": "https://github.com/advisories/GHSA-r24j-jphp-67xq",
+    "article_url": "https://github.com/advisories/GHSA-r24j-jphp-67xq",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-16",
+    "summary": "REBUILD 4.5.0 through 4.5.4 contains an information disclosure vulnerability that allows low-privileged authenticated users to recover the administrator password hash by filtering User.password through the MCP QueryRecords tool. Attackers can send LK2 prefix-match filters to the /gw/mcp/sse gateway and use the returned total count as an oracle to extract the",
+    "aliases": [
+      {
+        "title": "CVE-2026-129875: Information disclosure in REBUILD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129875",
+        "source": "NIST NVD",
+        "published": "2026-11-16"
+      }
+    ]
+  },
+  {
+    "id": "3bf704f6f7ad654d",
+    "title": "Google: AI agent turned a security patch into a exploit with no human help",
+    "url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
+    "article_url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926",
+    "source": "theregister.com",
+    "published": "2026-11-16",
+    "summary": "Look ma, no human in the loop!"
+  },
+  {
+    "id": "19ffc913dde56b3a",
+    "title": "Agentic Threat Activity Crosses a Significant Threshold",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
+    "article_url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
+    "source": "cloud.google.com",
+    "published": "2026-11-16",
+    "summary": "This AI threat update provides GTIG’s findings on adversarial misuse of AI including Gemini and other non-Google tools."
   }
 ]
