@@ -764,7 +764,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-104100",
     "source": "NIST NVD",
     "published": "2026-11-17",
-    "summary": "Teable is an AI spreadsheet for business. Prior to release.2026-07-21T11-27-40Z.2320, a registered user can supply path traversal sequences in the hash field accepted by POST /api/attachments/signature when the default local storage provider is in use. In apps/nestjs-backend/src/features/attachments/plugins/local.ts, LocalStorage.presigned uses the client-co"
+    "summary": "Teable is an AI spreadsheet for business. Prior to release.2026-07-21T11-27-40Z.2320, a registered user can supply path traversal sequences in the hash field accepted by POST /api/attachments/signature when the default local storage provider is in use. In apps/nestjs-backend/src/features/attachments/plugins/local.ts, LocalStorage.presigned uses the client-co",
+    "aliases": []
   },
   {
     "id": "4a0133d7d12e7b78",
@@ -773,7 +774,8 @@
     "article_url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
     "source": "Microsoft Security",
     "published": "2026-11-17",
-    "summary": "Read about updates to Microsoft Perception and the new Microsoft Security cyber stack to defend against threats, secure agents, and protect your digital estate."
+    "summary": "Read about updates to Microsoft Perception and the new Microsoft Security cyber stack to defend against threats, secure agents, and protect your digital estate.",
+    "aliases": []
   },
   {
     "id": "1b31ab2b21025c36",
@@ -799,7 +801,8 @@
     "article_url": "https://www.helpnetsecurity.com/2026/11/17/airlock-digital-agentic-control/",
     "source": "Help Net Security",
     "published": "2026-11-17",
-    "summary": "Airlock Digital has announced the availability of Agentic Control with the release of Airlock Digital v7.1. Agentic Control includes dedicated Agentic Steering capabilities for AI agents, allowing customers to extend their Deny by Default Application Control to this emerging technology. Airlock Digital evaluates an agent’s requested behavior at runtime to st"
+    "summary": "Airlock Digital has announced the availability of Agentic Control with the release of Airlock Digital v7.1. Agentic Control includes dedicated Agentic Steering capabilities for AI agents, allowing customers to extend their Deny by Default Application Control to this emerging technology. Airlock Digital evaluates an agent’s requested behavior at runtime to st",
+    "aliases": []
   },
   {
     "id": "2c9234c43136915c",
@@ -808,6 +811,59 @@
     "article_url": "https://www.businessinsider.com/jensen-huang-nvidia-ouster-removes-major-threat-to-anthropic-ipo-2026-11",
     "source": "businessinsider.com",
     "published": "2026-11-17",
-    "summary": "Jensen Huang's open AI strategy threatened Anthropic's business. His Nvidia ouster comes just days before its $1.4 trillion IPO."
+    "summary": "Jensen Huang's open AI strategy threatened Anthropic's business. His Nvidia ouster comes just days before its $1.4 trillion IPO.",
+    "aliases": []
+  },
+  {
+    "id": "ca8240384a9854cc",
+    "title": "The AI Repo Man: Exploiting Agentic AI Debt Collection Platforms",
+    "url": "https://eaton-works.com/2026/11/18/credit-nirvana-hack/",
+    "article_url": "https://eaton-works.com/2026/11/18/credit-nirvana-hack/",
+    "source": "eaton-works.com",
+    "published": "2026-11-18",
+    "summary": "CVE-2026-110474 & CVE-2026-110475: Vulnerabilities in Credit Nirvana platforms exposed millions of collections records and call recordings."
+  },
+  {
+    "id": "e77e8a3cb282dd0d",
+    "title": "CVE-2026-18399: Mattermost versions 11.7.x <= 11.7.11, 11.10.x <= 11.10.2, 11.11.x <= 11.11.1 fail to enforce the configured GitLab group/namespace restriction on the permalink…",
+    "url": "https://github.com/advisories/GHSA-5476-r7mg-m5f3",
+    "article_url": "https://github.com/advisories/GHSA-5476-r7mg-m5f3",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-18",
+    "summary": "Mattermost versions 11.7.x <= 11.7.11, 11.10.x <= 11.10.2, 11.11.x <= 11.11.1 fail to enforce the configured GitLab group/namespace restriction on the permalink code-preview feature and the {{get_projects}} MCP tool, which allows an authenticated user with a connected GitLab account to retrieve repository file content or project metadata from projects outsid",
+    "aliases": [
+      {
+        "title": "CVE-2026-18399: Mattermost versions 11.7.x <= 11.7.11, 11.10.x <= 11.10.2, 11.11.x <= 11.11.1 fail to enforce the configured GitLab group/namespace restriction on the permalink…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18399",
+        "source": "NIST NVD",
+        "published": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "ab31cbb369d5f38c",
+    "title": "CVE-2026-111371: The SchemaEngine AI – AI Schema Markup, Reviews & Rich Snippets for SEO plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'content/excerpt (REST…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111371",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-111371",
+    "source": "NIST NVD",
+    "published": "2026-11-18",
+    "summary": "The SchemaEngine AI – AI Schema Markup, Reviews & Rich Snippets for SEO plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'content/excerpt (REST wp/v2/posts) → stored in post_content/post_excerpt' parameter in all versions up to, and including, 3.1.3 due to insufficient input sanitization and output escaping. This makes it possible fo"
+  },
+  {
+    "id": "9e4ea33661455010",
+    "title": "Government regulators asked AI bots to plan a terrorist attack.The chatbots did.",
+    "url": "https://www.ms.now/news/government-regulators-ai-chatbots-terrorist-attacks",
+    "article_url": "https://www.ms.now/news/government-regulators-ai-chatbots-terrorist-attacks",
+    "source": "ms.now",
+    "published": "2026-11-18",
+    "summary": "Sen. Maggie Hassan, D-N.H., wants stricter safety rules after a watchdog report detailed chatbot suggestions for explosives and electrical substation attacks."
+  },
+  {
+    "id": "67952d9a918d2536",
+    "title": "Inside the Codex sandbox",
+    "url": "https://openai.com/index/inside-the-codex-sandbox",
+    "source": "OpenAI",
+    "published": "2026-11-18",
+    "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows."
   }
 ]
