@@ -821,7 +821,8 @@
     "article_url": "https://eaton-works.com/2026/11/18/credit-nirvana-hack/",
     "source": "eaton-works.com",
     "published": "2026-11-18",
-    "summary": "CVE-2026-110474 & CVE-2026-110475: Vulnerabilities in Credit Nirvana platforms exposed millions of collections records and call recordings."
+    "summary": "CVE-2026-110474 & CVE-2026-110475: Vulnerabilities in Credit Nirvana platforms exposed millions of collections records and call recordings.",
+    "aliases": []
   },
   {
     "id": "e77e8a3cb282dd0d",
@@ -847,7 +848,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-111371",
     "source": "NIST NVD",
     "published": "2026-11-18",
-    "summary": "The SchemaEngine AI – AI Schema Markup, Reviews & Rich Snippets for SEO plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'content/excerpt (REST wp/v2/posts) → stored in post_content/post_excerpt' parameter in all versions up to, and including, 3.1.3 due to insufficient input sanitization and output escaping. This makes it possible fo"
+    "summary": "The SchemaEngine AI – AI Schema Markup, Reviews & Rich Snippets for SEO plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'content/excerpt (REST wp/v2/posts) → stored in post_content/post_excerpt' parameter in all versions up to, and including, 3.1.3 due to insufficient input sanitization and output escaping. This makes it possible fo",
+    "aliases": []
   },
   {
     "id": "9e4ea33661455010",
@@ -856,7 +858,8 @@
     "article_url": "https://www.ms.now/news/government-regulators-ai-chatbots-terrorist-attacks",
     "source": "ms.now",
     "published": "2026-11-18",
-    "summary": "Sen. Maggie Hassan, D-N.H., wants stricter safety rules after a watchdog report detailed chatbot suggestions for explosives and electrical substation attacks."
+    "summary": "Sen. Maggie Hassan, D-N.H., wants stricter safety rules after a watchdog report detailed chatbot suggestions for explosives and electrical substation attacks.",
+    "aliases": []
   },
   {
     "id": "67952d9a918d2536",
@@ -864,6 +867,43 @@
     "url": "https://openai.com/index/inside-the-codex-sandbox",
     "source": "OpenAI",
     "published": "2026-11-18",
-    "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows."
+    "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+    "aliases": []
+  },
+  {
+    "id": "42cd44b80651ea0f",
+    "title": "CVE-2026-77359: Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode validates Host and Origin values for /mcp but does not…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77359",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-77359",
+    "source": "NIST NVD",
+    "published": "2026-11-19",
+    "summary": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode validates Host and Origin values for /mcp but does not apply the same browser-origin controls to the state-changing /api/connect and /api/stop management routes. A malicious website can use DNS rebinding so that its hostname resolves to a loopba"
+  },
+  {
+    "id": "92e28505053acd90",
+    "title": "CVE-2026-77318: Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode can enforce MCP_TOKEN on /mcp while leaving the…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77318",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-77318",
+    "source": "NIST NVD",
+    "published": "2026-11-19",
+    "summary": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode can enforce MCP_TOKEN on /mcp while leaving the state-changing /api/connect and /api/stop management routes unauthenticated. An unauthenticated network caller can use /api/connect to replace runtime_url and document_url values and their tokens, "
+  },
+  {
+    "id": "e1f87fe903b74b79",
+    "title": "CVE-2026-133161: ### Summary ui With `strip_ansi=True`, Pydantic AI Harness's `ToolOutputLimits` capability removes ANSI escape sequences from tool output with a pattern that takes time…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133161",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-133161",
+    "source": "NIST NVD",
+    "published": "2026-11-19",
+    "summary": "### Summary ui With `strip_ansi=True`, Pydantic AI Harness's `ToolOutputLimits` capability removes ANSI escape sequences from tool output with a pattern that takes time quadratic in the length of a line. A tool result of a few hundred kilobytes, crafted with many unterminated escape sequences, can occupy the event loop for tens of seconds to minutes, delayin"
+  },
+  {
+    "id": "8e7ee4d195afd33a",
+    "title": "30 Years of Gatekeeper Asymmetry Doom: The Paradox that Makes Powerful LLMs More Vulnerable",
+    "url": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
+    "article_url": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
+    "source": "Check Point Research",
+    "published": "2026-11-19",
+    "summary": "Abstract We give an exposition for a principle of gatekeeper asymmetry doom in information security, which states that “If the system vetting adversarial input has strictly less power than the system processing that input, without leveraging some hard problem, this will inevitably lead to doom.” We list a variety of examples where one can see […]"
   }
 ]
