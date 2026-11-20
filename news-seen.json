@@ -877,7 +877,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-77359",
     "source": "NIST NVD",
     "published": "2026-11-19",
-    "summary": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode validates Host and Origin values for /mcp but does not apply the same browser-origin controls to the state-changing /api/connect and /api/stop management routes. A malicious website can use DNS rebinding so that its hostname resolves to a loopba"
+    "summary": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode validates Host and Origin values for /mcp but does not apply the same browser-origin controls to the state-changing /api/connect and /api/stop management routes. A malicious website can use DNS rebinding so that its hostname resolves to a loopba",
+    "aliases": []
   },
   {
     "id": "92e28505053acd90",
@@ -886,7 +887,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-77318",
     "source": "NIST NVD",
     "published": "2026-11-19",
-    "summary": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode can enforce MCP_TOKEN on /mcp while leaving the state-changing /api/connect and /api/stop management routes unauthenticated. An unauthenticated network caller can use /api/connect to replace runtime_url and document_url values and their tokens, "
+    "summary": "Jupyter MCP Server is a Model Context Protocol server for Jupyter. Prior to 1.0.3, standalone streamable-http mode can enforce MCP_TOKEN on /mcp while leaving the state-changing /api/connect and /api/stop management routes unauthenticated. An unauthenticated network caller can use /api/connect to replace runtime_url and document_url values and their tokens, ",
+    "aliases": []
   },
   {
     "id": "e1f87fe903b74b79",
@@ -895,7 +897,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-133161",
     "source": "NIST NVD",
     "published": "2026-11-19",
-    "summary": "### Summary ui With `strip_ansi=True`, Pydantic AI Harness's `ToolOutputLimits` capability removes ANSI escape sequences from tool output with a pattern that takes time quadratic in the length of a line. A tool result of a few hundred kilobytes, crafted with many unterminated escape sequences, can occupy the event loop for tens of seconds to minutes, delayin"
+    "summary": "### Summary ui With `strip_ansi=True`, Pydantic AI Harness's `ToolOutputLimits` capability removes ANSI escape sequences from tool output with a pattern that takes time quadratic in the length of a line. A tool result of a few hundred kilobytes, crafted with many unterminated escape sequences, can occupy the event loop for tens of seconds to minutes, delayin",
+    "aliases": []
   },
   {
     "id": "8e7ee4d195afd33a",
@@ -904,6 +907,60 @@
     "article_url": "https://research.checkpoint.com/2026/30-years-of-gatekeeper-asymmetry-doom-the-paradox-that-makes-powerful-llms-more-vulnerable/",
     "source": "Check Point Research",
     "published": "2026-11-19",
-    "summary": "Abstract We give an exposition for a principle of gatekeeper asymmetry doom in information security, which states that “If the system vetting adversarial input has strictly less power than the system processing that input, without leveraging some hard problem, this will inevitably lead to doom.” We list a variety of examples where one can see […]"
+    "summary": "Abstract We give an exposition for a principle of gatekeeper asymmetry doom in information security, which states that “If the system vetting adversarial input has strictly less power than the system processing that input, without leveraging some hard problem, this will inevitably lead to doom.” We list a variety of examples where one can see […]",
+    "aliases": []
+  },
+  {
+    "id": "bc516efccac66cbe",
+    "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+    "source": "BleepingComputer",
+    "published": "2026-11-20",
+    "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]"
+  },
+  {
+    "id": "6f6e6d1277de1a48",
+    "title": "CVE-2026-129017: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Gemini Labs Site Reviews site-reviews allows Stored XSS.This issue…",
+    "url": "https://github.com/advisories/GHSA-ph32-9qcf-4xx8",
+    "article_url": "https://github.com/advisories/GHSA-ph32-9qcf-4xx8",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-20",
+    "summary": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Gemini Labs Site Reviews site-reviews allows Stored XSS.This issue affects Site Reviews: from n/a through 8.3.7.",
+    "aliases": [
+      {
+        "title": "CVE-2026-129017: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Gemini Labs Site Reviews site-reviews allows Stored XSS.This issue…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129017",
+        "source": "NIST NVD",
+        "published": "2026-11-20"
+      }
+    ]
+  },
+  {
+    "id": "dcff8ee3027c7cb3",
+    "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+    "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+    "article_url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+    "source": "SecurityWeek",
+    "published": "2026-11-20",
+    "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach."
+  },
+  {
+    "id": "12b22c82844628eb",
+    "title": "CVE-2026-126715: The Xagio SEO & AEO – AI SEO for Google Rankings & AI Visibility plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter in all…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126715",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-126715",
+    "source": "NIST NVD",
+    "published": "2026-11-20",
+    "summary": "The Xagio SEO & AEO – AI SEO for Google Rankings & AI Visibility plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter in all versions up to, and including, 7.1.0.51 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to "
+  },
+  {
+    "id": "079e633f2c0fd285",
+    "title": "AI agent API security hasn’t caught up with agents already running in production",
+    "url": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
+    "article_url": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
+    "source": "Help Net Security",
+    "published": "2026-11-20",
+    "summary": "Postman asked nearly 9,000 developers, architects and executives how they’re handling AI agents, and the answers tell a familiar story. Companies put the new thing to work first and left the question of who holds the keys for later. A quarter of the organizations that answered already have agents calling their APIs in production. Source: Postman The keys are"
   }
 ]
