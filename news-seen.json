@@ -865,6 +865,7 @@
     "id": "67952d9a918d2536",
     "title": "Inside the Codex sandbox",
     "url": "https://openai.com/index/inside-the-codex-sandbox",
+    "article_url": "https://openai.com/index/inside-the-codex-sandbox/",
     "source": "OpenAI",
     "published": "2026-11-18",
     "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
@@ -917,7 +918,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
     "source": "BleepingComputer",
     "published": "2026-11-20",
-    "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]"
+    "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]",
+    "aliases": []
   },
   {
     "id": "6f6e6d1277de1a48",
@@ -943,7 +945,8 @@
     "article_url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
     "source": "SecurityWeek",
     "published": "2026-11-20",
-    "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach."
+    "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach.",
+    "aliases": []
   },
   {
     "id": "12b22c82844628eb",
@@ -952,7 +955,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-126715",
     "source": "NIST NVD",
     "published": "2026-11-20",
-    "summary": "The Xagio SEO & AEO – AI SEO for Google Rankings & AI Visibility plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter in all versions up to, and including, 7.1.0.51 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to "
+    "summary": "The Xagio SEO & AEO – AI SEO for Google Rankings & AI Visibility plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'title' parameter in all versions up to, and including, 7.1.0.51 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to ",
+    "aliases": []
   },
   {
     "id": "079e633f2c0fd285",
@@ -961,6 +965,76 @@
     "article_url": "https://www.helpnetsecurity.com/2026/11/20/ai-agent-api-security-production/",
     "source": "Help Net Security",
     "published": "2026-11-20",
-    "summary": "Postman asked nearly 9,000 developers, architects and executives how they’re handling AI agents, and the answers tell a familiar story. Companies put the new thing to work first and left the question of who holds the keys for later. A quarter of the organizations that answered already have agents calling their APIs in production. Source: Postman The keys are"
+    "summary": "Postman asked nearly 9,000 developers, architects and executives how they’re handling AI agents, and the answers tell a familiar story. Companies put the new thing to work first and left the question of who holds the keys for later. A quarter of the organizations that answered already have agents calling their APIs in production. Source: Postman The keys are",
+    "aliases": []
+  },
+  {
+    "id": "c510cfc2bb4f9fe2",
+    "title": "CVE-2026-126705: The WP Job Portal – AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to time-based SQL Injection via the 'columns[ ]'…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126705",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-126705",
+    "source": "NIST NVD",
+    "published": "2026-11-21",
+    "summary": "The WP Job Portal – AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to time-based SQL Injection via the 'columns[ ]' parameter in all versions up to, and including, 2.8.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it pos",
+    "aliases": [
+      {
+        "title": "CVE-2026-126705: The WP Job Portal – AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to time-based SQL Injection via the 'columns[ ]'…",
+        "url": "https://github.com/advisories/GHSA-rxx7-mv74-wx6h",
+        "source": "GitHub Security Advisories",
+        "published": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "id": "d606a451061f10cf",
+    "title": "CVE-2026-124248: The GPTranslate – Multilingual AI Translation Agent for WordPress: Translate Your Site with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124248",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-124248",
+    "source": "NIST NVD",
+    "published": "2026-11-21",
+    "summary": "The GPTranslate – Multilingual AI Translation Agent for WordPress: Translate Your Site with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 2.34.17 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject ar",
+    "aliases": [
+      {
+        "title": "CVE-2026-124248: The GPTranslate – Multilingual AI Translation Agent for WordPress: Translate Your Site with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+        "url": "https://github.com/advisories/GHSA-frr8-g5pp-w35q",
+        "source": "GitHub Security Advisories",
+        "published": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "id": "53abcb6f4704464b",
+    "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+    "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+    "article_url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+    "source": "SecurityWeek",
+    "published": "2026-11-21",
+    "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability."
+  },
+  {
+    "id": "b32549b29312c302",
+    "title": "CVE-2026-120736: The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+    "url": "https://github.com/advisories/GHSA-gmx2-68g8-gp7w",
+    "article_url": "https://github.com/advisories/GHSA-gmx2-68g8-gp7w",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-21",
+    "summary": "The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'your-message (any CF7 form field used in a form_field: tag)' parameter in all versions up to, and including, 6.0.9 due to insufficient input sanitization and output escaping. This makes it possib",
+    "aliases": [
+      {
+        "title": "CVE-2026-120736: The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120736",
+        "source": "NIST NVD",
+        "published": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "id": "31de93106fde76af",
+    "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+    "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "article_url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "source": "The Hacker News",
+    "published": "2026-11-21",
+    "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI Label 0.8"
   }
 ]

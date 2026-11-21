@@ -1,5 +1,111 @@
 [
   {
+    "title": "CVE-2026-126705: The WP Job Portal – AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to time-based SQL Injection via the 'columns[ ]'…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126705",
+    "source": "NIST NVD",
+    "origin": "advisory",
+    "summary": "The WP Job Portal – AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to time-based SQL Injection via the 'columns[ ]' parameter in all versions up to, and including, 2.8.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it pos",
+    "published": "2026-11-21",
+    "published_at": "2026-11-21T12:16:41.407000+00:00",
+    "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-126705#published",
+    "id": "c510cfc2bb4f9fe2",
+    "added_on": "2026-11-21",
+    "aliases": [
+      {
+        "title": "CVE-2026-126705: The WP Job Portal – AI-Powered Recruitment System for Company or Job Board website plugin for WordPress is vulnerable to time-based SQL Injection via the 'columns[ ]'…",
+        "url": "https://github.com/advisories/GHSA-rxx7-mv74-wx6h",
+        "source": "GitHub Security Advisories",
+        "published": "2026-11-21"
+      }
+    ],
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-126705",
+    "image_fallback": "assets/news/43a43923580b88f0fc4f0891.svg",
+    "image": "assets/news/43a43923580b88f0fc4f0891.svg",
+    "image_kind": "headline"
+  },
+  {
+    "title": "CVE-2026-124248: The GPTranslate – Multilingual AI Translation Agent for WordPress: Translate Your Site with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124248",
+    "source": "NIST NVD",
+    "origin": "advisory",
+    "summary": "The GPTranslate – Multilingual AI Translation Agent for WordPress: Translate Your Site with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 2.34.17 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject ar",
+    "published": "2026-11-21",
+    "published_at": "2026-11-21T12:16:41.103000+00:00",
+    "date_source": "https://nvd.nist.gov/vuln/detail/CVE-2026-124248#published",
+    "id": "d606a451061f10cf",
+    "added_on": "2026-11-21",
+    "aliases": [
+      {
+        "title": "CVE-2026-124248: The GPTranslate – Multilingual AI Translation Agent for WordPress: Translate Your Site with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+        "url": "https://github.com/advisories/GHSA-frr8-g5pp-w35q",
+        "source": "GitHub Security Advisories",
+        "published": "2026-11-21"
+      }
+    ],
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-124248",
+    "image_fallback": "assets/news/e75e7bfaa32e8d2ad8fb4ba6.svg",
+    "image": "assets/news/e75e7bfaa32e8d2ad8fb4ba6.svg",
+    "image_kind": "headline"
+  },
+  {
+    "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+    "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+    "source": "SecurityWeek",
+    "origin": "news",
+    "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability.",
+    "published": "2026-11-21",
+    "published_at": "2026-11-21T12:08:50+00:00",
+    "date_source": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/#publisher-metadata",
+    "article_url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+    "id": "53abcb6f4704464b",
+    "added_on": "2026-11-21",
+    "image_fallback": "assets/news/d60304a3761516d85f9fa138.svg",
+    "image": "assets/news/56ec1a5f70fb431eb4509543.webp",
+    "image_kind": "publisher",
+    "image_origin": "https://www.securityweek.com/wp-content/uploads/2026/04/Artificial-Intelligence-vs-AI.jpeg"
+  },
+  {
+    "title": "CVE-2026-120736: The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+    "url": "https://github.com/advisories/GHSA-gmx2-68g8-gp7w",
+    "source": "GitHub Security Advisories",
+    "origin": "advisory",
+    "summary": "The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'your-message (any CF7 form field used in a form_field: tag)' parameter in all versions up to, and including, 6.0.9 due to insufficient input sanitization and output escaping. This makes it possib",
+    "published": "2026-11-21",
+    "published_at": "2026-11-21T11:30:54.935000+00:00",
+    "date_source": "https://cveawg.mitre.org/api/cve/CVE-2026-120736#datePublished",
+    "id": "b32549b29312c302",
+    "added_on": "2026-11-21",
+    "aliases": [
+      {
+        "title": "CVE-2026-120736: The AutomatorWP – No-Code Workflow Automation, Integration & Webhooks Plugin, now with AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120736",
+        "source": "NIST NVD",
+        "published": "2026-11-21"
+      }
+    ],
+    "article_url": "https://github.com/advisories/GHSA-gmx2-68g8-gp7w",
+    "image_fallback": "assets/news/f6325930e37d0f5bf60a88f2.svg",
+    "image": "assets/news/f6325930e37d0f5bf60a88f2.svg",
+    "image_kind": "headline"
+  },
+  {
+    "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+    "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "source": "The Hacker News",
+    "origin": "news",
+    "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI Label 0.8",
+    "published": "2026-11-21",
+    "published_at": "2026-11-21T11:03:00+00:00",
+    "date_source": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html#publisher-metadata",
+    "article_url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "id": "31de93106fde76af",
+    "added_on": "2026-11-21",
+    "image_fallback": "assets/news/3f1e03dc09c854019dcefa12.svg",
+    "image": "assets/news/9be43cb2c72849e757629ca2.webp",
+    "image_kind": "publisher",
+    "image_origin": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEIG6Wgi3wGQXrsdGKEf4ORPFjHVGpRkoSUPraOJfKhGmB0vYFojLq2mCuOP3a71_XpNZusvn45ZDa1J3a7eQ0WE3XJY0FGunHVWB1yHBluJT5vSDCmzkhaFGiHjeKbnoah6noyZ3mNInS-mjJK1Gfcf7jT3A60ZYR_eknSgt_sEa6MNGM-DA5-aLXMbZ5/s1600/medical-ai.jpg"
+  },
+  {
     "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
     "source": "BleepingComputer",
@@ -245,8 +351,10 @@
     "id": "67952d9a918d2536",
     "added_on": "2026-11-18",
     "image_fallback": "assets/news/7eb375b80578b797bc70f469.svg",
-    "image": "assets/news/7eb375b80578b797bc70f469.svg",
-    "image_kind": "headline"
+    "image": "assets/news/f593f1de1141a6cad57ba2bb.webp",
+    "image_kind": "publisher",
+    "article_url": "https://openai.com/index/inside-the-codex-sandbox/",
+    "image_origin": "https://images.ctfassets.net/kftzwdyauwt9/1PnylD7lJwgUw7jYNP8wLh/7fa5553001136f3982e8d4db44146de3/inside-the-codex-sandbox-social.png?w=1600&h=900&fit=fill"
   },
   {
     "title": "CVE-2026-104100: Teable is an AI spreadsheet for business. Prior to release.2026-07-21T11-27-40Z.2320, a registered user can supply path traversal sequences in the hash field accepted by…",
@@ -1345,85 +1453,5 @@
     "image_fallback": "assets/news/840a8f0c2aff36b3f8bbdbb0.svg",
     "image_kind": "publisher",
     "image_origin": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/1password-socialbanner-dark-v2.png"
-  },
-  {
-    "title": "PuzzleMask: Abusing Plain Prose as a Covert AI Attack Vector",
-    "url": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
-    "source": "Check Point Research",
-    "published": "2026-09-10",
-    "origin": "research",
-    "summary": "A prompt-crafting technique hides harmful instructions from lightweight AI policy checks while a target model recovers them.",
-    "image": "assets/news/36484edc88ba5dc738113d69.webp",
-    "id": "d4b36573d1a386fd",
-    "article_url": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/",
-    "published_at": "2026-09-10T14:32:46+00:00",
-    "date_source": "https://research.checkpoint.com/2026/puzzlemask-abusing-plain-prose-as-a-covert-ai-attack-vector/#publisher-metadata",
-    "image_fallback": "assets/news/412106d0e084ae8f83fd7a7d.svg",
-    "image_kind": "publisher",
-    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/07/splash-1024x683.png"
-  },
-  {
-    "title": "An alignment assessment of recent cybersecurity incidents",
-    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-    "source": "Anthropic Research",
-    "published": "2026-09-09",
-    "origin": "research",
-    "summary": "Anthropic examines how models acted during recent security incidents, including unauthorized access and other unintended behavior.",
-    "image": "assets/news/3f68f37a7cb2b80b2be72932.webp",
-    "id": "8b9a61488ff4bf89",
-    "article_url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-    "published_at": "2026-09-09T00:00:00+00:00",
-    "date_source": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents#publisher-metadata",
-    "image_fallback": "assets/news/06b79ad3d11121debf53c782.svg",
-    "image_kind": "publisher",
-    "image_origin": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dbd9d321d423a22b6aeeae8172a5ba9546faf71d-1200x630.jpg"
-  },
-  {
-    "title": "The Shared Clipboard Inside the Sandbox: Cross-Account Data Leakage in ChatGPT",
-    "url": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/",
-    "source": "Check Point Research",
-    "published": "2026-09-08",
-    "origin": "research",
-    "summary": "A cross-account channel in ChatGPT code-execution environments could be used to leak data from another user's session.",
-    "image": "assets/news/48c62ad3908aa1aa2692cc73.webp",
-    "id": "e7e62c94ce7550cb",
-    "article_url": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/",
-    "published_at": "2026-09-08T13:00:18+00:00",
-    "date_source": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/#publisher-metadata",
-    "image_fallback": "assets/news/133f1d31d9568b319ed05868.svg",
-    "image_kind": "publisher",
-    "image_origin": "https://research.checkpoint.com/wp-content/uploads/2026/08/cover-1-1024x576.png"
-  },
-  {
-    "title": "VMs won't contain cyber-capable agents",
-    "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
-    "source": "Trail of Bits",
-    "published": "2026-08-26",
-    "origin": "research",
-    "summary": "A threat model for running highly capable AI security agents argues that virtual machines alone may be insufficient containment.",
-    "image": "assets/news/75d953188bb8b2d513cdb1b0.webp",
-    "id": "9bc4fb43dadb96af",
-    "article_url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
-    "published_at": "2026-08-26T11:00:00+00:00",
-    "date_source": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/#publisher-metadata",
-    "image_fallback": "assets/news/05094bf5d04377f1854d0ab8.svg",
-    "image_kind": "publisher",
-    "image_origin": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/vm-cyber-capable-agents-social-banner.png"
-  },
-  {
-    "title": "Can AI do novel security research? Meet the HTTP Terminator",
-    "url": "https://portswigger.net/research/can-ai-do-novel-security-research",
-    "source": "PortSwigger Research",
-    "published": "2026-08-05",
-    "origin": "research",
-    "summary": "James Kettle describes an autonomous AI system that discovered new HTTP desynchronization attacks and tested them against live sites.",
-    "image": "assets/news/48fb6082cce95ace94a1d8ff.webp",
-    "id": "7883bfd1659300c3",
-    "article_url": "https://portswigger.net/research/can-ai-do-novel-security-research",
-    "published_at": "2026-08-05T19:30:00+00:00",
-    "date_source": "https://portswigger.net/research/can-ai-do-novel-security-research#publisher-metadata",
-    "image_fallback": "assets/news/ad311351a35b9d5dc92c38a0.svg",
-    "image_kind": "publisher",
-    "image_origin": "https://portswigger.net/cms/images/65/c9/4abd-twittercard-http_terminator_x.png"
   }
 ]
