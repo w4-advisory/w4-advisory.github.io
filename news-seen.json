@@ -1046,7 +1046,8 @@
     "article_url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
     "source": "The Hacker News",
     "published": "2026-11-22",
-    "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed "
+    "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed ",
+    "aliases": []
   },
   {
     "id": "bca97bd1f0675e1a",
@@ -1055,7 +1056,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-134659",
     "source": "NIST NVD",
     "published": "2026-11-22",
-    "summary": "OpenAirInterface CN5G AMF before 2.2.2 contains a missing resource release vulnerability in amf_sbi::handle_itti_message() that leaves stale PDU session contexts when NRF lookup or SMF selection fails. Authenticated UEs can request PDU sessions while no SMF is selectable, causing deregistration to wait on SMF release timeouts and stall shared NAS processing "
+    "summary": "OpenAirInterface CN5G AMF before 2.2.2 contains a missing resource release vulnerability in amf_sbi::handle_itti_message() that leaves stale PDU session contexts when NRF lookup or SMF selection fails. Authenticated UEs can request PDU sessions while no SMF is selectable, causing deregistration to wait on SMF release timeouts and stall shared NAS processing ",
+    "aliases": []
   },
   {
     "id": "af9b618b99bb00e5",
@@ -1064,7 +1066,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-134657",
     "source": "NIST NVD",
     "published": "2026-11-22",
-    "summary": "OpenAirInterface CN5G PCF through 2.2.2 contains a memory leak vulnerability in pcf_smpc::delete_sm_policy_handler() that leaves stale UE IPv4, SUPI and DNN index entries after association deletion. Attackers can trigger repeated SM policy create and delete cycles over N7 via PDU session establishment and release to grow PCF memory without bound and break as"
+    "summary": "OpenAirInterface CN5G PCF through 2.2.2 contains a memory leak vulnerability in pcf_smpc::delete_sm_policy_handler() that leaves stale UE IPv4, SUPI and DNN index entries after association deletion. Attackers can trigger repeated SM policy create and delete cycles over N7 via PDU session establishment and release to grow PCF memory without bound and break as",
+    "aliases": []
   },
   {
     "id": "4faec4116e10fa3e",
@@ -1073,7 +1076,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-134656",
     "source": "NIST NVD",
     "published": "2026-11-22",
-    "summary": "OpenAirInterface CN5G SMF through 2.2.2 contains a missing resource release vulnerability in handle_pdu_session_release_sm_context_request() that fails to delete N7 SM policy associations at the PCF. Authenticated UEs can repeatedly establish and release PDU sessions through the AMF-initiated Release SM Context path to accumulate stale associations and exhau"
+    "summary": "OpenAirInterface CN5G SMF through 2.2.2 contains a missing resource release vulnerability in handle_pdu_session_release_sm_context_request() that fails to delete N7 SM policy associations at the PCF. Authenticated UEs can repeatedly establish and release PDU sessions through the AMF-initiated Release SM Context path to accumulate stale associations and exhau",
+    "aliases": []
   },
   {
     "id": "897d6d68263a843f",
@@ -1082,6 +1086,60 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-134553",
     "source": "NIST NVD",
     "published": "2026-11-22",
-    "summary": "A vulnerability was determined in wiroai Wiro-MCP up to 1.3.0. This affects the function upload_file of the file src/tools/upload-file.ts of the component File Upload. This manipulation of the argument url causes server-side request forgery. Remote exploitation of the attack is possible. Upgrading to version 1.3.1 is able to mitigate this issue. Patch name: "
+    "summary": "A vulnerability was determined in wiroai Wiro-MCP up to 1.3.0. This affects the function upload_file of the file src/tools/upload-file.ts of the component File Upload. This manipulation of the argument url causes server-side request forgery. Remote exploitation of the attack is possible. Upgrading to version 1.3.1 is able to mitigate this issue. Patch name: ",
+    "aliases": []
+  },
+  {
+    "id": "532bda65f136fd10",
+    "title": "CVE-2026-115296: Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated assistant user to permanently delete a shared or global…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115296",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-115296",
+    "source": "NIST NVD",
+    "published": "2026-11-23",
+    "summary": "Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated assistant user to permanently delete a shared or global conversation owned by another user in the same space. The individual-delete path can treat read access to a shared conversation as permission to delete it without checking ownership. The deleted conver"
+  },
+  {
+    "id": "95e88af1ec00021e",
+    "title": "CVE-2026-115291: Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated user with access to the assistant to delete other users'…",
+    "url": "https://github.com/advisories/GHSA-f3xm-6mwj-pg95",
+    "article_url": "https://github.com/advisories/GHSA-f3xm-6mwj-pg95",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-23",
+    "summary": "Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated user with access to the assistant to delete other users' conversations in the same space. The delete-all operation can issue a query without an ownership filter using the assistant's internal Elasticsearch client. A user can consequently delete conversation",
+    "aliases": [
+      {
+        "title": "CVE-2026-115291: Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated user with access to the assistant to delete other users'…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115291",
+        "source": "NIST NVD",
+        "published": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "id": "6af5f3ecf997dc2b",
+    "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+    "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+    "source": "BleepingComputer",
+    "published": "2026-11-23",
+    "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]"
+  },
+  {
+    "id": "4f683c664a273a4c",
+    "title": "Agentic Attacks: In The Wild",
+    "url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
+    "article_url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
+    "source": "Wiz Research",
+    "published": "2026-11-23",
+    "summary": "Agentic offensive frameworks like ARTEX are driving a surge in cloud intrusions. Wiz Research shares cases from the wild, including both sides of one attack via the operator's leaked logs, an update on Black October, and the detections that catch these noisy, machine-speed attacks."
+  },
+  {
+    "id": "1259b534687dd8b3",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "article_url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support/",
+    "source": "OpenAI",
+    "published": "2026-11-23",
+    "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations."
   }
 ]
