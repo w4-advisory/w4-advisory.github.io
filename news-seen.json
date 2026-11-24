@@ -1096,7 +1096,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-115296",
     "source": "NIST NVD",
     "published": "2026-11-23",
-    "summary": "Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated assistant user to permanently delete a shared or global conversation owned by another user in the same space. The individual-delete path can treat read access to a shared conversation as permission to delete it without checking ownership. The deleted conver"
+    "summary": "Missing authorization in Kibana Security AI Assistant conversation deletion can allow an authenticated assistant user to permanently delete a shared or global conversation owned by another user in the same space. The individual-delete path can treat read access to a shared conversation as permission to delete it without checking ownership. The deleted conver",
+    "aliases": []
   },
   {
     "id": "95e88af1ec00021e",
@@ -1122,7 +1123,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
     "source": "BleepingComputer",
     "published": "2026-11-23",
-    "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]"
+    "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+    "aliases": []
   },
   {
     "id": "4f683c664a273a4c",
@@ -1131,7 +1133,8 @@
     "article_url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
     "source": "Wiz Research",
     "published": "2026-11-23",
-    "summary": "Agentic offensive frameworks like ARTEX are driving a surge in cloud intrusions. Wiz Research shares cases from the wild, including both sides of one attack via the operator's leaked logs, an update on Black October, and the detections that catch these noisy, machine-speed attacks."
+    "summary": "Agentic offensive frameworks like ARTEX are driving a surge in cloud intrusions. Wiz Research shares cases from the wild, including both sides of one attack via the operator's leaked logs, an update on Black October, and the detections that catch these noisy, machine-speed attacks.",
+    "aliases": []
   },
   {
     "id": "1259b534687dd8b3",
@@ -1140,6 +1143,52 @@
     "article_url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support/",
     "source": "OpenAI",
     "published": "2026-11-23",
-    "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations."
+    "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+    "aliases": []
+  },
+  {
+    "id": "95cda46e035314fc",
+    "title": "CVE-2026-129317: AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.41 through 0.11.1, the OAuth…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129317",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-129317",
+    "source": "NIST NVD",
+    "published": "2026-11-24",
+    "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.41 through 0.11.1, the OAuth provider endpoints check a calling application's client secret against a scrypt hash synchronously on the REST API event loop. Anyone who knows the client ID of an active confidential OAuth ap"
+  },
+  {
+    "id": "f087047e9083b861",
+    "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+    "url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+    "source": "BleepingComputer",
+    "published": "2026-11-24",
+    "summary": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software resilience. [...]"
+  },
+  {
+    "id": "54a59e192c6c4265",
+    "title": "Recent Trends and Tactics of Agentic AI Attacks",
+    "url": "https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/",
+    "article_url": "https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/",
+    "source": "Unit 42",
+    "published": "2026-11-24",
+    "summary": "We tracked campaigns where attackers deployed autonomous AI agents to automate multi-platform intrusions, using standard tools while leaving distinct operational traces."
+  },
+  {
+    "id": "14a3a81af0d6081d",
+    "title": "Powering the OpenAI Daybreak Defense Factory with Wiz Security Intelligence",
+    "url": "https://www.wiz.io/blog/wiz-openai-codex-integration",
+    "article_url": "https://www.wiz.io/blog/wiz-openai-codex-integration",
+    "source": "Wiz Research",
+    "published": "2026-11-24",
+    "summary": "Bringing cloud security intelligence to AI-driven vulnerability investigation and code remediation."
+  },
+  {
+    "id": "e27faaae97a4e79d",
+    "title": "More restrictive policy for LLM usage in LibreOffice development",
+    "url": "https://blog.documentfoundation.org/blog/2026/11/24/updated-and-more-restrictive-policy-for-llm-usage-in-libreoffice-development/",
+    "article_url": "https://blog.documentfoundation.org/blog/2026/11/24/updated-and-more-restrictive-policy-for-llm-usage-in-libreoffice-development/",
+    "source": "blog.documentfoundation.org",
+    "published": "2026-11-24",
+    "summary": "LibreOffice – the suite – includes no AI features built in. It doesn’t try to change your content, share your data, or use your work to train models. If you want AI features, you can add them via extensions – but the software itself has zero AI features inside. Regarding software development: there are ongoing discussions about the use of large language mode"
   }
 ]
