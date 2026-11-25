@@ -1153,7 +1153,8 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-129317",
     "source": "NIST NVD",
     "published": "2026-11-24",
-    "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.41 through 0.11.1, the OAuth provider endpoints check a calling application's client secret against a scrypt hash synchronously on the REST API event loop. Anyone who knows the client ID of an active confidential OAuth ap"
+    "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.41 through 0.11.1, the OAuth provider endpoints check a calling application's client secret against a scrypt hash synchronously on the REST API event loop. Anyone who knows the client ID of an active confidential OAuth ap",
+    "aliases": []
   },
   {
     "id": "f087047e9083b861",
@@ -1162,7 +1163,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
     "source": "BleepingComputer",
     "published": "2026-11-24",
-    "summary": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software resilience. [...]"
+    "summary": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software resilience. [...]",
+    "aliases": []
   },
   {
     "id": "54a59e192c6c4265",
@@ -1171,7 +1173,8 @@
     "article_url": "https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/",
     "source": "Unit 42",
     "published": "2026-11-24",
-    "summary": "We tracked campaigns where attackers deployed autonomous AI agents to automate multi-platform intrusions, using standard tools while leaving distinct operational traces."
+    "summary": "We tracked campaigns where attackers deployed autonomous AI agents to automate multi-platform intrusions, using standard tools while leaving distinct operational traces.",
+    "aliases": []
   },
   {
     "id": "14a3a81af0d6081d",
@@ -1180,7 +1183,8 @@
     "article_url": "https://www.wiz.io/blog/wiz-openai-codex-integration",
     "source": "Wiz Research",
     "published": "2026-11-24",
-    "summary": "Bringing cloud security intelligence to AI-driven vulnerability investigation and code remediation."
+    "summary": "Bringing cloud security intelligence to AI-driven vulnerability investigation and code remediation.",
+    "aliases": []
   },
   {
     "id": "e27faaae97a4e79d",
@@ -1189,6 +1193,60 @@
     "article_url": "https://blog.documentfoundation.org/blog/2026/11/24/updated-and-more-restrictive-policy-for-llm-usage-in-libreoffice-development/",
     "source": "blog.documentfoundation.org",
     "published": "2026-11-24",
-    "summary": "LibreOffice – the suite – includes no AI features built in. It doesn’t try to change your content, share your data, or use your work to train models. If you want AI features, you can add them via extensions – but the software itself has zero AI features inside. Regarding software development: there are ongoing discussions about the use of large language mode"
+    "summary": "LibreOffice – the suite – includes no AI features built in. It doesn’t try to change your content, share your data, or use your work to train models. If you want AI features, you can add them via extensions – but the software itself has zero AI features inside. Regarding software development: there are ongoing discussions about the use of large language mode",
+    "aliases": []
+  },
+  {
+    "id": "30251e137c31bb1d",
+    "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+    "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+    "article_url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+    "source": "BleepingComputer",
+    "published": "2026-11-25",
+    "summary": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]"
+  },
+  {
+    "id": "a17ef718c7561bfa",
+    "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+    "article_url": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+    "source": "Microsoft Security",
+    "published": "2026-11-25",
+    "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation."
+  },
+  {
+    "id": "a91b47f6b68f80ba",
+    "title": "The AI Threat Horizon: Why Speed, Edge AI and Baselines Are Our Best Defense",
+    "url": "https://unit42.paloaltonetworks.com/ai-threat-horizon/",
+    "article_url": "https://unit42.paloaltonetworks.com/ai-threat-horizon/",
+    "source": "Unit 42",
+    "published": "2026-11-25",
+    "summary": "Unit 42 examines the evolution of AI-driven cyberattacks and outlines proactive defense strategies for security teams."
+  },
+  {
+    "id": "0b0f5037404aac7d",
+    "title": "CVE-2026-136694: A weakness has been identified in eosphoros-ai DB-GPT up to 0.8.2. This impacts the function skill_upload of the file…",
+    "url": "https://github.com/advisories/GHSA-9q9m-3xvx-72mj",
+    "article_url": "https://github.com/advisories/GHSA-9q9m-3xvx-72mj",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-25",
+    "summary": "A weakness has been identified in eosphoros-ai DB-GPT up to 0.8.2. This impacts the function skill_upload of the file packages/dbgpt-app/src/dbgpt_app/openapi/api_v1/agentic_data_api.py of the component Skill Upload Handler. Executing a manipulation of the argument filename can lead to path traversal. It is possible to launch the attack remotely. The exploit",
+    "aliases": [
+      {
+        "title": "CVE-2026-136694: A weakness has been identified in eosphoros-ai DB-GPT up to 0.8.2. This impacts the function skill_upload of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136694",
+        "source": "NIST NVD",
+        "published": "2026-11-25"
+      }
+    ]
+  },
+  {
+    "id": "d082f553ab189d8a",
+    "title": "CVE-2026-132255: AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.3.4 before 0.11.0, LLM and other…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132255",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-132255",
+    "source": "NIST NVD",
+    "published": "2026-11-25",
+    "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.3.4 before 0.11.0, LLM and other dynamically priced blocks run without charge when a priced input is left at its schema default. An account with a credit balance of zero can make unlimited language-model, code-generation, and imag"
   }
 ]
