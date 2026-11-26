@@ -1203,7 +1203,8 @@
     "article_url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
     "source": "BleepingComputer",
     "published": "2026-11-25",
-    "summary": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]"
+    "summary": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]",
+    "aliases": []
   },
   {
     "id": "a17ef718c7561bfa",
@@ -1212,7 +1213,8 @@
     "article_url": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
     "source": "Microsoft Security",
     "published": "2026-11-25",
-    "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation."
+    "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation.",
+    "aliases": []
   },
   {
     "id": "a91b47f6b68f80ba",
@@ -1221,7 +1223,8 @@
     "article_url": "https://unit42.paloaltonetworks.com/ai-threat-horizon/",
     "source": "Unit 42",
     "published": "2026-11-25",
-    "summary": "Unit 42 examines the evolution of AI-driven cyberattacks and outlines proactive defense strategies for security teams."
+    "summary": "Unit 42 examines the evolution of AI-driven cyberattacks and outlines proactive defense strategies for security teams.",
+    "aliases": []
   },
   {
     "id": "0b0f5037404aac7d",
@@ -1247,6 +1250,52 @@
     "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-132255",
     "source": "NIST NVD",
     "published": "2026-11-25",
-    "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.3.4 before 0.11.0, LLM and other dynamically priced blocks run without charge when a priced input is left at its schema default. An account with a credit balance of zero can make unlimited language-model, code-generation, and imag"
+    "summary": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From 0.3.4 before 0.11.0, LLM and other dynamically priced blocks run without charge when a priced input is left at its schema default. An account with a credit balance of zero can make unlimited language-model, code-generation, and imag",
+    "aliases": []
+  },
+  {
+    "id": "0b75246ced860331",
+    "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+    "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+    "article_url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+    "source": "The Hacker News",
+    "published": "2026-11-26",
+    "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use"
+  },
+  {
+    "id": "42bfd492e119b7ae",
+    "title": "CVE-2026-137475: vLLM 0.21.0 before 0.28.0, when using the V1 model runner, contains a state aliasing flaw in ThinkingBudgetStateHolder.sync_batch(), whose SWAP branch copies…",
+    "url": "https://github.com/advisories/GHSA-mcw5-wrwm-9p6r",
+    "article_url": "https://github.com/advisories/GHSA-mcw5-wrwm-9p6r",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-26",
+    "summary": "vLLM 0.21.0 before 0.28.0, when using the V1 model runner, contains a state aliasing flaw in ThinkingBudgetStateHolder.sync_batch(), whose SWAP branch copies thinking-budget state to the destination batch row without removing the source entry. Attackers submitting requests with thinking_token_budget can force the reasoning-end token sequence into a concurren"
+  },
+  {
+    "id": "5df9eb1c36199754",
+    "title": "AI leader at a tech giant: Our industry has stopped taking safety seriously",
+    "url": "https://www.theguardian.com/commentisfree/2026/nov/26/ai-leader-tech-giant-trust-safeguarding-privacy-profit",
+    "article_url": "https://www.theguardian.com/commentisfree/2026/nov/26/ai-leader-tech-giant-trust-safeguarding-privacy-profit",
+    "source": "theguardian.com",
+    "published": "2026-11-26",
+    "summary": "We’re developing the most powerful tech in history – but trust, safeguarding and privacy are being sidelined in favour of huge profit, says an anonymous AI expert"
+  },
+  {
+    "id": "4d885c3460c8bb42",
+    "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
+    "url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+    "article_url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+    "source": "SecurityWeek",
+    "published": "2026-11-26",
+    "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign."
+  },
+  {
+    "id": "1a7cc7c32aaca9dc",
+    "title": "A Feast for AI: What Wiz Agents are Thankful For",
+    "url": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
+    "article_url": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
+    "source": "Wiz Research",
+    "published": "2026-11-26",
+    "summary": "Grab a slice of Data Pie and pull up a chair. Here’s how Wiz’s Red, Green, and Blue Agents celebrate a quieter, smarter security season."
   }
 ]
