@@ -1260,7 +1260,8 @@
     "article_url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
     "source": "The Hacker News",
     "published": "2026-11-26",
-    "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use"
+    "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use",
+    "aliases": []
   },
   {
     "id": "42bfd492e119b7ae",
@@ -1269,7 +1270,8 @@
     "article_url": "https://github.com/advisories/GHSA-mcw5-wrwm-9p6r",
     "source": "GitHub Security Advisories",
     "published": "2026-11-26",
-    "summary": "vLLM 0.21.0 before 0.28.0, when using the V1 model runner, contains a state aliasing flaw in ThinkingBudgetStateHolder.sync_batch(), whose SWAP branch copies thinking-budget state to the destination batch row without removing the source entry. Attackers submitting requests with thinking_token_budget can force the reasoning-end token sequence into a concurren"
+    "summary": "vLLM 0.21.0 before 0.28.0, when using the V1 model runner, contains a state aliasing flaw in ThinkingBudgetStateHolder.sync_batch(), whose SWAP branch copies thinking-budget state to the destination batch row without removing the source entry. Attackers submitting requests with thinking_token_budget can force the reasoning-end token sequence into a concurren",
+    "aliases": []
   },
   {
     "id": "5df9eb1c36199754",
@@ -1278,7 +1280,8 @@
     "article_url": "https://www.theguardian.com/commentisfree/2026/nov/26/ai-leader-tech-giant-trust-safeguarding-privacy-profit",
     "source": "theguardian.com",
     "published": "2026-11-26",
-    "summary": "We’re developing the most powerful tech in history – but trust, safeguarding and privacy are being sidelined in favour of huge profit, says an anonymous AI expert"
+    "summary": "We’re developing the most powerful tech in history – but trust, safeguarding and privacy are being sidelined in favour of huge profit, says an anonymous AI expert",
+    "aliases": []
   },
   {
     "id": "4d885c3460c8bb42",
@@ -1287,7 +1290,8 @@
     "article_url": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
     "source": "SecurityWeek",
     "published": "2026-11-26",
-    "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign."
+    "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign.",
+    "aliases": []
   },
   {
     "id": "1a7cc7c32aaca9dc",
@@ -1296,6 +1300,59 @@
     "article_url": "https://www.wiz.io/blog/what-wiz-agents-are-thankful-for",
     "source": "Wiz Research",
     "published": "2026-11-26",
-    "summary": "Grab a slice of Data Pie and pull up a chair. Here’s how Wiz’s Red, Green, and Blue Agents celebrate a quieter, smarter security season."
+    "summary": "Grab a slice of Data Pie and pull up a chair. Here’s how Wiz’s Red, Green, and Blue Agents celebrate a quieter, smarter security season.",
+    "aliases": []
+  },
+  {
+    "id": "20d4951d50cc0d71",
+    "title": "CVE-2026-137684: A security flaw has been discovered in eosphoros-ai DB-GPT up to 0.8.3. This affects the function editor_sql_run of the file…",
+    "url": "https://github.com/advisories/GHSA-jh6m-rp4m-7gj5",
+    "article_url": "https://github.com/advisories/GHSA-jh6m-rp4m-7gj5",
+    "source": "GitHub Security Advisories",
+    "published": "2026-11-27",
+    "summary": "A security flaw has been discovered in eosphoros-ai DB-GPT up to 0.8.3. This affects the function editor_sql_run of the file packages/dbgpt-app/src/dbgpt_app/openapi/api_v1/editor/api_editor_v1.py of the component Editor SQL Run API. Performing a manipulation of the argument db_name results in authorization bypass. It is possible to initiate the attack remot",
+    "aliases": [
+      {
+        "title": "CVE-2026-137684: A security flaw has been discovered in eosphoros-ai DB-GPT up to 0.8.3. This affects the function editor_sql_run of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137684",
+        "source": "NIST NVD",
+        "published": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "f8d16e3a9875054e",
+    "title": "Matters.AI Lands India’s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
+    "url": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+    "source": "Dark Reading",
+    "published": "2026-11-27",
+    "summary": "The security startup consolidates four legacy security tools into an autonomous platform that uses context-aware AI to trace sensitive data lineage, analyze user intent, and automatically remediate threats across enterprise environments."
+  },
+  {
+    "id": "982bfc2fadcbc685",
+    "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+    "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "article_url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+    "source": "The Hacker News",
+    "published": "2026-11-27",
+    "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and pre"
+  },
+  {
+    "id": "979e934b372966d4",
+    "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+    "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "article_url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+    "source": "The Hacker News",
+    "published": "2026-11-27",
+    "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been"
+  },
+  {
+    "id": "d6836d9aebe613b6",
+    "title": "CVE-2026-137681: A vulnerability was found in eosphoros-ai DB-GPT up to 0.8.2. Impacted is the function _react_agent_stream_impl of the file…",
+    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137681",
+    "article_url": "https://nvd.nist.gov/vuln/detail/cve-2026-137681",
+    "source": "NIST NVD",
+    "published": "2026-11-27",
+    "summary": "A vulnerability was found in eosphoros-ai DB-GPT up to 0.8.2. Impacted is the function _react_agent_stream_impl of the file packages/dbgpt-app/src/dbgpt_app/openapi/api_v1/agentic_data_api.py of the component Agentic Data API React Agent. The manipulation of the argument database_name results in authorization bypass. The attack can be executed remotely. The "
   }
 ]
